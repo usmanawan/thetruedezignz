@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">		
+	<head>
+			<title>Touch Stone</title>
+             <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+			<link rel="icon" href="favicon.ico" type="image/x-icon">
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+			<link rel="icon" href="favicon.ico" type="image/x-icon">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			
+            
+            <!-- CSS
+			================================================== -->
+			<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+			<link href="css/style.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/FontAwesome/css/font-awesome.min.css">
+			
+			<link href="css/animate.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+      
+             <link rel="stylesheet" href="css/ihover.css" type="text/css" />
+             <!-- <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />-->
+             <link rel="stylesheet" href="css/transition-animations.css"/>
+    		<link rel="stylesheet" href="css/demo-single-page.css"/>
+             <link rel="stylesheet" href="css/jquery.galereya.css"/>
+             <link rel="stylesheet" href="css/jquery.galereya.ie.css"/> 
+             <link rel="stylesheet" href="css/fractionslider.css">
+             
+           <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+			<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
+           <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">-->
+             <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+    <style>
+		html,body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			background: rgba(255,255,255,.9);
+			clear: both;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			padding: 20px;
+			position: relative;
+			z-index: 1;
+		}
+		.fluid_container {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: 0;
+		}
+		#camera_wrap_4 {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			margin-bottom: 0!important;
+			position: fixed;
+			right: 0;
+			top: 0;
+		}
+		.camera_bar {
+			z-index: 2;
+		}
+		.camera_thumbs {
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+		.camera_thumbs_cont {
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		.camera_overlayer {
+			opacity: .3;
+		}
+	</style>
+
+            
+            <!-- Java Script
+			================================================== -->
+			   
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+             
+             <!--<script src="js/jquery-2.1.3.min.js"></script>-->
+			   <!-- <script src="js/particles.min.js"></script> -->
+			<script type="text/javascript" src="js/html5shiv.js"></script>
+			<script type="text/javascript" src="js/bootstrap.js"></script>
+			<script type="text/javascript" src="js/jquery.easing.js"></script>
+			<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+			<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+            <script type="text/javascript" src="js/jquery.sticky.js"></script>
+         
+            <!-- <script type="text/javascript" src="js/nivo-lightbox.js"></script>-->
+		
+			<script type="text/javascript" src="js/wow.js"></script>
+			<script type="text/javascript" src="js/custom.js"></script>
+           
+             <!--<script src="js/jquery.lazyload-any.js" type="text/javascript"></script>-->
+           <script src="js/jquery.galereya.js"></script>
+            <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+   
+    <script type='text/javascript' src='js/camera.js'></script> 
+           
+            <script type='text/javascript' src='js/granim.min.js'></script>  
+    
+    <!-- <script>
+        $(function() {
+            $('#gallery').galereya({
+                
+            });
+        });
+
+    </script>-->
+        <script>
+            $(document).ready(function() {
+               var granimInstance = new Granim({
+    element: '#canvas-basic',
+    name: 'basic-gradient',
+    direction: 'left-right',
+    opacity: [1, 1],
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+               
+                ['#02AAB0', '#00CDAC'],
+                ['#DA22FF', '#9733EE'],
+				['#b24592', '#f15f79'], 
+				['#ff5f6d', '#ffc371'], 
+				['#f79d00', '#64f38c'], 
+				
+				
+            ]
+        }
+    }
+});
+            });
+        </script>
+    
+    <!--   <script>
+      
+		
+		$(window).load(function(){
+	$('.slider').fractionSlider({
+		'fullWidth': 			true,
+		'controls': 			true, 
+		'pager': 				true,
+		'responsive': 			true,
+		'dimensions': 			"1500,800",
+	    'increase': 			false,
+		'timeout' : 5000, // default timeout before switching slides
+		
+		
+	});
+
+});
+    </script>        -->           
+    
+<style>
+
+#homecolor{
+background: #d9d9d9; /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom right,#d9d9d9 ,#e6e6e6 , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d9d9d9 ,#e6e6e6 , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	min-height: 1300px;
+}
+</style>
+			
+   
+    </head>
+
+<body>
+
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_4').camera({
+				height: 'auto',
+				loader: 'pie',
+				pagination: true,
+				thumbnails: true,
+				hover: false,
+				fx:'simpleFade',
+				easing:'easeInOutQuad',
+			
+				transPeriod: 1000,
+				opacityOnGrid: true,
+				imagePath: '../images/'
+			});
+
+		});
+	</script>
+ 
+         
+     <div class="pt-wrapper">    
+		
+        <!-- Fixed navbar -->
+           <div class="navbar " >
+           <div class="navbar-default">
+             <div class="container-fluid">
+               <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+                 
+                 <!-- Logo -->
+               <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+               </div>
+               
+              
+                <div class="navbar-collapse collapse ">
+                   <ul class="nav navbar-nav">
+                      <li><a class="pt-trigger iconcolor" data-animation="13" data-goto="1">Home</a></li>
+                       <li><a class="pt-trigger" data-animation="13" data-goto="1"> About</a></li>
+                      <li><a class="pt-trigger" data-animation="13" data-goto="1">Services</a></li>
+                      <li><a class="pt-trigger" data-animation="13" data-goto="1">  Products</a></li>
+                       <li><a class="pt-trigger" data-animation="13" data-goto="5"> Contact</a></li>
+                  </ul>
+              </div>
+             
+         
+          </div>
+          </div>
+          </div>
+        
+         <!--========== Slider ===========-->
+		 <!--===============================-->
+         <section id="homecolor" class="pt-page pt-page-1">
+		  
+		    <div id="particles-js"></div> 
+         	<!-- <div class="centeralign">
+			<!--<div class="logo wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+  			<img src="images/logo.png">
+   			</div>
+            </div>
+  		<div class="clearfix"></div>
+        <header class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+   
+        
+            <div class="middle"><h1>Welcome</h1>
+            <h4>Branding-Websites-Brouchers</h4>
+            
+           <!-- <ul class="list-inline">
+             <li><i class="fa fa-facebook fa-2x"></i></li>
+             <li><i class="fa fa-twitter fa-2x"></i></li>
+             <li><i class="fa fa-skype fa-2x"></i></li>
+             <li><i class="fa fa-google-plus fa-2x"></i></li>
+             <li><i class="fa fa-linkedin fa-2x"></i></li>
+             
+            </ul>
+            <br>
+            <button  data-animation="50" data-goto="-4" class="btn btn-theme btn-lg pt-trigger">Portfolio</button>
+         
+            </div>
+              
+         
+        </header>-->
+           <!--<div class="slider-wrapper">
+			<div class="responisve-container">
+				<div class="slider">
+					<div class="fs_loader"></div>
+				
+					<div class="slide">
+							
+							  <img 	src="images/slider/home.png" class="img-theme" width="1400" height="857"		
+								data-position="245,75" data-in="slideBottom" data-delay="0" data-out="right">
+
+						<p 		class="golden" 			
+								data-position="-10,580" data-in="top" data-step="1" data-out="top">Welcome to </p>
+						
+						<h1     class="claim title1"			
+								data-position="-110,364" data-in="top"  data-out="top" data-delay="50" data-ease-in="easeInOutCubic">TOUCHSTONE</h1>
+										
+						<p 		class="teaser turky " 	
+								data-position="170,530" data-in="bottom" data-step="2" data-delay="100">Your Event Partner</p>		
+					
+					</div>
+					
+					<div class="slide">
+							
+							  <img 	src="images/slider/touchstone.png" class="img-theme" width="1150" height="704"		
+								data-position="100,500" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,-164" data-in="Right"  data-out="right" data-delay="10">BIRTHDAY PARTIES</h1>
+
+						<p 		class="golden" 			
+								data-position="95,-200" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+					
+						<div class="slide">
+							
+							  <img 	src="images/slider/weddings.png" class="img-theme" width="1150" height="704"		
+								data-position="100,-200" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,1050" data-in="right"  data-out="left" data-delay="10">WEDDING EVENTS</h1>
+
+						<p 		class="golden" 			
+								data-position="95,1000" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+                    
+                    
+                    <div class="slide">
+							
+							  <img 	src="images/slider/weddings2.png" class="img-theme" width="1150" height="704"		
+								data-position="100,500" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,-164" data-in="right"  data-out="left" data-delay="10">ENGAGEMENT EVENTS</h1>
+
+						<p 		class="golden" 			
+								data-position="95,-200" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+                    
+                    <div class="slide">
+							
+							  <img 	src="images/slider/CORP.png" class="img-theme" width="1150" height="704"		
+								data-position="100,-200" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,1050" data-in="right"  data-out="left" data-delay="10">CORPORATE  EVENTS</h1>
+
+						<p 		class="golden" 			
+								data-position="95,1000" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+                    
+				</div>
+			</div>
+		</div>-->
+        <div class="fluid_container">
+        		<div class="camera_wrap camera_emboss camera_white_skin " id="camera_wrap_4">
+            <div data-thumb="images/slides/thumbs/16.jpg" data-src="images/slides/16.jpg">
+                <div class="camera_caption">
+                 <p class="wow fadeInLeft">Your Event Partner</p>
+                  <div class="clearfix"></div>
+               <h1 class="wow fadeInRight">Welcome To TOUCHSTONE</h1>
+               
+           
+            </div>
+            </div>
+            
+            
+            <div data-thumb="images/slides/thumbs/01.jpg" data-src="images/slides/01.jpg">
+            	
+               <div class="camera_caption">
+                  <p class="wow fadeInLeft">We Make Them Memoirable</p>
+                 <div class="clearfix"></div> 
+                <h1 class="wow fadeInRight">Wedding Events</h1>
+              
+          
+            </div>
+            </div>
+            
+             <div data-thumb="images/slides/thumbs/04.jpg"  data-src="images/slides/04.jpg">
+            		 <div class="camera_caption">
+                    <p class="wow fadeInLeft">Creative Solutions With Proven Expertise</p>
+                        <div class="clearfix"></div>
+                      <h1 class="wow fadeInRight">Corporate Events</h1>
+              
+           
+            </div>
+            </div>
+            
+            
+         <div data-thumb="images/slides/thumbs/02.jpg" data-src="images/slides/02.jpg">
+            	
+                <div class="camera_caption push2">
+                <p class="wow fadeInUp">We can handle Projects of any Complexity. </p>
+                 <div class="clearfix"></div>
+                <h1 class="wow fadeInDown"> Projects of Any Complexity</h1>
+                  
+                  
+               
+                
+          
+            </div>
+            </div>
+             <div data-thumb="images/slides/thumbs/8.jpg"  data-src="images/slides/8.jpg">
+            		<div class="camera_caption push2">
+                     <p class="wow fadeInUp">We Can Meke Your Birthday Lovely. </p>
+                      <div class="clearfix"></div>
+                    <h1 class="wow fadeInDown"> Birthday Parties</h1>
+               
+           
+            </div>
+            </div>
+             <div data-thumb="images/slides/thumbs/13.jpg" data-src="images/slides/13.jpg">
+            	 <div class="camera_caption push2">
+           		 <p class="wow fadeInUp">We took project from ground level to till end. </p>
+                  <div class="clearfix"></div>
+               <h1 class="wow fadeInDown">Plan ,Design & Build</h1>
+               
+            </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/05.jpg"  data-src="images/slides/05.jpg">
+            		<div class="camera_caption push2">
+                     <p class="wow fadeInUp">We Provide Decorations Suitable for Your Ocassion. </p>
+                      <div class="clearfix"></div>
+                    <h1 class="wow fadeInDown"> Decorations</h1>
+               
+           
+            </div>
+            </div>
+            
+         
+          
+            
+        </div><!-- #camera_wrap_3 -->
+
+   		 </div>
+               <div  class="navbar-default navbar-fixed-bottom" style="position:absolute;"> <div id="detailstop" class="container-fluid">
+         
+               
+                <div class="  pull-left">
+                    
+                    <ul class="list-inline">
+                      <li ><span class="badge badge-theme"><i class="fa fa-envelope"></i></span> <a href="mailto:info@touchstoneevent.com">info@touchstoneevent.com</a>
+                      </li>
+                      <li ><span class="badge badge-theme"><i class="fa fa-phone"></i></span>
+                    +92 3310333349 
+                      </li>
+                    </ul>
+                    
+               </div>
+           		<div class="  pull-right">
+                    
+                    <ul class="list-inline">
+                          <li ><span class="badge badge-theme"><i class=" fa fa-facebook"></i></span>
+                        
+                          </li>
+                          <li ><span class="badge badge-theme"><i class=" fa fa-twitter"></i></span>
+                         
+                          </li>
+                           <li ><span class="badge badge-theme"><i class=" fa fa-skype"></i></span>
+                         
+                          </li>
+                           <li ><span class="badge badge-theme"><i class=" fa fa-youtube"></i></span>
+                         
+                          </li>
+                           <li ><span class="badge badge-theme"><i class=" fa fa-linkedin"></i></span>
+                         
+                          </li>
+                    </ul>
+                    
+               </div>
+           
+        
+        </div></div>
+       </section>
+       
+   		
+	
+        
+          
+          
+          
+          <!--========== About ===========-->
+		 <!--===============================-->
+         <section id="about" class="pt-page pt-page-2">
+         	 <article class="container">
+                      
+     				<!--Page title -->   	
+     				<div class="title wow lightSpeedIn" >
+                    	<p class="golden">Who We Are</p>
+       					<h1>About</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+                        
+                        
+						
+					 <span class="text-center"><i class="fa fa-star fa-5x"></i> <i class="fa fa-star fa-4x"></i> <i class="fa fa-star fa-3x"></i> <i class="fa fa-star fa-2x"></i> <i class="fa fa-star "></i></span>
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+		
+					<!--Services icons Start-->
+					<div class="row">
+                    
+
+                        <div class="col-lg-6 col-md-6">
+                        
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                         <h2>About</h2>
+                         <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
+                         	<ul class="style1">
+			
+					        	 <li>Safe healthy quality working lives for our people.</li>
+					         	<li>Have the courage to change course when needed.</li>
+					         	<li>Steward system assets and focus on building value.</li>
+								<br>
+			      			 </ul>
+                        </div>
+                    
+                    <!--Services icons End-->
+       
+    				</div><!--Services icons End--><!-- /.row -->	
+                   <div class="expand">
+                    <div class="col-lg-6">
+                         		<h2>Our Mission</h2>
+                                <span class="badge badge-theme2 pull-left hollow"><i class="fa fa-meh-o fa-2x"></i></span>
+                         <p>  Our mission is to spread the spirit of tourism across whole Pakistan. We aim to open up every piece of bookable accommodation and turn every stone to make sure that you get the best deal in town.</p>
+                         </div>
+                    <div class="col-lg-6">
+                         		<h2>Our Vision</h2>
+                                <span class="badge badge-theme2 pull-left hollow"><i class="fa fa-user fa-2x"></i></span>
+<p>Ghoomo Pakistan is operated by a group of passionate hikers, campers and trekkers having years of experience in sneaking-out of their everyday life and making every moment count.</p>
+                         </div>
+                    	
+                    </div>    
+                     
+                   <div class="clearfix"></div>     	
+                       
+						<div class="title">
+                          <h1>Our Skills</h1>
+                        </div>
+                        
+                        <ul class="list-unstyled middle expand" id="skills" data-appear-top-offset="600">
+			
+							<li class="col-md-3 marginbottom-sm " >
+									
+									 <div class="circleanim" id="skill-1">
+                        				<i class="fa fa-cogs fa-2x"></i>
+                                         
+									</div>
+									<h4>Pre-Construction Services</h4>
+									
+                                    <p >We accomplish this with specialized teams that are composed of both project management and site supervision professionals.</p>
+          
+									<a href="#" class="btn btn-default btn-lg">Read More</a>									
+							</li >	
+			
+							<li class="col-md-3  marginbottom-sm ">
+								<div class="circleanim" id="skill-2">
+                                <i class="fa fa-calendar-o fa-2x"></i>
+                              
+							    </div>
+								<h4>Project Management</h4>
+								<p>Our project management team is never content to sit back and write a memo or fancy report. We always invest ourselves into a project and take a "hands on" approach to managing.</p>
+							
+                            	<a href="#" class="btn  btn-default">Read More</a>
+							</li>	
+			
+							<li class="col-md-3  marginbottom-sm ">
+								    <div class="circleanim" id="skill-3">
+									<i class="fa fa-phone fa-2x"></i>
+                                    
+                                    </div>
+								<h4 >DESIGN BUILD</h4>
+								<p>We only partner with companies who live up to our own high standards and exceptional quality, so you know your project is in good hands at all times.</p>
+							
+                            <a href="#" class="btn  btn-default">Read More</a>	
+				           </li>
+                           <li class="col-md-3  marginbottom-sm">
+								    <div class="circleanim" id="skill-4">
+									<i class="fa fa-bolt fa-2x"></i>
+                                    
+                                    </div>
+								<h4 >GENERAL CONTRACTING</h4>
+								<p>By having a complete team of qualified workers and partners, we control every aspect of the project to ensure it lives up to our exceptional standards.</p>
+							
+                            <a href="#" class="btn  btn-default">Read More</a>	
+				           </li>
+                         
+          
+			           </ul>
+       				  
+    				   <div class="expand center-block">
+                       
+                                             <ul class="nav nav-tabs text-center" role="tablist" id="myTab">
+  												<li role="presentation" class="active"><a href="#info" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-cogs fa-2x"></i> </a></li>
+  												<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-info fa-2x"></i></a></li>
+ 												<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-book fa-2x"></i></a></li>
+  
+											</ul>
+
+											<div class="tab-content">
+ 												 <div role="tabpanel" class="tab-pane active" id="info">
+  <h2>Who We Are</h2>
+  <div class="row">
+  <div class="col-md-4"><p>Ghoomo Pakistan came into existence to provide completeHoliday Solution to travelers traveling to the Heaven in the North ofPakistan. <br>
+
+We have experienced staff to take care of all your tour needs. We are available to provide travel assistance on 24/7 basis with access to our office through our physical address, telephone and email.<br>
+
+Ghoomo Pakistan is committed to providing its valued customers with only the best travel deals available. With this promise, Ghoomo Pakistan continues to improve its travel services in the most convenient ways possible by taking advantage of technological advancements. We are proud for making outstanding progress in the last few years and now we are well known as one of the very reputable Travel Agencies inside Pakistan.<br> 
+
+Ghoomo Pakistan has developed this website that features a dynamic booking engine where affordable all-in fares, customized travel packages, accommodations and transfers can be availed of. Ghoomo Pakistan is the first-ever travel agency in the Pakistan to develop this kind of travel technology.
+
+                         </p></div>
+                         
+                         <div class="col-md-8"> 
+                       
+                         </div></div>
+                         </div>
+  												 <div role="tabpanel" class="tab-pane" id="profile"><h2>Our Mission</h2>
+                         <p>Our mission is to spread the spirit of tourism across whole Pakistan. We aim to open up every piece of bookable accommodation and turn every stone to make sure that you get the best deal in town.</p>
+                         <h2>People BehindGhoomo Pakistan</h2>
+<p>Ghoomo Pakistan is operated by a group of passionate hikers, campers and trekkers having years of experience in sneaking-out of their everyday life and making every moment count.</p></div>
+												 <div role="tabpanel" class="tab-pane" id="messages"> <h2>How We Help</h2>
+                     Customers get more options in great destinations at the best available prices. Our partner properties receive more business. Pakistan gets a boost in tourism. Ghoomois a win-win deal for everybody!<br>
+
+   We design our treks and tours keeping in view the affording capacity of every class. Our most of the tours are very economical and equipped with best level of services. We take care of your travel, transportation to any destination with great care and quality. We also provide hotel reservation services.<br>
+
+   <a href="mailto:info@ghoomopakistan.com.pk">info@ghoomopakistan.com.pk</a>. <br>We always strive to improve, so please do send us your feedback.</div>
+  
+											</div>
+						</div>
+											<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  })
+</script>
+             
+             
+             
+             </article>
+         </section>
+          
+          
+         <!--========== Features ===========-->
+		 <!--===============================-->
+         <section id="features" class="pt-page pt-page-3">
+         	 <article class="container">
+                      
+     				<!--Page title -->   	
+     				<div class="title wow lightSpeedIn" >
+                    	
+       					<h1>Our Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+		
+					<!--Services icons Start-->
+					<div id="services" class="row">
+                    
+						<ul class="list-unstyled">
+			
+							<li class="col-md-4 col-xs-8 marginbottom-sm wow animated fadeInRight" data-wow-duration="1s"  >
+									<span><i class="fa fa-bell-o fa-4x"></i></span>
+					
+									<h4>Buy/Sell</h4>
+									<p>There are many variations of passages of Lorem Ipsum available, but the                                      majority have suffered alteration in some form.</p>
+          
+									<a href="#" class="btn btn-theme btn-lg">Read More</a>
+							</li >	
+			
+							<li class="col-md-4 col-xs-8  marginbottom-sm wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+								<span><i class="fa fa-truck fa-4x"></i></span>
+					
+								<h4>Delievry</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+							</li>	
+			
+							<li class="col-md-4 col-xs-8  marginbottom-sm wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="2s">
+								<span><i class="fa fa-cogs fa-4x"></i></span>
+					
+								<h4 >Self Learners</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+				           </li>
+                          <!-- <li class="col-md-4 col-xs-8" >
+									<span><i class="fa fa-magic fa-4x"></i></span>
+					
+									<h4>Door Parameters</h4>
+									<p>There are many variations of passages of Lorem Ipsum available, but the                                      majority have suffered alteration in some form.</p>
+          
+									<a href="#" class="btn  btn-theme">Read More</a>
+							</li >	
+			
+							<li class="col-md-4 col-xs-8">
+								<span><i class="fa fa-pencil  fa-4x"></i></span>
+					
+								<h4>Touch Screen</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+							</li>	
+			
+							<li class="col-md-4 col-xs-8">
+								<span><i class="fa fa-cogs fa-4x"></i></span>
+					
+								<h4 >For Interor exterior</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+				           </li>	-->
+          
+			           </ul><!--Services icons End-->
+       
+    				</div><!--Services icons End--><!-- /.row -->
+             
+             
+             
+             
+             </article>
+         </section>
+         
+         
+         
+           
+         <!--========== Description ===========-->
+		 <!--===============================-->
+          <section id="description" class="pt-page pt-page-4">
+         	<div class="overlay"> </div>
+         	 <article class="container">
+                      	<!--Page title -->   	
+     				<div class="title wow lightSpeedIn">
+                    	
+       					<h1 class="cul">Products</h1>
+						<p class="cul">We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line"></span>
+</div> <!--Page title End -->  
+        
+              </article>
+              <article class="container-fluid"> 
+  
+  <div id="gallery">
+      
+        
+                                    ...
+    <img src="images/gallery/thumbs/2.jpg"
+        alt="Image"
+        data-desc="Example"
+         data-category="print"
+        data-fullsrc="images/gallery/2.jpg"
+>    
+           <img src="images/gallery/thumbs/3.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/3.jpg"
+         data-category="design"
+>    <img src="images/gallery/thumbs/4.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/4.jpg"
+         data-category="web"
+>    <img src="images/gallery/thumbs/5.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/5.jpg"
+>    <img src="images/gallery/thumbs/6.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="design"
+        data-fullsrc="images/gallery/6.jpg"
+>    
+       <img src="images/gallery/thumbs/9.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/9.jpg"
+          data-category="design"
+>    <img src="images/gallery/thumbs/10.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="print"
+        data-fullsrc="images/gallery/10.jpg"
+>    
+<img src="images/gallery/thumbs/11.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="web"
+        data-fullsrc="images/gallery/11.jpg"
+>     
+                </div>
+  <div class="row">
+  <div class="col-md-4 wow bounceInUp" >
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect2 top_to_bottom"><a href="#">
+        <div class="img"></div>
+        <div class="info">
+          <h3>TIMBER SALES</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+  <div class="col-md-4 wow bounceInUp" data-wow-delay="1s">
+ 
+    <!-- colored -->
+    <div class="ih-item circle colored effect2 top_to_bottom"><a href="#">
+        <div class="img"></div>
+        <div class="info">
+          <h3>PALLETS AND BOXES</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
+  <div class="col-md-4 wow bounceInUp" data-wow-delay="2s">
+ 
+    <!-- colored -->
+    <div class="ih-item circle colored effect2 top_to_bottom"><a href="#">
+        <div class="img"></div>
+        <div class="info">
+          <h3>PALLETS AND BOXES</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
+</div>
+         </article>
+       </section>
+		
+       
+       
+       
+       
+       <!--========== Contact ===========-->
+		   <!--===============================-->
+        	 <section id="contactus" class="pt-page pt-page-5">
+         	 	 <canvas id="canvas-basic">  </canvas>  
+               <div class="bgheader">
+                  
+     					<!--Page title -->   	
+     				<div class="title wow lightSpeedIn">
+                    	
+                        <p class="golden">Who We Are</p>
+       					<h1>Contact us</h1>
+						 
+    <div class="spacer">
+                <hr>
+                <i class="fa fa-2x fa-heart-o grey-icon"></i>
+                <i class="fa fa-3x fa-heart solid-icon"></i>
+  </div> 
+                         
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+                 
+                   	</div>
+                    <div class="clearfix"></div>
+                    <article class="container">  
+                     
+                    <div class="row">	
+                     <div class="clearfix"></div>
+                     <form role="form" method="post" id="contactform" action="email.php" class="col-sm-5 wow flipInX" onsubmit="return get_captcha()">
+                      <h3>Contact Us</h3>
+                      <div class="form-group">
+                        <label >Name</label>
+                        <input type="text"  class="form-control" id="name" name="name" pattern="[A-Za-z]{1,20}" placeholder="Enter Your Name" title="Please Enter Your Valid Name" required>
+                      </div>
+ 					 <div class="form-group">
+   						 <label>Email address</label>
+    					<input type="email" class="form-control " name="email" id="Email1" placeholder="Enter email" required>
+ 					</div>
+                      <div class="form-group">
+                        <label >Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      </div>
+                        
+                       <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message"  class="form-control" rows="3"  name="message" id="message" placeholder="Enter your message" required></textarea>
+                      </div>
+                       <div class="row">
+                       <label style="margin-left:15px;">Please enter the code</label>
+                      <div class="clearfix"></div>
+                       <div class="form-group col-sm-6 marginbottom-sm">
+                         
+                        <input type="text" disabled="disabled" class="form-control pull-left" name="result" id="result" style="width:80%;">
+                        
+                        <button class="btn btn-default pull-left" id="refresh" name="refresh" onClick="set_captcha()" > <i class="fa fa-refresh"></i></button>
+                        </div>
+                       <!-- <div class="form-group col-sm-1">
+                        <button class="btn btn-default" id="refresh" name="refresh" onClick="set_captcha()" > <i class="fa fa-refresh"></i></button>
+                        </div>-->
+                       <div class="form-group col-sm-6">
+                          
+                        <input type="text" name="captcha" class="form-control" id="captcha" />
+					</div>
+		         </div>
+                      
+              		   <button type="submit" id="submit"  class="btn btn-theme pull-right">Submit</button>
+              		    <div id='error_captcha' class='error col-lg-6'> <img src='images/error.png'> Please Enter Valid Captcha</div>
+ <div id='mail_success' class='success col-lg-6'> <img src='images/success.png'> Your message has been sent successfully. Our team will contact you soon.</div>
+                 
+      				<!--Mail Fail Message -->
+      			<div id='mail_fail' class='error col-lg-6'> <img src='images/error.png'> Sorry, error occured this time sending your message. </div>
+          	  </form>
+              <div class="col-md-7">
+            
+            <h3>Contact Details</h3>
+             <!--Address Details End -->  
+                <ul class=" list-unstyled">
+				
+					<li class="wow flipInY">
+						<span class="badge badge-theme"><i class="fa fa-home fa-2x"></i></span>  
+                      
+						Office 6,Raja Khalil ur rehman  Plaza ,Main British Home Market ,IJP Road Islamabad.
+					</li>
+					
+					<li class="wow flipInY">
+						<span class="badge badge-theme"><i class="fa fa-envelope  fa-2x "></i></span>  
+						   &nbsp;&nbsp; info@touchstoneevent.com
+					</li>
+					
+					<li class="wow flipInY">
+						<span class="badge badge-theme"><i class="fa fa-phone fa-2x"></i></span>  
+						    &nbsp;&nbsp;+92 3310333349 / 0314 9000039 / 0334 5254950
+					</li>
+				</ul>
+             </div>
+           
+              
+		   		</div>
+			
+			<!--Maps --> 
+			<div class="col-md-12">
+            <div class="clearfix"></div>
+            	 <h2 class="middle">We are Here</h2>	
+               
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53126.6840748932!2d73.0000888822142!3d33.672245511907235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94293e93d3f7%3A0x97e3852453dcbad3!2sTouch+Stone+Events!5e0!3m2!1sen!2s!4v1487793559337" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+			 
+             	 <!--Maps End -->  
+            </div> 
+           </article>
+          </section>
+       
+                <script>
+$(document).ready(function(){
+var text = "";
+var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for( var i=0; i < 5; i++ )
+text += possible.charAt(Math.floor(Math.random() * possible.length));
+document.getElementById('result').value=text;
+});
+
+function set_captcha(){
+	var text = "";
+var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for( var i=0; i < 5; i++ )
+text += possible.charAt(Math.floor(Math.random() * possible.length));
+document.getElementById('result').value=text;
+	}
+
+function get_captcha(){
+	var data_new = document.getElementById('captcha').value;
+	var result = document.getElementById('result').value;
+	
+	var name = document.getElementById('name').value;
+	var Email1 = document.getElementById('Email1').value;
+	var subject = document.getElementById('subject').value;
+
+	var message = document.getElementById('message').value;
+	
+		if(data_new==result)
+		{
+		$.ajax({
+		type:'POST',
+		url:'email.php',
+		data: {name:name, email:Email1, subject:subject, message:message},
+		success:function(data){
+		console.log(data);
+		$("#mail_success").show().fadeOut(5000);
+		},
+		error:function(data){
+		$("#mail_fail").show().fadeOut(5000);
+		}
+		});
+		document.getElementById("contactform").reset();
+		return false;
+		}
+		else{
+		$("#error_captcha").show().fadeOut(5000);
+		return false;
+		}
+	}
+</script>
+        
+       
+         <!--========== Display ===========-->
+		 <!--===============================
+         <section id="display">
+         	 <article class="container">
+                      
+     				 <div class="row">  
+ 						
+                       		 <div id="i3d" class="interactive_3d col-md-7 col-sm-12">
+            
+									<img src="images/rotate/images/frame_1.png">
+     						</div>
+                      
+                      
+                      			<div class="col-md-5 col-sm-12" id="rotator">
+									<h1>Display from every angle</h1>
+									<p>Show your  <span class="color">product</span>, with style.</p>
+	     			 		  
+                              </div>
+						</div>
+                 
+                </article>
+              </section>-->
+			  
+              
+             <!--========== Screenshots ===========-->
+		    <!--===============================-->
+        	 <!--<section id="screenshots" >
+         	 	<article class="container">
+                      
+     					<!--Page title   	
+     				<div class="title">
+                    	<span class="line2"></span>
+       					<h1>Awesome Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line2"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->    
+
+		  			<!--<ul class="bxslider">
+				
+						<li>
+							<img src="images/gallery/1.png">
+						</li>
+					
+						<li>
+							<img src="images/gallery/5.jpg">
+						</li>
+					
+						<li>
+							
+						</li>
+						<li>
+							<img src="images/gallery/11.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/12.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/13.jpg">
+						</li>
+					
+					</ul>-->
+                    <!--Filter Controls -->
+                            <!--<div class="controls  middle">	
+                                
+                                <ul class="list-inline">
+                                    <li class="filter active" data-filter="all">Show All</li>
+                                    <li class="filter" data-filter="category_1">Industrial Doors</li>
+                                    <li class="filter" data-filter="category_2">Domestic Doors</li>
+                                    <li class="filter" data-filter="category_3">Gates</li>
+                                </ul>
+                                
+                            </div>-->
+                    
+                              
+                   
+                                 <!--<ul class=" list-unstyled row" id="stage">
+                                    
+                                    <li class=" col-md-4 mix category_1 mix_all" data-cat="1">
+                                      <img src="img/por/1.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_2 mix_all" data-cat="2">
+                                       <img src="img/por/12.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_3 mix_all" data-cat="3">
+                                       <img src="img/por/14.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/11.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_1 mix_all" data-cat="1">
+                                      <img src="img/por/13.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_2 mix_all" data-cat="2">
+                                      <img src="img/por/9.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_3 mix_all" data-cat="3">
+                                      <img src="img/por/16.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                     
+                                    </li>
+                                    <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/17.jpg"/>
+                                    </li>
+                                </ul>-->
+			
+		
+        
+           
+             <!--========== Pricing ===========-->
+		    <!--===============================-->
+        	<!-- <section id="pricing" >
+         	 	<article class="container">
+                      
+     					 	
+     				<div class="title">
+                    	<span class="line2"></span>
+       					<h1>Awesome Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line2"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+					
+                    
+                      <!--<div class="row">
+       					<div class="col-md-3 col-xs-6">
+							<img src="images/s200.png">
+						</div>
+		
+        				<div class="col-md-3 col-xs-6 push">
+						
+                       		 <h1><strong>Choice 1</strong></h1>
+							
+                           		 <ul class="list-unstyled ">
+									<li> Awesome text effects slider</li>
+									<li>Working Ajax Contact Form</li>
+								</ul>
+		
+        					<h1><strong>15</strong>$</h1>
+						
+                        </div>
+		
+      					 <div class="col-md-3 col-xs-6">
+							<img src="images/s500.png">
+						</div>
+			
+            			<div class="col-md-3 col-xs-6 push">
+							<h1><strong>Choice 2</strong></h1>
+						
+                        	<ul class="list-unstyled ">
+								<li> Special Rotation plugin</li>
+								<li>Responsive Design</li>
+							</ul>
+					
+                    		<h1><strong>15</strong>$</h1>
+					</div>
+				  </div>-->
+                     
+        
+           
+           
+           
+           
+       
+        <!--       <script>
+			jQuery(function () {
+    jQuery('.show').click(function () {
+        var index = $(this).index(),
+            newTarget = jQuery('.slide').eq(index);
+        jQuery('.slide').not(newTarget).slideUp('fast')
+        newTarget.delay('fast').slideToggle('fast')
+        return false;
+    })
+});
+		</script>        -->     
+
+	<!--Scrolling  script  --> 
+	<!--<script>
+            $(function() {
+                $('ul.sdt_menu li a,ul.nav li a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top 
+                    }, 2000,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 2000);
+                    */
+                    event.preventDefault();
+                });
+            });
+    </script>	--> 
+	
+    
+   <!-- <script>
+	  $(document).ready( function() {
+	    $("#i3d").interactive_3d({
+	      frames: 38,
+		  speed: 50,
+	    });
+	  });
+		
+	</script>	--> 
+    
+<!--	<script>
+	$(document).ready(function(){
+  	  $('.bxslider').bxSlider({
+    	slideWidth: 500,
+    	minSlides: 3,
+    	maxSlides: 4,
+		speed:1500,
+		easing:'ease-in'
+
+  });
+});
+</script>-->  
+<!--<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 400) {
+        $('#navigation').fadeIn();
+    } else {
+        $('#navigation').fadeOut();
+    }
+});
+</script>
+<script>
+		
+
+	$(function(){
+	
+		$('#screenshots').mixitup();
+		
+	});
+	</script> -->
+
+<!--  <script>
+$(document).ready(function(){
+    $('#screenshots a').nivoLightbox();
+});
+</script>
+-->
+
+	<!--<style>
+	
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			background: rgba(255,255,255,.9);
+			clear: both;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			padding: 20px;
+			position: absolute;
+			z-index: 1;
+		}
+		.fluid_container {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			position:absolute;
+			right: 0;
+			top: 0;
+			z-index: 0;
+		}
+		#camera_wrap_4 {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			margin-bottom: 0!important;
+			position: relative;
+			right: 0;
+			top: 0;
+		}
+		.camera_bar {
+			z-index: 2;
+		}
+		.camera_thumbs {
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+		.camera_thumbs_cont {
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		.camera_overlayer {
+			opacity: .1;
+		}
+	</style>-->
+    
+       <!-- <script>
+		$('#navigation').click(function(e){    
+    $('.navbar').fadeOut('slow', function(){
+        $('.navbar').fadeIn('slow');
+    });
+});
+
+$('#btn-bk').click(function(e){    
+    $('#bank, #btn-bk').fadeOut('slow', function(){
+        $('#fancy, #btn').fadeIn('slow');
+    });
+});
+
+</script>-->
+<!--<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 630) {
+        $('.navbar').fadeIn();
+    } else {
+        $('.navbar').fadeOut();
+    }
+});
+</script>  
+<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 300) {
+        $('#sdt_menu').fadeOut();
+    } else {
+        $('#sdt_menu').fadeIn();
+    }
+});
+</script> -->
+</div>  
+<!-- <script src="js/jquery-2.1.3.min.js"></script>-->
+            <script src="js/transition.js"></script> 
+                 
+
+
+<script>
+ new WOW().init();
+</script> 
+ <!--<script>
+
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#D4AF37"
+      },
+      "shape": {
+        "type": "star",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 100,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+
+);
+    </script>-->
+<style>
+
+#particles-js{
+  width: 100%;
+  height:100%;
+  position:absolute;
+}
+.navbar .nav > li > a {color:#f8f8f8;}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+@media (max-width:768px){
+.navbar-collapse > ul.navbar-nav{background:#b1b1b1;}
+.navbar-brand > img {
+	max-width:168px;
+	margin-top:2px;
+}
+}</style>
+ <script>
+	
+	$(".navbar-toggle").click(function(event) {
+$(".navbar-collapse").toggle('in');
+});
+	</script>  
+</body>
+</html>

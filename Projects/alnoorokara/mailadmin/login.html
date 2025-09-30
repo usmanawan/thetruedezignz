@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+<div class="bg-success text-center">
+<br>
+<br>
+<h1>Alnoor Okara Mail Admin</h1>
+<br>
+<br>
+</div>
+<center>
+<table>
+<form method="post" name="login" enctype="application/x-www-form-urlencoded">
+<tr>
+
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td>E-mail Address:</td>
+<td ><input type="text" name="credential_0" value="" style="margin-left:10%;" class="form-control" size="30" maxlength="128" class="formfield"></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td>Password:</td>
+<td style="margin-left:5%;"><input type="password" style="margin-left:10%;" class="form-control" name="credential_1" size="20" maxlength="50" class="formfield"></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td><input type="submit" name="Log In" class="btn btn-default"  value="Check Mail" onclick="javascript:login.action='https://www.ipage.com/mail/index.bml?s=1';javascript:login.destination.value = '/mailadmin/index.bml?check=1';" ></td>
+<td><input type="submit" name="Log In" class="btn btn-success"  value="Manage Mail" onclick="javascript:login.action='https://secure.ipage.com/mailLogin';javascript:login.destination.value = '/mailadmin/index.bml?manage=1';"></td>
+</tr>
+<input type="hidden" name="destination">
+</form>
+</table>
+</center>

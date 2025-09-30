@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">		
+	<head>
+			<title>The FreeFolio</title>
+             <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+			<link rel="icon" href="favicon.ico" type="image/x-icon">
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+			<link rel="icon" href="favicon.ico" type="image/x-icon">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			
+            
+            <!-- CSS
+			================================================== -->
+			<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+			<link href="css/style.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/FontAwesome/css/font-awesome.min.css">
+			<link href="css/nivo-lightbox.css" rel="stylesheet" type="text/css" />
+			<link href="css/animate.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+            <link rel="stylesheet" href="css/camera.css" type="text/css" />
+             <link rel="stylesheet" href="css/ihover.css" type="text/css" />
+             <!-- <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />-->
+             <link rel="stylesheet" href="css/transition-animations.css"/>
+    		<link rel="stylesheet" href="css/demo-single-page.css"/>
+             <link rel="stylesheet" href="css/jquery.galereya.css"/>
+             <link rel="stylesheet" href="css/jquery.galereya.ie.css"/> 
+             
+            <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+            
+            <!-- Java Script
+			================================================== -->
+			<script type="text/javascript" src="js/jquery.js"></script>
+             <!--<script src="js/jquery-2.1.3.min.js"></script>-->
+			<script type="text/javascript" src="js/html5shiv.js"></script>
+			<script type="text/javascript" src="js/bootstrap.js"></script>
+			<script type="text/javascript" src="js/jquery.easing.js"></script>
+			<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+			<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+            <script type="text/javascript" src="js/jquery.sticky.js"></script>
+            <script src="js/camera.js" type="text/javascript" charset="utf-8"></script>
+            <script src="js/jquery.mobile.customized.min.js" type="text/javascript" charset="utf-8"></script>
+             <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+			 <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+			<script type="text/javascript" src="js/wow.js"></script>
+			<script type="text/javascript" src="js/custom.js"></script>
+             <script src="js/jquery.appear.js" type="text/javascript"></script>
+            <script type="text/javascript" src="js/circle-progress.js"></script>
+             <!--<script src="js/jquery.lazyload-any.js" type="text/javascript"></script>-->
+           <script src="js/jquery.galereya.js"></script>
+    
+     <script>
+        $(function() {
+            $('#gallery').galereya({
+                
+            });
+        });
+    </script>
+    
+                          
+    
+
+			<!--<script src="js/elementTransitions.min.js"></script>-->
+           
+             <!--  <script>
+$(document).ready(function(){
+  
+    
+    
+    $("#show1").click(function(){
+        $("#home3").slideUp('slow', function() {
+     $("#features").slideToggle(600);
+     
+  });
+     
+    });
+    
+    $("#show2").click(function(){
+        $("#home3").slideUp('slow', function() {
+    $("#description").slideToggle(600);
+ 
+  });
+      
+    });
+ 
+    $("#show3").click(function(){
+        $("#home3").slideUp('slow', function() {
+    $("#screenshots").slideToggle(600);
+ 
+  });
+      
+    });
+	  $("#show4").click(function(){
+        $("#home3").slideUp('slow', function() {
+    $("#contactus").slideToggle(600);
+ 
+  });
+      
+    });
+
+});
+	
+
+		  </script>
+          -->
+   
+    </head>
+
+<body>
+ <!-- <script src="js/circular-progress.js"></script>
+    <script>
+    (function () {
+      var n, id, progress;
+
+      progress = new CircularProgress({
+        radius: 20
+      });
+
+      document.body.appendChild(progress.el);
+
+      n = 0;
+      id = setInterval(function () {
+        if (n == 100) clearInterval(id);
+        progress.update(n++);
+      }, 100);
+    })();
+
+    (function () {
+      var n, id, progress;
+
+      progress = new CircularProgress({
+        radius: 40,
+        lineWidth: 2,
+        strokeStyle: 'black',
+        initial: {
+          lineWidth: 4,
+          strokeStyle: 'gray'
+        }
+      });
+
+      document.body.appendChild(progress.el);
+
+      n = 0;
+      id = setInterval(function () {
+        if (n == 100) clearInterval(id);
+        progress.update(n++);
+      }, 70);
+    })();
+
+    (function () {
+      var n, id, progress;
+
+      progress = new CircularProgress({
+        radius: 70,
+        strokeStyle: 'black',
+        lineCap: 'square',
+        lineJoin: 'round',
+        lineWidth: 5,
+        shadowBlur: 0,
+        shadowColor: 'yellow',
+        text: {
+          font: 'bold 15px arial',
+          shadowBlur: 0
+        },
+        initial: {
+          strokeStyle: 'white',
+          lineCap: 'square',
+          lineJoin: 'round',
+          lineWidth: 5,
+          shadowBlur: 10,
+          shadowColor: 'black'
+        }
+      });
+
+      document.body.appendChild(progress.el);
+
+      n = 0;
+      id = setInterval(function () {
+        if (n == 100) clearInterval(id);
+        progress.update(n++);
+      }, 30);
+    })();
+
+    </script> -->
+    
+         
+     <div class="pt-wrapper">    
+		
+        <!-- Fixed navbar -->
+           <div class="navbar " >
+           <div class="navbar-default">
+             <div class="container">
+               <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+                 
+                 <!-- Logo -->
+               <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+               </div>
+               
+              
+                <div class="navbar-collapse collapse ">
+                   <ul class="nav navbar-nav">
+                      <li><a class="pt-trigger" data-animation="13" data-goto="1">Home</a></li>
+                       <li><a class="pt-trigger" data-animation="26" data-goto="2">About</a></li>
+                      <li><a class="pt-trigger" data-animation="26" data-goto="3">Services</a></li>
+                      <li><a class="pt-trigger" data-animation="25" data-goto="4">Products</a></li>
+                       <li><a class="pt-trigger" data-animation="25" data-goto="5">Contact</a></li>
+                  </ul>
+              </div>
+             
+         
+          </div>
+          </div>
+          </div>
+        
+         <!--========== Slider ===========-->
+		 <!--===============================-->
+         <section id="homecolor" class="pt-page pt-page-1">
+		  
+		  
+         	<div class="centeralign">
+			<!--<div class="logo wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+  			<img src="images/logo.png">
+   			</div>-->
+  		<div class="clearfix"></div>
+        <header class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+   
+        
+            <div class="middle"><h1>Welcome</h1>
+            <h4>Branding-Websites-Brouchers</h4>
+            
+           <!-- <ul class="list-inline">
+             <li><i class="fa fa-facebook fa-2x"></i></li>
+             <li><i class="fa fa-twitter fa-2x"></i></li>
+             <li><i class="fa fa-skype fa-2x"></i></li>
+             <li><i class="fa fa-google-plus fa-2x"></i></li>
+             <li><i class="fa fa-linkedin fa-2x"></i></li>
+             
+            </ul>
+            <br>
+            <button  data-animation="50" data-goto="-4" class="btn btn-theme btn-lg pt-trigger">Portfolio</button>-->
+            </div>
+              
+         
+        </header>
+        
+       </section>
+       
+   		
+	
+          </section>
+          
+          
+          
+          <!--========== About ===========-->
+		 <!--===============================-->
+         <section id="about" class="pt-page pt-page-2">
+         	 <article class="container">
+                      
+     				<!--Page title -->   	
+     				<div class="title wow lightSpeedIn" >
+                    	
+       					<h1>About</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+                        
+                        
+						
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+		
+					<!--Services icons Start-->
+					<div class="row">
+                    
+
+                        <div class="col-lg-6 col-md-6">
+                         <img src="images/aboutbg1.jpg" class="img-theme">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                         <h2>About</h2>
+                         <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
+                         	<ul class="style1">
+			
+					        	 <li>Safe healthy quality working lives for our people.</li>
+					         	<li>Have the courage to change course when needed.</li>
+					         	<li>Steward system assets and focus on building value.</li>
+								<br>
+			      			 </ul>
+                        </div>
+                    
+                    <!--Services icons End-->
+       
+    				</div><!--Services icons End--><!-- /.row -->	
+                   <div class="expand">
+                    <div class="col-lg-6">
+                         		<h2>Our Mission</h2>
+                                <span class="badge badge-theme2 pull-left hollow"><i class="fa fa-meh-o fa-2x"></i></span>
+                         <p>  Our mission is to spread the spirit of tourism across whole Pakistan. We aim to open up every piece of bookable accommodation and turn every stone to make sure that you get the best deal in town.</p>
+                         </div>
+                    <div class="col-lg-6">
+                         		<h2>Our Vision</h2>
+                                <span class="badge badge-theme2 pull-left hollow"><i class="fa fa-user fa-2x"></i></span>
+<p>Ghoomo Pakistan is operated by a group of passionate hikers, campers and trekkers having years of experience in sneaking-out of their everyday life and making every moment count.</p>
+                         </div>
+                    	
+                    </div>    
+                     
+                   <div class="clearfix"></div>     	
+                       
+						<div class="title">
+                          <h1>Our Skills</h1>
+                        </div>
+                        
+                        <ul class="list-unstyled middle expand" id="skills" data-appear-top-offset="600">
+			
+							<li class="col-md-3 marginbottom-sm " >
+									
+									 <div class="circleanim" id="skill-1">
+                        				<i class="fa fa-cogs fa-2x"></i>
+                                         
+									</div>
+									<h4>Pre-Construction Services</h4>
+									
+                                    <p >We accomplish this with specialized teams that are composed of both project management and site supervision professionals.</p>
+          
+									<a href="#" class="btn btn-default btn-lg">Read More</a>									
+							</li >	
+			
+							<li class="col-md-3  marginbottom-sm ">
+								<div class="circleanim" id="skill-2">
+                                <i class="fa fa-calendar-o fa-2x"></i>
+                              
+							    </div>
+								<h4>Project Management</h4>
+								<p>Our project management team is never content to sit back and write a memo or fancy report. We always invest ourselves into a project and take a "hands on" approach to managing.</p>
+							
+                            	<a href="#" class="btn  btn-default">Read More</a>
+							</li>	
+			
+							<li class="col-md-3  marginbottom-sm ">
+								    <div class="circleanim" id="skill-3">
+									<i class="fa fa-phone fa-2x"></i>
+                                    
+                                    </div>
+								<h4 >DESIGN BUILD</h4>
+								<p>We only partner with companies who live up to our own high standards and exceptional quality, so you know your project is in good hands at all times.</p>
+							
+                            <a href="#" class="btn  btn-default">Read More</a>	
+				           </li>
+                           <li class="col-md-3  marginbottom-sm">
+								    <div class="circleanim" id="skill-4">
+									<i class="fa fa-bolt fa-2x"></i>
+                                    
+                                    </div>
+								<h4 >GENERAL CONTRACTING</h4>
+								<p>By having a complete team of qualified workers and partners, we control every aspect of the project to ensure it lives up to our exceptional standards.</p>
+							
+                            <a href="#" class="btn  btn-default">Read More</a>	
+				           </li>
+                         
+          
+			           </ul>
+       				  
+    				   <div class="expand center-block">
+                       
+                                             <ul class="nav nav-tabs text-center" role="tablist" id="myTab">
+  												<li role="presentation" class="active"><a href="#info" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-cogs fa-2x"></i> </a></li>
+  												<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-info fa-2x"></i></a></li>
+ 												<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-book fa-2x"></i></a></li>
+  
+											</ul>
+
+											<div class="tab-content">
+ 												 <div role="tabpanel" class="tab-pane active" id="info">
+  <h2>Who We Are</h2>
+  <div class="row">
+  <div class="col-md-4"><p>Ghoomo Pakistan came into existence to provide completeHoliday Solution to travelers traveling to the Heaven in the North ofPakistan. <br>
+
+We have experienced staff to take care of all your tour needs. We are available to provide travel assistance on 24/7 basis with access to our office through our physical address, telephone and email.<br>
+
+Ghoomo Pakistan is committed to providing its valued customers with only the best travel deals available. With this promise, Ghoomo Pakistan continues to improve its travel services in the most convenient ways possible by taking advantage of technological advancements. We are proud for making outstanding progress in the last few years and now we are well known as one of the very reputable Travel Agencies inside Pakistan.<br> 
+
+Ghoomo Pakistan has developed this website that features a dynamic booking engine where affordable all-in fares, customized travel packages, accommodations and transfers can be availed of. Ghoomo Pakistan is the first-ever travel agency in the Pakistan to develop this kind of travel technology.
+
+                         </p></div>
+                         
+                         <div class="col-md-8"> 
+                          <img src="images/aboutbg.jpg" class="img-theme">
+                         </div></div>
+                         </div>
+  												 <div role="tabpanel" class="tab-pane" id="profile"><h2>Our Mission</h2>
+                         <p>Our mission is to spread the spirit of tourism across whole Pakistan. We aim to open up every piece of bookable accommodation and turn every stone to make sure that you get the best deal in town.</p>
+                         <h2>People BehindGhoomo Pakistan</h2>
+<p>Ghoomo Pakistan is operated by a group of passionate hikers, campers and trekkers having years of experience in sneaking-out of their everyday life and making every moment count.</p></div>
+												 <div role="tabpanel" class="tab-pane" id="messages"> <h2>How We Help</h2>
+                     Customers get more options in great destinations at the best available prices. Our partner properties receive more business. Pakistan gets a boost in tourism. Ghoomois a win-win deal for everybody!<br>
+
+   We design our treks and tours keeping in view the affording capacity of every class. Our most of the tours are very economical and equipped with best level of services. We take care of your travel, transportation to any destination with great care and quality. We also provide hotel reservation services.<br>
+
+   <a href="mailto:info@ghoomopakistan.com.pk">info@ghoomopakistan.com.pk</a>. <br>We always strive to improve, so please do send us your feedback.</div>
+  
+											</div>
+						</div>
+											<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  })
+</script>
+             
+             
+             
+             </article>
+         </section>
+          
+          
+         <!--========== Features ===========-->
+		 <!--===============================-->
+         <section id="features" class="pt-page pt-page-3">
+         	 <article class="container">
+                      
+     				<!--Page title -->   	
+     				<div class="title wow lightSpeedIn" >
+                    	
+       					<h1>Our Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+		
+					<!--Services icons Start-->
+					<div id="services" class="row">
+                    
+						<ul class="list-unstyled">
+			
+							<li class="col-md-4 col-xs-8 marginbottom-sm wow animated fadeInRight" data-wow-duration="1s"  >
+									<span><i class="fa fa-bell-o fa-4x"></i></span>
+					
+									<h4>Buy/Sell</h4>
+									<p>There are many variations of passages of Lorem Ipsum available, but the                                      majority have suffered alteration in some form.</p>
+          
+									<a href="#" class="btn btn-theme btn-lg">Read More</a>
+							</li >	
+			
+							<li class="col-md-4 col-xs-8  marginbottom-sm wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+								<span><i class="fa fa-truck fa-4x"></i></span>
+					
+								<h4>Delievry</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+							</li>	
+			
+							<li class="col-md-4 col-xs-8  marginbottom-sm wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="2s">
+								<span><i class="fa fa-cogs fa-4x"></i></span>
+					
+								<h4 >Self Learners</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+				           </li>
+                          <!-- <li class="col-md-4 col-xs-8" >
+									<span><i class="fa fa-magic fa-4x"></i></span>
+					
+									<h4>Door Parameters</h4>
+									<p>There are many variations of passages of Lorem Ipsum available, but the                                      majority have suffered alteration in some form.</p>
+          
+									<a href="#" class="btn  btn-theme">Read More</a>
+							</li >	
+			
+							<li class="col-md-4 col-xs-8">
+								<span><i class="fa fa-pencil  fa-4x"></i></span>
+					
+								<h4>Touch Screen</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+							</li>	
+			
+							<li class="col-md-4 col-xs-8">
+								<span><i class="fa fa-cogs fa-4x"></i></span>
+					
+								<h4 >For Interor exterior</h4>
+								<p>There are many variations of passages of Lorem Ipsum available, but the                                   majority have suffered alteration in some form.</p>
+							
+                            	<a href="#" class="btn  btn-theme">Read More</a>
+				           </li>	-->
+          
+			           </ul><!--Services icons End-->
+       
+    				</div><!--Services icons End--><!-- /.row -->
+             
+             
+             
+             
+             </article>
+         </section>
+         
+         
+         
+           
+         <!--========== Description ===========-->
+		 <!--===============================-->
+          <section id="description" class="pt-page pt-page-4">
+         	<div class="overlay"> </div>
+         	 <article class="container">
+                      	<!--Page title -->   	
+     				<div class="title wow lightSpeedIn">
+                    	
+       					<h1 class="cul">Products</h1>
+						<p class="cul">We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line"></span>
+</div> <!--Page title End -->  
+        
+               
+  
+  <div id="gallery">
+      
+        <img src="images/gallery/thumbs/1.jpg"
+        alt="Title here"
+        title="Or here(more priority)"
+        data-desc="some description"
+        data-category="web"
+        data-fullsrc="images/gallery/1.jpg"
+    >
+                                    ...
+    <img src="images/gallery/thumbs/2.jpg"
+        alt="Image"
+        data-desc="Example"
+         data-category="print"
+        data-fullsrc="images/gallery/2.jpg"
+>    
+           <img src="images/gallery/thumbs/3.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/3.jpg"
+         data-category="design"
+>    <img src="images/gallery/thumbs/4.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/4.jpg"
+         data-category="web"
+>    <img src="images/gallery/thumbs/5.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/5.jpg"
+>    <img src="images/gallery/thumbs/6.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="design"
+        data-fullsrc="images/gallery/6.jpg"
+>    <img src="images/gallery/thumbs/7.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="print"
+        data-fullsrc="images/gallery/7.jpg"
+>    <img src="images/gallery/thumbs/8.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/8.jpg"
+          data-category="web"
+>    <img src="images/gallery/thumbs/9.jpg"
+        alt="Image"
+        data-desc="Example"
+        data-fullsrc="images/gallery/9.jpg"
+          data-category="design"
+>    <img src="images/gallery/thumbs/10.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="print"
+        data-fullsrc="images/gallery/10.jpg"
+>    
+<img src="images/gallery/thumbs/11.jpg"
+        alt="Image"
+        data-desc="Example"
+          data-category="web"
+        data-fullsrc="images/gallery/11.jpg"
+>     
+                </div>
+  <div class="row">
+  <div class="col-md-4 wow bounceInUp" >
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect2 top_to_bottom"><a href="#">
+        <div class="img"><img src="images/7.jpg" alt="img"></div>
+        <div class="info">
+          <h3>TIMBER SALES</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+  <div class="col-md-4 wow bounceInUp" data-wow-delay="1s">
+ 
+    <!-- colored -->
+    <div class="ih-item circle colored effect2 top_to_bottom"><a href="#">
+        <div class="img"><img src="images/8.jpg" alt="img"></div>
+        <div class="info">
+          <h3>PALLETS AND BOXES</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
+  <div class="col-md-4 wow bounceInUp" data-wow-delay="2s">
+ 
+    <!-- colored -->
+    <div class="ih-item circle colored effect2 top_to_bottom"><a href="#">
+        <div class="img"><img src="images/1.gif" alt="img"></div>
+        <div class="info">
+          <h3>PALLETS AND BOXES</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
+</div>
+         </article>
+       </section>
+		
+       
+       
+       
+       
+       <!--========== Contact ===========-->
+		   <!--===============================-->
+        	 <section id="contactus" class="pt-page pt-page-5">
+         	 	<article class="container">
+                      
+     					<!--Page title -->   	
+     				<div class="title wow lightSpeedIn">
+                    
+       					<h1>Contact us</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+                   	
+                    <div class="row">	
+                    
+                     <form role="form" class="col-sm-6 wow flipInX">
+                      <h3>Contact Us</h3>
+                      <div class="form-group">
+                        <label >Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                      </div>
+ 					 <div class="form-group">
+   						 <label>Email address</label>
+    					<input type="email" class="form-control " id="Email1" placeholder="Enter email">
+ 					</div>
+                      <div class="form-group">
+                        <label >Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                      </div>
+                        
+                       <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message"  class="form-control" rows="3" id="message" placeholder="Enter your message"></textarea>
+                      </div>
+                      
+              		<button type="submit" class="btn btn-theme pull-right">Submit</button>
+          	  </form>
+             <h3>We are Here</h3>
+             <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3153.6358190356873!2d144.9725234!3d-37.775136599999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6434622d590d1%3A0x1fe820f3c28f19da!2s168+Edward+St%2C+Brunswick+East+VIC+3057%2C+Australia!5e0!3m2!1sen!2s!4v1410502555686" width="550" height="300" frameborder="0" style="margin-top: 27px;"></iframe>-->
+              
+		   		</div>
+			
+			<!--Address Details --> 
+			<h2 class="middle"> Contact Details</h2>
+            		
+                <!--Address Details End -->  
+                <ul class=" list-inline">
+				
+					<li class="col-md-5 col-xs-8 marginbottom-sm wow flipInY">
+						<span class="badge badge-theme"><i class="fa fa-home fa-2x"></i></span>  
+						  9-13 Granito Court Dandenong South
+						San Francisco.
+					</li>
+					
+					<li class="col-md-4 col-xs-8 marginbottom-sm wow flipInY">
+						<span class="badge badge-theme"><i class="fa fa-envelope  fa-2x "></i></span>  
+						   &nbsp;&nbsp; info@cambriapallets.com.au
+					</li>
+					
+					<li class="col-md-3 col-xs-8 wow flipInY">
+						<span class="badge badge-theme"><i class="fa fa-phone fa-2x"></i></span>  
+						    &nbsp;&nbsp;+613 9706 6022 
+					</li>
+				</ul>
+                 
+			 
+             	
+             
+           </article>
+          </section>
+       
+            
+        
+       
+         <!--========== Display ===========-->
+		 <!--===============================
+         <section id="display">
+         	 <article class="container">
+                      
+     				 <div class="row">  
+ 						
+                       		 <div id="i3d" class="interactive_3d col-md-7 col-sm-12">
+            
+									<img src="images/rotate/images/frame_1.png">
+     						</div>
+                      
+                      
+                      			<div class="col-md-5 col-sm-12" id="rotator">
+									<h1>Display from every angle</h1>
+									<p>Show your  <span class="color">product</span>, with style.</p>
+	     			 		  
+                              </div>
+						</div>
+                 
+                </article>
+              </section>-->
+			  
+              
+             <!--========== Screenshots ===========-->
+		    <!--===============================-->
+        	 <!--<section id="screenshots" >
+         	 	<article class="container">
+                      
+     					<!--Page title   	
+     				<div class="title">
+                    	<span class="line2"></span>
+       					<h1>Awesome Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line2"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->    
+
+		  			<!--<ul class="bxslider">
+				
+						<li>
+							<img src="images/gallery/1.png">
+						</li>
+					
+						<li>
+							<img src="images/gallery/5.jpg">
+						</li>
+					
+						<li>
+							<img src="images/gallery/8.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/11.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/12.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/13.jpg">
+						</li>
+					
+					</ul>-->
+                    <!--Filter Controls -->
+                            <!--<div class="controls  middle">	
+                                
+                                <ul class="list-inline">
+                                    <li class="filter active" data-filter="all">Show All</li>
+                                    <li class="filter" data-filter="category_1">Industrial Doors</li>
+                                    <li class="filter" data-filter="category_2">Domestic Doors</li>
+                                    <li class="filter" data-filter="category_3">Gates</li>
+                                </ul>
+                                
+                            </div>-->
+                    
+                              
+                   
+                                 <!--<ul class=" list-unstyled row" id="stage">
+                                    
+                                    <li class=" col-md-4 mix category_1 mix_all" data-cat="1">
+                                      <img src="img/por/1.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_2 mix_all" data-cat="2">
+                                       <img src="img/por/12.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_3 mix_all" data-cat="3">
+                                       <img src="img/por/14.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/11.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_1 mix_all" data-cat="1">
+                                      <img src="img/por/13.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_2 mix_all" data-cat="2">
+                                      <img src="img/por/9.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_3 mix_all" data-cat="3">
+                                      <img src="img/por/16.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/8.jpg"/>
+                                    </li>
+                                    <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/17.jpg"/>
+                                    </li>
+                                </ul>-->
+			
+		
+        
+           
+             <!--========== Pricing ===========-->
+		    <!--===============================-->
+        	<!-- <section id="pricing" >
+         	 	<article class="container">
+                      
+     					 	
+     				<div class="title">
+                    	<span class="line2"></span>
+       					<h1>Awesome Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line2"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->  
+					
+                    
+                      <!--<div class="row">
+       					<div class="col-md-3 col-xs-6">
+							<img src="images/s200.png">
+						</div>
+		
+        				<div class="col-md-3 col-xs-6 push">
+						
+                       		 <h1><strong>Choice 1</strong></h1>
+							
+                           		 <ul class="list-unstyled ">
+									<li> Awesome text effects slider</li>
+									<li>Working Ajax Contact Form</li>
+								</ul>
+		
+        					<h1><strong>15</strong>$</h1>
+						
+                        </div>
+		
+      					 <div class="col-md-3 col-xs-6">
+							<img src="images/s500.png">
+						</div>
+			
+            			<div class="col-md-3 col-xs-6 push">
+							<h1><strong>Choice 2</strong></h1>
+						
+                        	<ul class="list-unstyled ">
+								<li> Special Rotation plugin</li>
+								<li>Responsive Design</li>
+							</ul>
+					
+                    		<h1><strong>15</strong>$</h1>
+					</div>
+				  </div>-->
+                     
+        
+           
+           
+           
+           
+       
+        <!--       <script>
+			jQuery(function () {
+    jQuery('.show').click(function () {
+        var index = $(this).index(),
+            newTarget = jQuery('.slide').eq(index);
+        jQuery('.slide').not(newTarget).slideUp('fast')
+        newTarget.delay('fast').slideToggle('fast')
+        return false;
+    })
+});
+		</script>        -->     
+
+	<!--Scrolling  script  --> 
+	<!--<script>
+            $(function() {
+                $('ul.sdt_menu li a,ul.nav li a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top 
+                    }, 2000,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 2000);
+                    */
+                    event.preventDefault();
+                });
+            });
+    </script>	--> 
+	
+    
+   <!-- <script>
+	  $(document).ready( function() {
+	    $("#i3d").interactive_3d({
+	      frames: 38,
+		  speed: 50,
+	    });
+	  });
+		
+	</script>	--> 
+    
+<!--	<script>
+	$(document).ready(function(){
+  	  $('.bxslider').bxSlider({
+    	slideWidth: 500,
+    	minSlides: 3,
+    	maxSlides: 4,
+		speed:1500,
+		easing:'ease-in'
+
+  });
+});
+</script>-->  
+<!--<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 400) {
+        $('#navigation').fadeIn();
+    } else {
+        $('#navigation').fadeOut();
+    }
+});
+</script>
+<script>
+		
+
+	$(function(){
+	
+		$('#screenshots').mixitup();
+		
+	});
+	</script> -->
+<!-- <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_4').camera({
+				height: 'auto',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: false,
+				hover: false,
+				opacityOnGrid: false,
+				imagePath: '../images/'
+			});
+
+		});
+	</script>-->
+<!--  <script>
+$(document).ready(function(){
+    $('#screenshots a').nivoLightbox();
+});
+</script>
+-->
+
+	<!--<style>
+	
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			background: rgba(255,255,255,.9);
+			clear: both;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			padding: 20px;
+			position: absolute;
+			z-index: 1;
+		}
+		.fluid_container {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			position:absolute;
+			right: 0;
+			top: 0;
+			z-index: 0;
+		}
+		#camera_wrap_4 {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			margin-bottom: 0!important;
+			position: relative;
+			right: 0;
+			top: 0;
+		}
+		.camera_bar {
+			z-index: 2;
+		}
+		.camera_thumbs {
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+		.camera_thumbs_cont {
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		.camera_overlayer {
+			opacity: .1;
+		}
+	</style>-->
+    
+       <!-- <script>
+		$('#navigation').click(function(e){    
+    $('.navbar').fadeOut('slow', function(){
+        $('.navbar').fadeIn('slow');
+    });
+});
+
+$('#btn-bk').click(function(e){    
+    $('#bank, #btn-bk').fadeOut('slow', function(){
+        $('#fancy, #btn').fadeIn('slow');
+    });
+});
+
+</script>-->
+<!--<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 630) {
+        $('.navbar').fadeIn();
+    } else {
+        $('.navbar').fadeOut();
+    }
+});
+</script>  
+<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 300) {
+        $('#sdt_menu').fadeOut();
+    } else {
+        $('#sdt_menu').fadeIn();
+    }
+});
+</script> -->
+</div>  
+             <script>
+
+
+
+/*
+ * Example 4:
+ *   - solid color fill
+ *   - custom start angle
+ *   - custom line cap
+ */
+/*	var el = $('.circleanim,#2'),
+    inited = false;
+
+el.appear({ force_process: true });
+
+el.on('appear', function() {
+  if (!inited) {
+    el.circleProgress({ value: -0.9 });
+    inited = true;
+  }
+});*/  
+<!--$('someselector').appear();-->
+
+$('.circleanim').circleProgress({
+    startAngle: -Math.PI / 4 * 3,
+    value: .5,
+    lineCap: 'square',
+     fill: { gradient: [['#FDFBEF', 1], ['#F1B03A', 1]], gradientAngle: Math.PI / 4 },
+	 size: 170,
+    thickness: 10,
+	reverse:true,
+	emptyFill:"rgba(f, f, f, .4)"
+});
+
+/* 
+ * Example 4:
+ *   - solid color fill
+ *   - custom start angle
+ *   - custom line cap
+ *   - dynamic value set
+ */
+
+</script>   
+<!-- <script src="js/jquery-2.1.3.min.js"></script>-->
+            <script src="js/transition.js"></script> 
+                 
+
+
+<script>
+ new WOW().init();
+</script> 
+</body>
+</html>

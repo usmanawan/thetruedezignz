@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iGotcha</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- CSS
+			================================================== -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/FontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/hover.css" type="text/css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />-->
+    <link rel="stylesheet" href="css/transition-animations.css" />
+    <link rel="stylesheet" href="css/demo-single-page.css" />
+    <link rel="stylesheet" href="css/jquery.galereya.css" />
+    <link rel="stylesheet" href="css/jquery.galereya.ie.css" />
+    <link rel="stylesheet" href="css/fractionslider.css">
+    <link rel="stylesheet" type="text/css" href="css/vegas.css">
+    <link rel="stylesheet" type="text/css" href="css/morphext.css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
+    <style>
+        html,
+        body {
+            <!-- height: 100%;
+            -->margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #09f;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        #back_to_camera {
+            background: rgba(255, 255, 255, .9);
+            clear: both;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .fluid_container-fluid {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        #camera_wrap_4 {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            margin-bottom: 0!important;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+
+        .camera_bar {
+            z-index: 2;
+        }
+
+        .camera_thumbs {
+            margin-top: -100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .camera_thumbs_cont {
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+
+        .camera_overlayer {
+            opacity: .3;
+        }
+    </style>
+
+
+    <!-- Java Script
+			================================================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--<script src="js/jquery-2.1.3.min.js"></script>-->
+    <!-- <script src="js/particles.min.js"></script> -->
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+
+    <script type="text/javascript" src="js/wow.js"></script>
+
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!--<script src="js/jquery.lazyload-any.js" type="text/javascript"></script>-->
+    <script src="js/jquery.galereya.js"></script>
+    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+
+    <script type='text/javascript' src='js/camera.js'></script>
+
+    <script type='text/javascript' src='js/granim.min.js'></script>
+    <script src="js/vegas.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#gallery').galereya({
+                wave: false,
+                modifier: 'ex1',
+                spacing: 5,
+                disableSliderOnClick: false,
+            });
+        });
+
+    </script>
+
+    <!--  <script>
+            $(document).ready(function() {
+               var granimInstance = new Granim({
+    element: '.canvas-basic',
+    name: 'basic-gradient',
+    direction: 'left-right',
+    opacity: [0.5, 0.7],
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+               
+                ['#02AAB0', '#00CDAC'],
+                ['#DA22FF', '#9733EE'],
+				['#b24592', '#f15f79'], 
+				['#ff5f6d', '#ffc371'], 
+				['#f79d00', '#64f38c'], 
+				
+				
+            ]
+        }
+    }
+});
+            });
+        </script> -->
+
+    <!--   <script>
+      
+		
+		$(window).load(function(){
+	$('.slider').fractionSlider({
+		'fullWidth': 			true,
+		'controls': 			true, 
+		'pager': 				true,
+		'responsive': 			true,
+		'dimensions': 			"1500,800",
+	    'increase': 			false,
+		'timeout' : 5000, // default timeout before switching slides
+		
+		
+	});
+
+});
+    </script>        -->
+
+    <style>
+        #homecolor {
+            background: #d9d9d9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom right, #d9d9d9, #e6e6e6, #ffffff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #d9d9d9, #e6e6e6, #ffffff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: transparent;
+        }
+
+        .canvas-interactive-wrapper {
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .canvas-basic {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-height: 1300px;
+            z-index: 1;
+        }
+
+        #contactus,
+        #description {
+            background: transparent;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--<script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_4').camera({
+				height: 'auto',
+				loader: 'pie',
+				pagination: true,
+				thumbnails: true,
+				hover: false,
+				fx:'simpleFade',
+				easing:'easeInOutQuad',
+			
+				transPeriod: 1000,
+				opacityOnGrid: true,
+				imagePath: '../images/'
+			});
+
+		});
+	</script>-->
+
+    <div id="loader">
+        <img src="images/Preloader/Preloader.gif">
+    </div>
+    <div class="pt-wrapper">
+
+        <!-- Fixed navbar -->
+        <div class="navbar" role="navigation">
+            <div class="navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" class="img-responsive" alt="logo">
+                        </a>
+                    </div>
+
+
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="pt-trigger hvr-overline-from-left" id="homepage" data-animation="16" data-goto="1">Home</a>
+                            </li>
+                            <li>
+                                <a class="pt-trigger hvr-overline-from-left" data-animation="17" data-goto="2"> About</a>
+                            </li>
+                            <li class="dropdown padding-top10">
+                                <a href="#" class="dropdown-toggle hvr-overline-from-left" data-toggle="dropdown">Services
+                                    <b class="caret"></b>
+                                </a>
+
+                                <ul class="dropdown-menu dd">
+                                    <li><a href="industrail.html">Branding Services</a></li>
+                                    <li><a href="Domestic.html">Copywriting</a></li>
+                                    <li><a href="gates.html">Social Media</a></li>
+                                    <li><a href="gates.html">Marketing</a></li>
+                                    <li><a href="gates.html">Website Design</a></li>
+                                  </ul>
+
+                            </li>
+                            <li>
+                                <a class="pt-trigger hvr-overline-from-left" data-animation="34" data-goto="4"> Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="pt-trigger hvr-overline-from-left" data-animation="35" data-goto="5"> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-default navbar-fixed-bottom hidden-sm hidden-xs" id="detailstop">
+                        <div class="container-fluid">
+
+
+                            <div class="  pull-left">
+
+                                <ul class="list-inline">
+                                    <li>
+                                        <i class="fa fa-envelope"></i>
+                                        <a href="mailto:info@igotchaoutsourcing.com">info@igotchaoutsourcing.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone"></i>
+                                        +61 8768768755
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="  pull-right">
+
+                                <ul class="list-inline">
+                                    <li>
+                                        <i class=" fa fa-facebook"></i>
+
+                                    </li>
+                                    <li>
+                                        <i class=" fa fa-twitter"></i>
+
+                                    </li>
+                                    <li>
+                                        <i class=" fa fa-skype"></i>
+
+                                    </li>
+                                    <li>
+                                        <i class=" fa fa-youtube"></i>
+
+                                    </li>
+                                    <li>
+                                        <i class=" fa fa-linkedin"></i>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--========== Slider ===========-->
+        <!--===============================-->
+
+
+        <section id="home" class="pt-page pt-page-1">
+
+            <div class="canvas-interactive-wrapper">
+                <canvas class="canvas-basic"> </canvas>
+            </div>
+            <div class="fluid_container-fluid">
+                <div class="homepageheading">
+                    <h1>
+                        <span class="line1">
+                            <span class="text-lowercase font-size13">i</span>Gotcha </span>
+                        <!-- <span class="line2">2</span>-->
+                        <span class="line3 text-lowercase">
+                            <span id="js-rotating">Master Your Strengths, Outsource Your Weaknesses, So you can focus on the income producing activities.
+                                , The enemy of progress is overwhelm, you are no longer alone because iGotcha , We Gotcha!
+                                </span>
+                        </span>
+
+                    </h1>
+                </div>
+
+                <!-- <div class="centeralign">
+			<!--<div class="logo wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+  			<img src="images/logo.png">
+   			</div>
+            </div>
+  		<div class="clearfix"></div>
+        <header class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+   
+        
+            <div class="middle"><h1>Welcome</h1>
+            <h4>Branding-Websites-Brouchers</h4>
+            
+           <!-- <ul class="list-inline">
+             <li><i class="fa fa-facebook fa-2x"></i></li>
+             <li><i class="fa fa-twitter fa-2x"></i></li>
+             <li><i class="fa fa-skype fa-2x"></i></li>
+             <li><i class="fa fa-google-plus fa-2x"></i></li>
+             <li><i class="fa fa-linkedin fa-2x"></i></li>
+             
+            </ul>
+            <br>
+            <button  data-animation="50" data-goto="-4" class="btn btn-warning btn-lg btn-lg pt-trigger">Portfolio</button>
+         
+            </div>
+              
+         
+        </header>-->
+                <!--<div class="slider-wrapper">
+			<div class="responisve-container-fluid">
+				<div class="slider">
+					<div class="fs_loader"></div>
+				
+					<div class="slide">
+							
+							  <img 	src="images/slider/home.png" class="img-theme" width="1400" height="857"		
+								data-position="245,75" data-in="slideBottom" data-delay="0" data-out="right">
+
+						<p 		class="golden" 			
+								data-position="-10,580" data-in="top" data-step="1" data-out="top">Welcome to </p>
+						
+						<h1     class="claim title1"			
+								data-position="-110,364" data-in="top"  data-out="top" data-delay="50" data-ease-in="easeInOutCubic">TOUCHSTONE</h1>
+										
+						<p 		class="teaser turky " 	
+								data-position="170,530" data-in="bottom" data-step="2" data-delay="100">Your Event Partner</p>		
+					
+					</div>
+					
+					<div class="slide">
+							
+							  <img 	src="images/slider/touchstone.png" class="img-theme" width="1150" height="704"		
+								data-position="100,500" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,-164" data-in="Right"  data-out="right" data-delay="10">BIRTHDAY PARTIES</h1>
+
+						<p 		class="golden" 			
+								data-position="95,-200" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+					
+						<div class="slide">
+							
+							  <img 	src="images/slider/weddings.png" class="img-theme" width="1150" height="704"		
+								data-position="100,-200" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,1050" data-in="right"  data-out="left" data-delay="10">WEDDING EVENTS</h1>
+
+						<p 		class="golden" 			
+								data-position="95,1000" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+                    
+                    
+                    <div class="slide">
+							
+							  <img 	src="images/slider/weddings2.png" class="img-theme" width="1150" height="704"		
+								data-position="100,500" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,-164" data-in="right"  data-out="left" data-delay="10">ENGAGEMENT EVENTS</h1>
+
+						<p 		class="golden" 			
+								data-position="95,-200" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+                    
+                    <div class="slide">
+							
+							  <img 	src="images/slider/CORP.png" class="img-theme" width="1150" height="704"		
+								data-position="100,-200" data-in="fade" data-delay="0" data-out="right">
+						
+								
+						<h1     class="claim title1 smallheading"			
+								data-position="0,1050" data-in="right"  data-out="left" data-delay="10">CORPORATE  EVENTS</h1>
+
+						<p 		class="golden" 			
+								data-position="95,1000" data-in="top" data-delay="350" data-out="bottom">We Make Them Special </p>
+					
+										
+						
+					
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+        <div class="fluid_container-fluid">
+        		<div class="camera_wrap camera_emboss camera_white_skin " id="camera_wrap_4">
+            <div data-thumb="images/slides/thumbs/16.jpg" data-src="images/slides/16.jpg">
+                <div class="camera_caption">
+                 <p class="wow fadeInLeft">Your Event Partner</p>
+                  <div class="clearfix"></div>
+               <h1 class="wow fadeInRight">Welcome To TOUCHSTONE</h1>
+               
+           
+            </div>
+            </div>
+            
+            
+            <div data-thumb="images/slides/thumbs/01.jpg" data-src="images/slides/01.jpg">
+            	
+               <div class="camera_caption">
+                  <p class="wow fadeInLeft">We Make Them Memoirable</p>
+                 <div class="clearfix"></div> 
+                <h1 class="wow fadeInRight">Wedding Events</h1>
+              
+          
+            </div>
+            </div>
+            
+             <div data-thumb="images/slides/thumbs/04.jpg"  data-src="images/slides/04.jpg">
+            		 <div class="camera_caption">
+                    <p class="wow fadeInLeft">Creative Solutions With Proven Expertise</p>
+                        <div class="clearfix"></div>
+                      <h1 class="wow fadeInRight">Corporate Events</h1>
+              
+           
+            </div>
+            </div>
+            
+            
+         <div data-thumb="images/slides/thumbs/02.jpg" data-src="images/slides/02.jpg">
+            	
+                <div class="camera_caption push2">
+                <p class="wow fadeInUp">We can handle Projects of any Complexity. </p>
+                 <div class="clearfix"></div>
+                <h1 class="wow fadeInDown"> Projects of Any Complexity</h1>
+                  
+                  
+               
+                
+          
+            </div>
+            </div>
+             <div data-thumb="images/slides/thumbs/8.jpg"  data-src="images/slides/8.jpg">
+            		<div class="camera_caption push2">
+                     <p class="wow fadeInUp">We Can Meke Your Birthday Lovely. </p>
+                      <div class="clearfix"></div>
+                    <h1 class="wow fadeInDown"> Birthday Parties</h1>
+               
+           
+            </div>
+            </div>
+             <div data-thumb="images/slides/thumbs/13.jpg" data-src="images/slides/13.jpg">
+            	 <div class="camera_caption push2">
+           		 <p class="wow fadeInUp">We took project from ground level to till end. </p>
+                  <div class="clearfix"></div>
+               <h1 class="wow fadeInDown">Plan ,Design & Build</h1>
+               
+            </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/05.jpg"  data-src="images/slides/05.jpg">
+            		<div class="camera_caption push2">
+                     <p class="wow fadeInUp">We Provide Decorations Suitable for Your Ocassion. </p>
+                      <div class="clearfix"></div>
+                    <h1 class="wow fadeInDown"> Decorations</h1>
+               
+           
+            </div>
+            </div>
+            
+         
+          
+            
+        </div><!-- #camera_wrap_3 -->
+
+                <!-- </div>-->
+                <div class="animateme">
+                    <ul class="bg-bubbles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--========== About ===========-->
+        <!--===============================-->
+        <section id="about" class="pt-page pt-page-2">
+            <div class="bgtop4">
+
+                <article class="container-fluid">
+
+                    <!--Page title -->
+                    <div class="title text-center" data-wow-delay="2s">
+                        <h1>
+                            <span class="descline">Brief History</span>
+                            <span class="line1">About</span>
+                            <span class="line"></span>
+                            <span class="clearfix"></span>
+                            <span class="line2"></span>
+                            <!--  <span class="line2">2</span>
+                      <span class="line3">Creative Designer</span>-->
+
+                        </h1>
+                    </div>
+                </article>
+            </div>
+            <!--Page title End -->
+            <article class="container">
+
+                <div class="row">
+
+                    <div class="clearfix"></div>
+                    <div class="col-md-7 yellow-block padding-top10">
+
+                        <br>
+                        <p>
+                            iGotcha is a digital marketing and branding agency created to help entrepreneurs build their business online using social
+                            media. The CEO and founder, Sameela Bibi has many years of experience in social media marketing,
+                            attraction marketing, lead generation, branding and leadership development. She is a 3x award
+                            winning marketer and a leader in one of the largests attraction marketing systems in the world.
+                            She has dominated leadersboard with some of the big names in the industry including Ray Higdon,
+                            Dianne Hochman,Todd and Leah Getts.
+
+
+
+
+
+
+                        </p>
+                        <ul class="style1 padding-top20">
+
+                            <li>She has built global organisations of over thousands using social media alone.</li>
+                            <li>Sameela, is an author, a blogger and a young mother of 3.</li>
+                            <li>She has created her own trainings, ebooks and courses which can help those who are new to the
+                                online world.</li>
+                            <br>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/ceo.jpeg" class="img-responsive img-thumbnail">
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-5">
+                        <br>
+                        <br>
+                        <br>
+                        <img src="images/ceo2.jpeg" class="img-responsive img-thumbnail">
+                    </div>
+
+
+                    <div class="col-md-7 yellow-block padding-top20">
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <p>Her passion has always been to make a difference in the world and to serve those who are overwhelmed
+                            not knowing which direction to take. She struggled for many years and totally understands the
+                            frustration of others. Sameela, saw a need in the marketplace after spending countless hours
+                            each day over the phone teaching entrepreneurs how they could stand out online,
+                            <br>
+                            <br>
+                            <blockquote class="padding-top20"> "it's a competitive industry" she says, "and it's not always as easy as it looks. You can buy
+                                tools, invest in coaches and courses but will end up going through analysis paralysis, you
+                                will feel burned out just trying to figure out how it's all done. Setting up landing pages,
+                                sale pages, websites, logos etc it's not an easy task." </blockquote>
+                        </p>
+                    </div>
+
+
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-12">
+                        <ul class="bxslider" style="margin-left:20px;margin-top:30px;">
+
+                            <li>
+                                <img src="images/log1.jpg">
+                            </li>
+
+                            <li>
+                                <img src="images/log2.jpg">
+                            </li>
+
+                            <li>
+                                <img src="images/log3.jpg">
+                            </li>
+                            <li>
+                                <img src="images/log4.jpg">
+                            </li>
+                            <li>
+                                <img src="images/log5.jpg">
+                            </li>
+
+                            <li>
+                                <img src="images/log2.jpg">
+                            </li>
+
+                            <li>
+                                <img src="images/log3.jpg">
+                            </li>
+                            <li>
+                                <img src="images/log4.jpg">
+                            </li>
+                            <li>
+                                <img src="images/log5.jpg">
+                            </li>
+
+                            <li>
+                                <img src="images/log1.jpg">
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+            </article>
+            <div class="clearfix"></div>
+        </section>
+
+
+
+        <!--========== Features ===========-->
+        <!--===============================-->
+        <section id="features" class="pt-page pt-page-3">
+            <div class="bgtop4">
+                <article class="container-fluid">
+
+                    <!--Page title -->
+                    <div class="title text-right" data-wow-delay="2s">
+                        <h1>
+                            <span class="descline">What We Offer</span>
+                            <span class="line1">Services</span>
+                            <span class="line"></span>
+                            <span class="clearfix"></span>
+                            <span class="line2"></span>
+                            <!--  <span class="line2">2</span>
+                      <span class="line3">Creative Designer</span>-->
+
+                        </h1>
+                    </div>
+
+                    <!--Page title End -->
+
+                </article>
+            </div>
+            <article class="container">
+                <div class="clearfix"></div>
+                <!--Services icons Start-->
+                <div id="services" class="row">
+
+                    <ul class="list-unstyled">
+
+                        <li class="col-md-4  marginbottom-sm wow animated fadeInRight" data-wow-duration="1s">
+                            <span class="pe-stack pe-lg">
+                                <i class="pe-7s-monitor pe-stack-2x"></i>
+                                <i class="pe-7s-graph3 pe-stack-1x"></i>
+                            </span>
+
+                            <h4>Software Development(asp.Net)</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn btn-warning btn-lg btn-lg">Read More</a>
+                        </li>
+
+                        <li class="col-md-4   marginbottom-sm ">
+                            <span class="pe-stack pe-lg">
+                                <i class="pe-7s-umbrella pe-stack-2x red"></i>
+                                <i class="pe-7s-drop pe-stack-1x blue"></i>
+                            </span>
+
+                            <h4>Software Development(Php)</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+
+                        <li class="col-md-4   marginbottom-sm">
+                            <span class="pe-stack pe-lg">
+                                <i class="pe-7s-albums pe-stack-2x"></i>
+                                <i class="pe-7s-look pe-stack-1x"></i>
+                            </span>
+
+                            <h4> IOS app Development</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+                        <span class="clearfix"></span>
+                        <li class="col-md-4   marginbottom-sm ">
+                            <span>
+                                <i class="pe-7s pe-7s-tools fa-3x"></i>
+                            </span>
+
+                            <h4> Android app Development</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn btn-lg btn-warning">Read More</a>
+                        </li>
+
+                        <li class="col-md-4   marginbottom-sm">
+                            <span>
+                                <i class="pe-7s pe-7s-paint fa-3x"></i>
+                            </span>
+
+                            <h4>Software Designer</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+
+                        <li class="col-md-4   marginbottom-sm ">
+                            <span>
+                                <i class="pe-7s pe-7s-settings fa-4x"></i>
+                            </span>
+
+                            <h4>Software Quality Assurance </h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+                        <span class="clearfix"></span>
+                        <li class="col-md-4   marginbottom-sm ">
+                            <span>
+                                <i class="pe-7s pe-7s-check fa-4x"></i>
+                            </span>
+
+                            <h4>Software Tester</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+
+                        <li class="col-md-4   marginbottom-sm ">
+                            <span>
+                                <i class="pe-7s pe-7s-search  fa-3x"></i>
+                            </span>
+
+                            <h4>Search Engine Opt. SEO</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+
+                        <li class="col-md-4   marginbottom-sm ">
+                            <span>
+                                <i class="pe-7s pe-7s-display2 fa-3x"></i>
+                            </span>
+
+                            <h4>Software Business Analyst </h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form.</p>
+
+                            <a href="#" class="btn  btn-warning btn-lg">Read More</a>
+                        </li>
+
+                    </ul>
+                    <!--Services icons End-->
+
+                </div>
+                <!--Services icons End-->
+                <!-- /.row -->
+
+
+
+
+            </article>
+        </section>
+
+
+
+
+        <!--========== Portfolio ===========-->
+        <!--===============================-->
+        <section id="description" class="pt-page pt-page-4">
+                <div class="bgtop4">
+            <article class="container-fluid">
+                <!--Page title -->
+                <div class="title text-center" data-wow-delay="2s">
+                    <h1>
+                        <span class="descline">What We Done</span>
+                        <span class="line1">Portfolio</span>
+                        <span class="line"></span>
+                        <span class="clearfix"></span>
+                        <span class="line2"></span>
+                        <!--  <span class="line2">2</span>
+                      <span class="line3">Creative Designer</span>-->
+
+                    </h1>
+                </div>
+
+                <!--Page title End -->
+
+            </article>
+            </div>
+            <article class="container">
+
+                <div id="gallery">
+
+                    <img src="images/gallery/2.jpg" alt="Our Work" data-desc="On Demand Work" data-category="Custom" data-fullsrc="images/gallery/2.jpg">
+                    <img src="images/gallery/3.jpg" alt="Our Work" data-desc="Love" data-fullsrc="images/gallery/3.jpg" data-category="Special Occassions">
+                    <img src="images/gallery/4.jpg" alt="Our Work" data-desc="Birthday Cake" data-fullsrc="images/gallery/4.jpg"
+                        data-category="Decorations">
+                    <img src="images/gallery/5.jpg" alt="Our Work" data-desc="love" data-category="Custom" data-fullsrc="images/gallery/5.jpg">
+                    <img src="images/gallery/6.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions"
+                        data-fullsrc="images/gallery/6.jpg">
+                    <img src="images/gallery/7.jpg" alt="Our Work" data-desc="Balloons" data-category="Custom" data-fullsrc="images/gallery/7.jpg">
+                    <img src="images/gallery/8.jpg" alt="Our Work" data-desc="Walls Art work" data-category="Custom" data-fullsrc="images/gallery/8.jpg">
+                    <img src="images/gallery/9.jpg" alt="Our Work" data-desc="Special Work" data-fullsrc="images/gallery/9.jpg" data-category="Special Occassions">
+                    <img src="images/gallery/10.jpg" alt="Our Work" data-desc="Custom" data-category="Custom" data-fullsrc="images/gallery/10.jpg">
+
+                    <img src="images/gallery/20.jpg" alt="Our Work" data-desc="On Demand Work" data-category="Custom" data-fullsrc="images/gallery/20.jpg">
+                    <img src="images/gallery/21.jpg" alt="Our Work" data-desc="Love" data-fullsrc="images/gallery/21.jpg" data-category="Special Occassions">
+                    <img src="images/gallery/22.jpg" alt="Our Work" data-desc="On Demand Work" data-fullsrc="images/gallery/22.jpg"
+                        data-category="Custom">
+                    <img src="images/gallery/23.jpg" alt="Our Work" data-desc="love" data-category="Custom" data-fullsrc="images/gallery/23.jpg">
+                    <img src="images/gallery/24.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions"
+                        data-fullsrc="images/gallery/24.jpg">
+                    <img src="images/gallery/25.jpg" alt="Our Work" data-desc="Balloons" data-category="Custom" data-fullsrc="images/gallery/25.jpg">
+                    <img src="images/gallery/26.jpg" alt="Our Work" data-desc="Walls Art work" data-category="Custom" data-fullsrc="images/gallery/26.jpg">
+                    <img src="images/gallery/27.jpg" alt="Our Work" data-desc="Special Work" data-fullsrc="images/gallery/27.jpg" data-category="Special Occassions">
+                    <img src="images/gallery/28.jpg" alt="Our Work" data-desc="Custom" data-category="Custom" data-fullsrc="images/gallery/28.jpg">
+                    <img src="images/gallery/29.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/29.jpg">
+                    <img src="images/gallery/30.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/30.jpg">
+                    <img src="images/gallery/31.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/31.jpg">
+                    <img src="images/gallery/32.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/32.jpg">
+
+                    <img src="images/gallery/33.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/33.jpg">
+                    <img src="images/gallery/34.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/34.jpg">
+                    <img src="images/gallery/35.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/35.jpg">
+                    <img src="images/gallery/36.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/36.jpe">
+                    <img src="images/gallery/37.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/37.jpg">
+                    <img src="images/gallery/38.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/38.jpg">
+
+                    <img src="images/gallery/11.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/11.jpg">
+                    <img src="images/gallery/12.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/12.jpg">
+                    <img src="images/gallery/13.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/13.jpg">
+                    <img src="images/gallery/14.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/14.jpg">
+                    <img src="images/gallery/39.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/39.jpg">
+                    <img src="images/gallery/40.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/40.jpg">
+                    <img src="images/gallery/41.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/41.jpg">
+                    <img src="images/gallery/42.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/42.jpg">
+                    <img src="images/gallery/43.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/43.jpg">
+                    <img src="images/gallery/44.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/44.jpg">
+                    <img src="images/gallery/15.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/15.jpg">
+                    <img src="images/gallery/16.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/16.jpg">
+                    <img src="images/gallery/17.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/17.jpg">
+                    <img src="images/gallery/18.jpeg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/18.jpeg">
+                    <img src="images/gallery/19.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/19.jpg">
+                    <img src="images/gallery/20.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/20.jpg">
+                    <img src="images/gallery/45.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/45.jpg">
+                    <img src="images/gallery/46.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/46.jpg">
+
+                    <img src="images/gallery/47.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/47.jpg">
+                    <img src="images/gallery/48.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/48.jpg">
+                    <img src="images/gallery/49.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/49.jpg">
+                    <img src="images/gallery/50.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/50.jpg">
+                    <img src="images/gallery/51.jpg" alt="Our Work" data-desc="Special Work" data-category="Special Occassions" data-fullsrc="images/gallery/51.jpg">
+                    <img src="images/gallery/52.jpg" alt="Our Work" data-desc="Creative Work" data-category="Decorations" data-fullsrc="images/gallery/52.jpg"> </div>
+
+            </article>
+        </section>
+
+
+
+
+
+        <!--========== Contact ===========-->
+        <!--===============================-->
+
+        <section id="contactus" class="pt-page pt-page-5">
+                <div class="bgtop4">
+            <article class="container-fluid">
+
+                <!--Page title -->
+                <div class="title text-center" data-wow-delay="2s">
+                    <h1>
+                        <span class="descline">Say Hello To Us</span>
+                        <span class="line1">Contact</span>
+                        <span class="line"></span>
+                        <span class="clearfix"></span>
+                        <span class="line2"></span>
+                        <!--  <span class="line2">2</span>
+                      <span class="line3">Creative Designer</span>-->
+
+                    </h1>
+                </div>
+
+                <!--Page title End -->
+                </article>
+                </div>
+
+                <aricle class="container">
+                     <div class="clearfix"></div>
+                        <div class="col-md-12">
+
+
+                    <!--Address Details End -->
+                    <ul class=" list-inline">
+
+                        <li class="wow flipInY col-md-5">
+                            <strong class="fontsize20">Address</strong>
+                            <br> #morison street,jade Enclave, newJursey.
+                        </li>
+
+                        <li class="wow flipInY col-md-3">
+                            <strong class="fontsize20">Email</strong>
+                            <br> info@igotchaoutsourcing.com
+                        </li>
+
+                        <li class="wow flipInY col-md-4">
+                            <strong class="fontsize20">Phone No</strong>
+                            <br> +61 8768768755
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 padding-top18 padding-bottom18 text-left">
+                    <div class="clearfix"></div>
+                    <h2>
+                        <strong>Contact Form</strong>
+                    </h2>
+                    <div class="line pull-left"></div>
+                </div>
+                <div class="clearfix"></div>
+                <form role="form" method="post" id="contactform" action="email.php" class="wow flipInX padding-top30" onsubmit="return get_captcha()">
+
+                    <div class="col-md-4 form-group">
+                        <!-- <label >Name</label>-->
+                        <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-z]{1,20}" placeholder="Enter Your Name" title="Please Enter Your Valid Name"
+                            required>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- <label>Email address</label>-->
+                        <input type="email" class="form-control " name="email" id="Email1" placeholder="Enter email" required>
+                    </div>
+                    <div class="col-md-4">
+                        <!--  <label >Subject</label>-->
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="clearfix margin-bottomsm"></div>
+                    <div class="col-md-7 padding-bottom15">
+                        <!-- <label>Message</label>-->
+                        <textarea name="message" class="form-control" rows="3" name="message" id="message" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label class="col-md-12 control-label ">Please enter the code</label>
+
+                            <div class="col-md-4 padding-right1">
+
+                                <input type="text" disabled="disabled" class="form-control btn-default4  pull-left" style="width: 80px;
+    border-radius: 4px 0 0 4px;
+    padding: 22px 17px;" name="result" id="result">
+
+                                <button class="btn btn-warning btn-lg pull-left" id="refresh" type="button" name="refresh" onClick="set_captcha()">
+                                    <i class="fa fa-refresh"></i>
+                                </button>
+
+                            </div>
+
+                            <div class=" padding-left2 col-md-4">
+                                <input type="text" name="captcha" class="form-control" id="captcha" />
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="col-md-12 text-center padding-top20 padding-bottom20">
+                        <button type="submit" id="submit" class="btn btn-warning btn-lg ">
+                            <i class="pe-7s pe-7s pe-7s-check "></i> Submit</button>
+                    </div>
+                    <div id='error_captcha' class='error col-lg-6'>
+                        <img src='images/error.png'> Please Enter Valid Captcha</div>
+                    <div id='mail_success' class='success col-lg-6'>
+                        <img src='images/success.png'> Your message has been sent successfully. Our team will contact you soon.</div>
+
+                    <!--Mail Fail Message -->
+                    <div id='mail_fail' class='error col-lg-6'>
+                        <img src='images/error.png'> Sorry, error occured this time sending your message. </div>
+                </form>
+
+
+
+                <div class="clearfix"></div>
+
+                <!--Maps -->
+                <div class="col-md-4 padding-top18 padding-bottom18 text-left">
+                    <div class="clearfix"></div>
+                    <h2>
+                        <strong>We are Here</strong>
+                    </h2>
+                    <div class="line pull-left"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                    <div class="clearfix"></div>
+
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6909.423139058086!2d-95.44490297091674!3d30.01643731911116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640cb1bc428d17b%3A0x8974a8952c5fb961!2sStarbucks!5e0!3m2!1sen!2sus!4v1544996060837"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <!--Maps End -->
+                </div>
+            </article>
+        </section>
+
+
+        <script>
+            $(document).ready(function () {
+                var text = "";
+                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                for (var i = 0; i < 5; i++)
+                    text += possible.charAt(Math.floor(Math.random() * possible.length));
+                document.getElementById('result').value = text;
+            });
+
+            function set_captcha() {
+                var text = "";
+                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                for (var i = 0; i < 5; i++)
+                    text += possible.charAt(Math.floor(Math.random() * possible.length));
+                document.getElementById('result').value = text;
+            }
+
+            function get_captcha() {
+                var data_new = document.getElementById('captcha').value;
+                var result = document.getElementById('result').value;
+
+                var name = document.getElementById('name').value;
+                var Email1 = document.getElementById('Email1').value;
+                var subject = document.getElementById('subject').value;
+
+                var message = document.getElementById('message').value;
+
+                if (data_new == result) {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'email.php',
+                        data: { name: name, email: Email1, subject: subject, message: message },
+                        success: function (data) {
+                            console.log(data);
+                            $("#mail_success").show().fadeOut(5000);
+                        },
+                        error: function (data) {
+                            $("#mail_fail").show().fadeOut(5000);
+                        }
+                    });
+                    document.getElementById("contactform").reset();
+                    return false;
+                }
+                else {
+                    $("#error_captcha").show().fadeOut(5000);
+                    return false;
+                }
+            }
+        </script>
+
+
+        <!--========== Display ===========-->
+        <!--===============================
+         <section id="display">
+         	 <article class="container-fluid">
+                      
+     				 <div class="row">  
+ 						
+                       		 <div id="i3d" class="interactive_3d col-md-7 col-sm-12">
+            
+									<img src="images/rotate/images/frame_1.png">
+     						</div>
+                      
+                      
+                      			<div class="col-md-5 col-sm-12" id="rotator">
+									<h1>Display from every angle</h1>
+									<p>Show your  <span class="color">product</span>, with style.</p>
+	     			 		  
+                              </div>
+						</div>
+                 
+                </article>
+              </section>-->
+
+
+        <!--========== Screenshots ===========-->
+        <!--===============================-->
+        <!--<section id="screenshots" >
+         	 	<article class="container-fluid">
+                      
+     					<!--Page title   	
+     				<div class="title">
+                    	<span class="line2"></span>
+       					<h1>Awesome Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line2"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->
+
+        <!--<ul class="bxslider">
+				
+						<li>
+							<img src="images/gallery/1.png">
+						</li>
+					
+						<li>
+							<img src="images/gallery/5.jpg">
+						</li>
+					
+						<li>
+							
+						</li>
+						<li>
+							<img src="images/gallery/11.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/12.jpg">
+						</li>
+						<li>
+							<img src="images/gallery/13.jpg">
+						</li>
+					
+					</ul>-->
+        <!--Filter Controls -->
+        <!--<div class="controls  middle">	
+                                
+                                <ul class="list-inline">
+                                    <li class="filter active" data-filter="all">Show All</li>
+                                    <li class="filter" data-filter="category_1">Industrial Doors</li>
+                                    <li class="filter" data-filter="category_2">Domestic Doors</li>
+                                    <li class="filter" data-filter="category_3">Gates</li>
+                                </ul>
+                                
+                            </div>-->
+
+
+
+        <!--<ul class=" list-unstyled row" id="stage">
+                                    
+                                    <li class=" col-md-4 mix category_1 mix_all" data-cat="1">
+                                      <img src="img/por/1.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_2 mix_all" data-cat="2">
+                                       <img src="img/por/12.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_3 mix_all" data-cat="3">
+                                       <img src="img/por/14.jpg"/>
+                                    </li>
+                                     <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/11.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_1 mix_all" data-cat="1">
+                                      <img src="img/por/13.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_2 mix_all" data-cat="2">
+                                      <img src="img/por/9.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_3 mix_all" data-cat="3">
+                                      <img src="img/por/16.jpg"/>
+                                    </li>
+                                      <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                     
+                                    </li>
+                                    <li class=" col-md-4 mix category_4 mix_all" data-cat="4">
+                                      <img src="img/por/17.jpg"/>
+                                    </li>
+                                </ul>-->
+
+
+
+
+        <!--========== Pricing ===========-->
+        <!--===============================-->
+        <!-- <section id="pricing" >
+         	 	<article class="container-fluid">
+                      
+     					 	
+     				<div class="title">
+                    	<span class="line2"></span>
+       					<h1>Awesome Features</h1>
+						<p>We are a group of Energetic People, who make awsome Products.				                         solutions.Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget                         quam. Vestibulum id ligula porta felis euismod semper. </p>
+						<span class="line2"></span>
+					
+                   		
+							
+					
+      
+     	
+    			   </div> <!--Page title End -->
+
+
+        <!--<div class="row">
+       					<div class="col-md-3 col-xs-6">
+							<img src="images/s200.png">
+						</div>
+		
+        				<div class="col-md-3 col-xs-6 push">
+						
+                       		 <h1><strong>Choice 1</strong></h1>
+							
+                           		 <ul class="list-unstyled ">
+									<li> Awesome text effects slider</li>
+									<li>Working Ajax Contact Form</li>
+								</ul>
+		
+        					<h1><strong>15</strong>$</h1>
+						
+                        </div>
+		
+      					 <div class="col-md-3 col-xs-6">
+							<img src="images/s500.png">
+						</div>
+			
+            			<div class="col-md-3 col-xs-6 push">
+							<h1><strong>Choice 2</strong></h1>
+						
+                        	<ul class="list-unstyled ">
+								<li> Special Rotation plugin</li>
+								<li>Responsive Design</li>
+							</ul>
+					
+                    		<h1><strong>15</strong>$</h1>
+					</div>
+				  </div>-->
+
+
+
+
+
+
+
+        <!--       <script>
+			jQuery(function () {
+    jQuery('.show').click(function () {
+        var index = $(this).index(),
+            newTarget = jQuery('.slide').eq(index);
+        jQuery('.slide').not(newTarget).slideUp('fast')
+        newTarget.delay('fast').slideToggle('fast')
+        return false;
+    })
+});
+		</script>        -->
+
+        <!--Scrolling  script  -->
+        <!--<script>
+            $(function() {
+                $('ul.sdt_menu li a,ul.nav li a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top 
+                    }, 2000,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 2000);
+                    */
+                    event.preventDefault();
+                });
+            });
+    </script>	-->
+
+
+        <!-- <script>
+	  $(document).ready( function() {
+	    $("#i3d").interactive_3d({
+	      frames: 38,
+		  speed: 50,
+	    });
+	  });
+		
+	</script>	-->
+
+        <!--	<script>
+	$(document).ready(function(){
+  	  $('.bxslider').bxSlider({
+    	slideWidth: 500,
+    	minSlides: 3,
+    	maxSlides: 4,
+		speed:1500,
+		easing:'ease-in'
+
+  });
+});
+</script>-->
+        <!--<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 400) {
+        $('#navigation').fadeIn();
+    } else {
+        $('#navigation').fadeOut();
+    }
+});
+</script>
+<script>
+		
+
+	$(function(){
+	
+		$('#screenshots').mixitup();
+		
+	});
+	</script> -->
+
+        <!--  <script>
+$(document).ready(function(){
+    $('#screenshots a').nivoLightbox();
+});
+</script>
+-->
+
+        <!--<style>
+	
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			background: rgba(255,255,255,.9);
+			clear: both;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			padding: 20px;
+			position: absolute;
+			z-index: 1;
+		}
+		.fluid_container-fluid {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			position:absolute;
+			right: 0;
+			top: 0;
+			z-index: 0;
+		}
+		#camera_wrap_4 {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			margin-bottom: 0!important;
+			position: relative;
+			right: 0;
+			top: 0;
+		}
+		.camera_bar {
+			z-index: 2;
+		}
+		.camera_thumbs {
+			margin-top: -100px;
+			position: relative;
+			z-index: 1;
+		}
+		.camera_thumbs_cont {
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		.camera_overlayer {
+			opacity: .1;
+		}
+	</style>-->
+
+        <!-- <script>
+		$('#navigation').click(function(e){    
+    $('.navbar').fadeOut('slow', function(){
+        $('.navbar').fadeIn('slow');
+    });
+});
+
+$('#btn-bk').click(function(e){    
+    $('#bank, #btn-bk').fadeOut('slow', function(){
+        $('#fancy, #btn').fadeIn('slow');
+    });
+});
+
+</script>-->
+        <!--<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 630) {
+        $('.navbar').fadeIn();
+    } else {
+        $('.navbar').fadeOut();
+    }
+});
+</script>  
+<script>
+	$(document).scroll(function () {
+    var y = $(this).scrollTop();   
+    if (y > 300) {
+        $('#sdt_menu').fadeOut();
+    } else {
+        $('#sdt_menu').fadeIn();
+    }
+});
+</script> -->
+
+        </div>
+        <!-- <script src="js/jquery-2.1.3.min.js"></script>-->
+        <script src="js/transition.js"></script>
+
+
+
+        <script>
+            new WOW().init();
+        </script>
+        <!--<script>
+
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#D4AF37"
+      },
+      "shape": {
+        "type": "star",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 100,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+
+);
+    </script>-->
+        <style>
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('.bxslider').bxSlider({
+                    slideWidth: 600,
+                    minSlides: 4,
+                    maxSlides: 5,
+                    slideMargin: 50,
+                    speed: 1500,
+                    auto: 'true',
+                    easing: 'ease-in'
+
+                });
+            });
+        </script>
+        <script>
+
+            $(".navbar-toggle").click(function (event) {
+                $(".navbar-collapse").toggle('in');
+            });
+
+            $(document).on('click', '.navbar-collapse.in', function (e) {
+                if ($(e.target).is('a')) {
+                    $(this).collapse('hide');
+                }
+            });
+        </script>
+        <script>
+            $("#home").vegas({
+                transition: 'fade2',
+                animation: 'kenburnsDown',
+                delay: 8000,
+                timer: false,
+                slides: [
+
+                    { src: "images/slides/3.jpg" },
+                    { src: "images/slides/1.jpg" },
+                    { src: "images/slides/2 (3).jpg" },
+
+
+                    { src: "images/slides/6.jpg" }
+
+                ],
+                overlay: true
+            });
+        </script>
+        <script src="js/morphext.min.js"></script>
+        <script>
+            $("#js-rotating").Morphext({
+                animation: "flipInX", // Overrides default "bounceIn"
+                separator: ",", // Overrides default ","
+                speed: 6000, // Overrides default 2000
+                complete: function () {
+                    // Overrides default empty function
+                }
+            });
+
+
+            $(window).on("scroll", function () {
+
+                if ($(this).scrollTop() > 100)
+
+                    $("#detailstop").removeClass("navbar-fixed-bottom").addClass("hide");
+
+                else
+
+                    $("#detailstop").removeClass("hide").addClass("navbar-fixed-bottom");
+
+
+            })
+
+            $('.nav li a').click(function () {
+                $('.nav-collapse').collapse('hide');
+            });
+
+        </script>
+
+</body>
+
+</html>
