@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Systimizer - System Cleaner, PC Optimizer & Internet Booster</title>
+		<meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops" />
+		<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
+		<meta name="author" content="" />
+		<!-- Bootstrap -->
+		<script src="js/modernizr.custom.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jquery.fancybox.css" rel="stylesheet">
+		<link href="css/flickity.css" rel="stylesheet" >
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/queries.css" rel="stylesheet">
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+		 .fontsize16 {
+    		font-size: 20px;
+    font-weight: 600;
+			}
+		</style>
+		<script>
+			/* function myFunction() {
+				if(var x = document.getElementById("lifetime2").value;){
+				document.getElementById("price1").innerHTML = "31.43 /Yr" );}
+				else(document.getElementById("price1").innerHTML = "22.45 /Yr");
+			} */
+			function myFunction(chk) {
+			var targetElement = document.getElementById('lifetime2');
+			var price1 = document.getElementById('price1');
+				console.log(targetElement)
+  				if (chk.checked){
+     				price1.innerHTML= "31.43 /Yr";
+  				}
+  			else{
+   				 price1.innerHTML="22.45 /Yr"
+  				}
+			}
+			function myFunction2(chk) {
+				  var targetElement = document.getElementById('lifetime1');
+			var price = document.getElementById('price');
+				console.log(targetElement)
+  				if (chk.checked){
+     				price.innerHTML= "38.94 /Yr";
+  				}
+  			else{
+   				 price.innerHTML="29.96 /Yr"
+  				}
+}
+			</script>
+	</head>
+	<body data-spy="scroll" data-target="#navbar" data-offset="30">
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<!-- open/close -->
+			
+		
+		<header>
+			<section class="hero2">
+				<div class="texture-overlay"></div>
+				
+					 <!-- Nav Menu -->
+
+		 <div class="nav-menu fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-dark navbar-expand-lg">
+							<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Systimizer Logo"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="true" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+							<div class="collapse navbar-collapse" id="navbar">
+									<ul class="navbar-nav ml-auto">
+											<li class="nav-item"> <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a> </li>
+											<li class="nav-item"> <a class="nav-link active" href="pricing.html"> PRICING  <span class="sr-only">(current)</span> </a> </li>
+											<li class="nav-item"> <a class="nav-link " href="privacy.html">PRIVACY</a> </li>
+											<li class="nav-item"> <a class="nav-link " href="contact.html">CONTACT</a> </li>
+											
+										</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="page-title text-center">
+        <h2 class="display-4">Fix your Computer Issues Now!</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star"></i> PC Cleaning &amp; Optimization</li>
+            <li class="list-inline-item"><i class="fa fa-star"></i> Fix Sluggish &amp; Slow PC</li>
+            <li class="list-inline-item"><i class="fa fa-star"></i> Fast System &amp; Internet</li>
+        </ul>
+    </div>
+			</section>
+		</header>
+	
+        
+        <div class="section" id="pricing" tabindex="-1">
+            <div class="container">
+               
+    
+                <div class="row">
+						<div class="col-md-6">
+					<div class="card pricing  animated fadeInDown">
+                        <div class="card-head">
+                            <small class="text-success fontsize16">Single Solution (1 PC)</small>
+                            <span class="price text-success" id="price1">22.45<sub>/Yr</sub></span>
+                        </div>
+						<ul class="list-unstyled">
+								<li >Orignal Price: <strong class="text-danger"> $29.94 </strong></li>
+								<li >
+									<div class="checkbox">
+									<input type="checkbox" onchange="myFunction(this)" id="lifetime2" value=""><label for="lifetime2">Upgrade to Lifetime License (+<span id="single-lifetime-price">8.98</span>)</label></div>
+									</li>
+									<li> <label class="switch">
+										<input type="checkbox" checked>
+										<span class="slider round"></span>
+									 </label>  <span class="toggletext">Auto Renew</span></li>
+								
+							</ul>
+                        <div class="card-body">
+								
+							<a href="#" class="use-btn animated fadeInUp ">Choose this Plan</a>
+                        </div>
+					</div></div>
+					<div class="col-md-6">
+                    <div class="card pricing popular animated fadeInDown">
+                        <div class="card-head">
+                            <small class="text-primary fontsize16">Family Pack (3 PCs)</small>
+                            <span class="price" id="price">$ 29.96<sub>/Yr</sub></span>
+                        </div>
+						<ul class="list-unstyled text-center">
+								<li >Orignal Price: <strong class="text-danger"> $39.94</strong></li>
+									<li >
+                                    <div class="checkbox">
+								  <input type="checkbox" onchange="myFunction2(this)" value="" id="lifetime1">   <label for="lifetime1">Upgrade to Lifetime License (+<span id="single-lifetime-price">8.98</span>)</label>
+								
+                                  </div>
+								</li>
+								<li> <label class="switch">
+									<input type="checkbox" checked>
+									<span class="slider round"></span>
+								 </label>  <span class="toggletext">Auto Renew</span></li>
+								
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="use-btn animated fadeInUp">Choose this Plan</a>
+                        </div>
+                    </div>
+				</div>
+                </div>
+                <!-- // end .pricing -->
+    
+    
+            </div>
+    
+        </div>
+		<section class="download" id="download">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6  wp4">
+							<div class="feature-icon">
+									<i class="fa fa-money"></i>
+								</div>
+								<h2 class="fontsize20">60 DAYS Money Back Guarantee</h2>
+						
+						<p class="text-info">All purchases of Systimizer are 100% guaranteed for 60 days with instant refund policy! If you are not completely satisfied with your purchase, you just need to send a quick email to support@systimizer.com.</p>
+							
+					</div>
+					<div class="col-md-6 wp4">
+							<div class="feature-icon">
+									<i class="fa fa-lock"></i>
+								</div>	
+						<h2> Secure Online Payment</h2>
+							<p class="text-info">MyCommerce is the authorized and secured Payment Processor for Systimizer. Worldwide recognised companies such as Visa, MasterCard, PayPal, VeriSign, McAfee, PCI Security Standards Council and Better Business Bureau certify MyCommerce platform and technologies. Your Private data will be 100% safe.</p>
+								
+						</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h1 class="footer-logo">
+						<img src="img/logo.png" alt="Footer Logo Blue">
+						</h1>
+						<p>COPYRIGHT © 2018. ALL RIGHTS RESERVED. SYSTIMIZER</em></a></p>
+					</div>
+					<div class="col-md-7">
+							<ul class="footer-nav">
+									<li><a href="#about">EULA</a></li>
+									<li><a href="#about">Privacy Policy</a></li>
+									<li><a href="#about">Terms of Use</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#about">Register</a></li>
+								
+								</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/min/toucheffects-min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/retina.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/min/scripts-min.js"></script>
+		<script>
+			 
+			  /*-----------------------------------
+     * FIXED  MENU - HEADER
+     *-----------------------------------*/
+	 function menuscroll() {
+        var $navmenu = $('.nav-menu');
+        if ($(window).scrollTop() > 50) {
+            $navmenu.addClass('is-scrolling');
+        } else {
+            $navmenu.removeClass("is-scrolling");
+        }
+    }
+    menuscroll();
+    $(window).on('scroll', function() {
+        menuscroll();
+    });
+    /*-----------------------------------
+     * NAVBAR CLOSE ON CLICK
+     *-----------------------------------*/
+
+    $('.navbar-nav > li:not(.dropdown) > a').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+    /* 
+     * NAVBAR TOGGLE BG
+     *-----------------*/
+    var siteNav = $('#navbar');
+    siteNav.on('show.bs.collapse', function(e) {
+        $(this).parents('.nav-menu').addClass('menu-is-open');
+    })
+    siteNav.on('hide.bs.collapse', function(e) {
+        $(this).parents('.nav-menu').removeClass('menu-is-open');
+    })
+
+	
+			 
+
+
+
+		</script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		
+	</body>
+</html>

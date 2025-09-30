@@ -9,7 +9,7 @@ if(isset($_REQUEST['subject'])&&($_REQUEST['subject']!='')&&isset($_REQUEST['nam
 
 		$to = 'usmanawan83@gmail.com '; 
 		
-		// subject chughtai.associates.isb@gmail.com
+		// subject usmanawan83@gmail.com
 		$subject = 'New Contact Us Request';
 		
 		// message

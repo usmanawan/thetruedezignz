@@ -817,6 +817,17 @@
           <form role="form" method="post" id="contactform" action="email.php"
             class=" wow flipInX padding-top30 padding-bottom20 animated" onsubmit="return get_captcha()">
 
+                  <!--Mail Success Message -->
+                  <div id="mail_success" class="success col-lg-6">
+                    <img src="images/success.png"> Your message has been sent successfully. Our team will contact you soon.
+                  </div>
+      
+                  <!--Mail Fail Message -->
+                  <div id="mail_fail" class="error col-lg-6">
+                    <img src="images/error.png"> Sorry, error occured this time sending your message.
+                  </div>
+
+
             <div class="col-md-4 form-group">
               <!-- <label >Name</label>-->
               <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-z]{1,20}"
@@ -871,14 +882,8 @@
             <div id="error_captcha" class="error col-lg-6">
               <img src="images/error.png"> Please Enter Valid Captcha
             </div>
-            <div id="mail_success" class="success col-lg-6">
-              <img src="images/success.png"> Your message has been sent successfully. Our team will contact you soon.
-            </div>
 
-            <!--Mail Fail Message -->
-            <div id="mail_fail" class="error col-lg-6">
-              <img src="images/error.png"> Sorry, error occured this time sending your message.
-            </div>
+        
           </form>
 
         </div>
