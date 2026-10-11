@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Capabilities Matrix — TrueDezignz Studio | Goodface Agency Aesthetic</title>
+  <meta name="description" content="Explore TrueDezignz Studio's 5 Core Architectural Pillars: Custom Front-End UI, WordPress & Elementor, Shopify & WooCommerce, Search Intelligence SEO, and AI Video Ads.">
+  <meta name="theme-color" content="#06070a">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gf: {
+              bg: '#06070a',
+              card: '#11131c',
+              border: '#1e2230',
+              muted: '#697288',
+              text: '#98a2b8',
+              heading: '#f3f6fc'
+            },
+            accent: {
+              indigo: '#6366f1',
+              violet: '#8b5cf6',
+              emerald: '#10b981',
+              cyan: '#06b6d4'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          },
+          boxShadow: {
+            'gf-glow': '0 0 45px -10px rgba(99, 102, 241, 0.28)',
+            'gf-emerald': '0 0 45px -10px rgba(16, 185, 129, 0.28)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #06070a; }
+    ::-webkit-scrollbar-thumb { background: #1e2230; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+
+    .gf-frosted {
+      background: rgba(17, 19, 28, 0.72);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(30, 34, 48, 0.9);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .gf-frosted:hover {
+      border-color: rgba(99, 102, 241, 0.45);
+      box-shadow: 0 16px 45px -12px rgba(99, 102, 241, 0.18);
+    }
+    .gf-grid-mesh {
+      background-size: 60px 60px;
+      background-image: 
+        linear-gradient(to right, rgba(30, 34, 48, 0.32) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(30, 34, 48, 0.32) 1px, transparent 1px);
+    }
+  </style>
+</head>
+
+<body class="bg-[#06070a] text-gf-text font-sans antialiased selection:bg-accent-indigo/30 selection:text-white relative overflow-x-hidden min-h-screen">
+
+  <!-- Ambient Light -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-[25%] -right-[10%] w-[700px] h-[700px] bg-indigo-600/10 rounded-full blur-[160px]"></div>
+    <div class="absolute top-[40%] -left-[15%] w-[750px] h-[750px] bg-emerald-600/08 rounded-full blur-[180px]"></div>
+    <div class="absolute inset-0 gf-grid-mesh opacity-35"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-2xl bg-[#06070a]/85 border-b border-gf-border">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      
+      <a href="./index.html" class="flex items-center space-x-3.5 group">
+        <div class="w-10 h-10 rounded-xl gf-frosted border border-gf-border flex items-center justify-center p-1">
+          <img src="images/logo.svg" alt="TrueDezignz Logo" class="w-7 h-7 object-contain" onerror="this.src='../images/logo.svg'">
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center space-x-2">
+            <span class="font-extrabold text-base tracking-wider text-white uppercase group-hover:text-accent-indigo transition-colors">
+              TrueDezignz
+            </span>
+            <span class="text-[10px] font-mono tracking-widest text-accent-cyan font-bold">STUDIO</span>
+          </div>
+          <span class="text-[11px] font-mono text-gf-muted tracking-tight">Capabilities Matrix</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide">
+        <a href="./index.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">Home</a>
+        <a href="./expertise.html" class="text-white font-semibold py-1 border-b-2 border-accent-indigo">Expertise</a>
+        <a href="./work.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">Selected Work</a>
+        <a href="./about.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">About</a>
+        <a href="./contact.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a 
+          href="https://wa.me/923335585690" 
+          target="_blank" 
+          class="px-5 py-2.5 rounded-full gf-frosted border border-gf-border hover:border-accent-emerald text-xs uppercase tracking-widest font-mono font-semibold text-white transition-all flex items-center space-x-2"
+        >
+          <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+          <span>Let's Talk</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menuToggle" class="md:hidden p-2 rounded-xl gf-frosted text-gf-text hover:text-white focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-gf-border bg-[#06070a]/98 backdrop-blur-2xl px-6 py-6 space-y-4">
+      <a href="./index.html" class="block text-base text-gf-text hover:text-white py-1">Home</a>
+      <a href="./expertise.html" class="block text-base font-semibold text-white py-1">Expertise (5 Pillars)</a>
+      <a href="./work.html" class="block text-base text-gf-text hover:text-white py-1">Selected Work & Products</a>
+      <a href="./about.html" class="block text-base text-gf-text hover:text-white py-1">About Usman</a>
+      <a href="./contact.html" class="block text-base text-gf-text hover:text-white py-1">Contact & Consultation</a>
+      <div class="pt-3 border-t border-gf-border">
+        <a 
+          href="https://wa.me/923335585690" 
+          target="_blank" 
+          class="block w-full py-3 rounded-xl bg-accent-emerald/20 border border-accent-emerald text-accent-emerald font-mono text-xs uppercase tracking-widest text-center font-bold"
+        >
+          WhatsApp: +92 333 5585690
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="relative z-10 pt-16 pb-16 px-5 sm:px-8 max-w-7xl mx-auto text-center">
+    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full gf-frosted border border-gf-border text-xs font-mono text-accent-indigo mb-6">
+      <span>THE 5-PILLAR ARCHITECTURAL SUITE</span>
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto mb-6">
+      High-Impact Capabilities Matrix
+    </h1>
+    <p class="text-base sm:text-lg text-gf-text max-w-2xl mx-auto leading-relaxed">
+      Where bespoke UI design, custom front-end code, Shopify & WordPress engineering, and AI-driven creative campaigns align into a verified scaling advantage.
+    </p>
+  </section>
+
+  <!-- Detailed Pillars -->
+  <section class="relative z-10 py-10 px-5 sm:px-8 max-w-7xl mx-auto space-y-16">
+
+    <!-- 01 / Custom Front-End & UI Architecture -->
+    <div class="rounded-3xl gf-frosted p-8 sm:p-12 border border-gf-border relative overflow-hidden">
+      <span class="absolute -top-6 -right-3 text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none">01</span>
+      <div class="max-w-3xl space-y-4">
+        <span class="text-xs font-mono text-accent-indigo font-bold uppercase tracking-widest">PILLAR 01 / CRAFT</span>
+        <h2 class="text-3xl font-bold text-white">Custom Front-End & UI Architecture</h2>
+        <p class="text-base text-gf-text leading-relaxed">
+          Concept-to-Figma-to-code precision, modular HTML/CSS/JS, custom dashboard applications, and design systems with zero layout shift.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-mono text-slate-300">
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Design Token Systems</div>
+            <p class="text-gf-muted text-[11px]">Strict mathematical scale for type, spacing, elevation, and tactile states.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Zero Layout Shift (CLS: 0.00)</div>
+            <p class="text-gf-muted text-[11px]">Pre-calculated dimension boxes and optimized font-display swap protocols.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 / WordPress & Elementor Solutions -->
+    <div class="rounded-3xl gf-frosted p-8 sm:p-12 border border-gf-border relative overflow-hidden">
+      <span class="absolute -top-6 -right-3 text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none">02</span>
+      <div class="max-w-3xl space-y-4">
+        <span class="text-xs font-mono text-accent-cyan font-bold uppercase tracking-widest">PILLAR 02 / CMS</span>
+        <h2 class="text-3xl font-bold text-white">WordPress & Elementor Solutions</h2>
+        <p class="text-base text-gf-text leading-relaxed">
+          Tailored corporate websites, custom Elementor Pro implementations, speed-first code architecture, and bulletproof security.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-mono text-slate-300">
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Sub-2s Server Tuning</div>
+            <p class="text-gf-muted text-[11px]">Redis object caching, script deferred execution, and database indexing.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Client-Safe CMS Backends</div>
+            <p class="text-gf-muted text-[11px]">Component blocks built so non-technical editors cannot break layouts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 / Shopify & WooCommerce Commerce -->
+    <div class="rounded-3xl gf-frosted p-8 sm:p-12 border border-accent-emerald/40 shadow-gf-emerald relative overflow-hidden">
+      <span class="absolute -top-6 -right-3 text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none">03</span>
+      <div class="max-w-3xl space-y-4">
+        <span class="text-xs font-mono text-accent-emerald font-bold uppercase tracking-widest">PILLAR 03 / COMMERCE</span>
+        <h2 class="text-3xl font-bold text-white">Shopify & WooCommerce Commerce</h2>
+        <p class="text-base text-gf-text leading-relaxed">
+          Conversion-engineered direct-to-consumer (DTC) storefronts, custom product funnels, and frictionless mobile checkout experiences.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-mono text-slate-300">
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Cart-to-Checkout CRO</div>
+            <p class="text-gf-muted text-[11px]">Streamlined slide-out drawers, upsells, sticky CTAs, and Apple/Google Pay.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Sub-1s Storefront Speed</div>
+            <p class="text-gf-muted text-[11px]">Liquid code purging, WebP/AVIF asset compression, and instant catalog filters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 / Search Intelligence & Technical SEO -->
+    <div class="rounded-3xl gf-frosted p-8 sm:p-12 border border-gf-border relative overflow-hidden">
+      <span class="absolute -top-6 -right-3 text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none">04</span>
+      <div class="max-w-3xl space-y-4">
+        <span class="text-xs font-mono text-accent-indigo font-bold uppercase tracking-widest">PILLAR 04 / SEARCH</span>
+        <h2 class="text-3xl font-bold text-white">Search Intelligence & Technical SEO</h2>
+        <p class="text-base text-gf-text leading-relaxed">
+          Semantic indexing, JSON-LD Schema integration, Core Web Vitals optimization, and keyword mapping built to capture high-intent search traffic.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-mono text-slate-300">
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ JSON-LD Schema Graphs</div>
+            <p class="text-gf-muted text-[11px]">Entity graph mapping for Organization, Services, Product, and Articles.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Core Web Vitals Dominance</div>
+            <p class="text-gf-muted text-[11px]">LCP under 0.8s, FID under 15ms, and 100% crawl accessibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 / Performance Media & AI Video Ads -->
+    <div class="rounded-3xl gf-frosted p-8 sm:p-12 border border-gf-border relative overflow-hidden">
+      <span class="absolute -top-6 -right-3 text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none">05</span>
+      <div class="max-w-3xl space-y-4">
+        <span class="text-xs font-mono text-accent-violet font-bold uppercase tracking-widest">PILLAR 05 / MEDIA</span>
+        <h2 class="text-3xl font-bold text-white">Performance Media & AI Video Ads</h2>
+        <p class="text-base text-gf-text leading-relaxed">
+          Short-form vertical video ad production (Meta & TikTok), dynamic captions, AI-assisted video editing, and high-CTR social launch collateral.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-xs font-mono text-slate-300">
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Kinetic Motion Hooks</div>
+            <p class="text-gf-muted text-[11px]">Designed to halt mobile scrolling in the first 1.5 seconds.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#090b12] border border-gf-border">
+            <div class="text-white font-bold mb-1">▹ Ad-to-Landing Page Continuity</div>
+            <p class="text-gf-muted text-[11px]">Aligning creative visuals directly with page headers for doubled conversion rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 py-12 px-5 sm:px-8 max-w-7xl mx-auto border-t border-gf-border flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-gf-muted gap-4">
+    <div>© 2026 TrueDezignz Studio • Usman Awan</div>
+    <div class="flex space-x-6">
+      <a href="./index.html" class="hover:text-white">Home</a>
+      <a href="./expertise.html" class="text-accent-indigo">Expertise</a>
+      <a href="./work.html" class="hover:text-white">Selected Work</a>
+      <a href="./about.html" class="hover:text-white">About</a>
+      <a href="./contact.html" class="hover:text-white">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    function toggleDrawer() {
+      if (!mobileDrawer) return;
+      mobileDrawer.classList.toggle('hidden');
+      const icon = menuToggle ? menuToggle.querySelector('svg') : null;
+      if (icon) {
+        if (mobileDrawer.classList.contains('hidden')) {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+        } else {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+        }
+      }
+    }
+    if (menuToggle) {
+      menuToggle.addEventListener('click', toggleDrawer);
+    }
+  </script>
+
+</body>
+</html>
