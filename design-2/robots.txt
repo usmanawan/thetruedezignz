@@ -1,0 +1,7 @@
+# Robots.txt for TrueDezignz Studio (Design 2 - Cinematic Edition)
+User-agent: *
+Allow: /
+
+# Sitemap Location (GitHub Pages default & local relative)
+Sitemap: https://usmanawan.github.io/thetruedezignz/design-2/sitemap.xml
+Sitemap: sitemap.xml

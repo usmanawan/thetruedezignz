@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Services — TrueDezignz Studio | Web Design, Shopify, WooCommerce & SEO</title>
+  <meta name="description" content="Explore TrueDezignz Studio's 5 Core Pillars: Custom Front-End & UI Design, WordPress/Elementor, Shopify & WooCommerce E-Commerce, Technical SEO, and AI Video Ad Creatives.">
+  <meta name="theme-color" content="#07080C">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              base: '#07080C',
+              card: '#10121A',
+              border: '#1B202E',
+              muted: '#717B94',
+              text: '#9BA5BC',
+              heading: '#F1F5F9'
+            },
+            accent: {
+              emerald: '#10B981',
+              cyan: '#06B6D4',
+              indigo: '#6366F1',
+              violet: '#8B5CF6'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          },
+          boxShadow: {
+            'glow-emerald': '0 0 30px -5px rgba(16, 185, 129, 0.35)',
+            'glass-card': '0 12px 40px -10px rgba(0, 0, 0, 0.7)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(7, 8, 12, 0.85);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(27, 32, 46, 0.9);
+    }
+    .bento-card {
+      background: rgba(16, 18, 26, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(27, 32, 46, 0.9);
+    }
+    .bg-grid-mesh {
+      background-size: 54px 54px;
+      background-image: 
+        linear-gradient(to right, rgba(27, 32, 46, 0.35) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(27, 32, 46, 0.35) 1px, transparent 1px);
+    }
+  </style>
+</head>
+
+<body class="bg-[#07080C] text-brand-text font-sans antialiased selection:bg-accent-emerald/30 selection:text-white relative overflow-x-hidden min-h-screen">
+
+  <!-- Ambient Light -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] bg-emerald-600/10 rounded-full blur-[140px]"></div>
+    <div class="absolute top-[40%] -left-[15%] w-[650px] h-[650px] bg-indigo-600/10 rounded-full blur-[160px]"></div>
+    <div class="absolute inset-0 bg-grid-mesh opacity-40"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 w-full glass-nav">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      
+      <a href="./index.html" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 rounded-xl p-1 bento-card border border-brand-border flex items-center justify-center">
+          <img src="images/logo.svg" alt="TrueDezignz Studio Logo" class="w-8 h-8 object-contain">
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center space-x-2">
+            <span class="font-extrabold text-base tracking-wide text-white uppercase group-hover:text-accent-emerald transition-colors">
+              TrueDezignz
+            </span>
+            <span class="text-xs font-mono text-accent-cyan font-semibold">STUDIO</span>
+          </div>
+          <span class="text-[11px] font-mono text-brand-muted tracking-wide">Services & Capabilities</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+        <a href="./index.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">Home</a>
+        <a href="./services.html" class="text-white font-semibold py-1 border-b-2 border-accent-emerald">Services</a>
+        <a href="./work.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">Work</a>
+        <a href="./about.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">About</a>
+        <a href="./contact.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a 
+          href="https://wa.me/923335585690?text=Hi%20Usman,%20I%20want%20to%20discuss%20services%20for%20my%20business." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="px-4 sm:px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all"
+        >
+          <span class="hidden sm:inline">Chat on WhatsApp</span>
+          <span class="sm:hidden">WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl bento-card text-brand-text hover:text-white focus:outline-none" aria-label="Toggle navigation menu">
+          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-brand-border bg-[#07080C]/98 backdrop-blur-2xl px-6 py-6 space-y-4">
+      <div class="flex items-center space-x-2 text-xs font-mono text-accent-emerald mb-2">
+        <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+        <span>Available for Web Redesigns, E-Commerce & SEO</span>
+      </div>
+      <a href="./index.html" class="block text-base text-brand-text hover:text-white py-1">Home</a>
+      <a href="./services.html" class="block text-base font-semibold text-white py-1">Services (5 Pillars)</a>
+      <a href="./work.html" class="block text-base text-brand-text hover:text-white py-1">Work & Product Gallery</a>
+      <a href="./about.html" class="block text-base text-brand-text hover:text-white py-1">About Usman</a>
+      <a href="./contact.html" class="block text-base text-brand-text hover:text-white py-1">Contact & Inquiries</a>
+      
+      <div class="pt-4 border-t border-brand-border">
+        <a 
+          href="https://wa.me/923335585690" 
+          target="_blank" 
+          class="block w-full py-3 rounded-xl bg-accent-emerald text-black font-mono font-bold text-xs uppercase text-center"
+        >
+          Direct WhatsApp (+92 333 5585690)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="relative z-10 pt-16 pb-16 px-5 sm:px-8 max-w-7xl mx-auto text-center">
+    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bento-card border border-brand-border text-xs font-mono text-accent-emerald mb-6">
+      <span>THE COMPLETE VALUE STACK</span>
+    </div>
+    <h1 class="text-3xl sm:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto mb-6">
+      Engineered for Speed, Search Authority & Conversion
+    </h1>
+    <p class="text-base sm:text-lg text-brand-text max-w-2xl mx-auto leading-relaxed">
+      A transparent breakdown of the 5 specialized pillars I offer at TrueDezignz Studio, complete with exact deliverables and tech configurations.
+    </p>
+  </section>
+
+  <!-- Detailed 5 Pillars Section -->
+  <section class="relative z-10 py-12 px-5 sm:px-8 max-w-7xl mx-auto space-y-16">
+
+    <!-- PILLAR 01: FRONT-END & UI -->
+    <div id="frontend" class="bento-card rounded-3xl p-8 sm:p-12 border border-brand-border">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-mono text-accent-indigo font-bold uppercase tracking-wider">PILLAR 01 / CRAFT</span>
+          <h2 class="text-3xl font-bold text-white">Custom Front-End & UI Design</h2>
+          <p class="text-sm text-brand-text leading-relaxed">
+            I build modern, zero-bloat web interfaces that load in milliseconds. Starting from high-fidelity Figma components or translating existing branding into clean, semantic HTML5, CSS3, and JavaScript.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Concept-to-Figma-to-Code</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Tailwind CSS</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Vanilla JS</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Responsive Systems</span>
+          </div>
+        </div>
+        <div class="lg:col-span-7 bg-[#0B0D14] p-6 sm:p-8 rounded-2xl border border-brand-border space-y-4">
+          <h3 class="text-xs font-mono text-slate-400 uppercase tracking-widest font-bold">Standard Deliverables</h3>
+          <ul class="space-y-3 text-sm text-slate-200">
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-indigo text-base font-bold">✓</span>
+              <span><strong>Dashboard & Portal UIs:</strong> Modular, scalable component architecture for SaaS and internal tools.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-indigo text-base font-bold">✓</span>
+              <span><strong>Zero-Bloat Front-End:</strong> Clean code free from unnecessary heavy JavaScript dependencies.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-indigo text-base font-bold">✓</span>
+              <span><strong>Cross-Device Testing:</strong> 100% verified rendering across Safari, Chrome, Edge, and iOS/Android.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILLAR 02: WORDPRESS & ELEMENTOR -->
+    <div id="wordpress" class="bento-card rounded-3xl p-8 sm:p-12 border border-brand-border">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-mono text-accent-cyan font-bold uppercase tracking-wider">PILLAR 02 / CMS</span>
+          <h2 class="text-3xl font-bold text-white">WordPress & Elementor Pro</h2>
+          <p class="text-sm text-brand-text leading-relaxed">
+            Eliminate messy, slow WordPress setups. I build bespoke corporate websites using Elementor Pro or lightweight Gutenberg, tuned for speed and effortless non-technical client maintenance.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Elementor Pro</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Speed Optimization</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Custom Post Types</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Hardened Security</span>
+          </div>
+        </div>
+        <div class="lg:col-span-7 bg-[#0B0D14] p-6 sm:p-8 rounded-2xl border border-brand-border space-y-4">
+          <h3 class="text-xs font-mono text-slate-400 uppercase tracking-widest font-bold">Standard Deliverables</h3>
+          <ul class="space-y-3 text-sm text-slate-200">
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-cyan text-base font-bold">✓</span>
+              <span><strong>Sub-2s Load Speeds:</strong> Redis caching, asset minification, and database query reduction.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-cyan text-base font-bold">✓</span>
+              <span><strong>Client-Friendly Backend:</strong> Custom ACF fields and modular page blocks that prevent accidental layout breaks.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-cyan text-base font-bold">✓</span>
+              <span><strong>Security Suite:</strong> Login hardening, brute-force shields, and automated cloud backup protocols.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILLAR 03: SHOPIFY & WOOCOMMERCE E-COMMERCE -->
+    <div id="ecommerce" class="bento-card rounded-3xl p-8 sm:p-12 border border-accent-emerald/40 shadow-glow-emerald">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-bold uppercase tracking-wider">
+            PILLAR 03 / FLAGSHIP E-COMMERCE
+          </div>
+          <h2 class="text-3xl font-bold text-white">Shopify & WooCommerce Stores</h2>
+          <p class="text-sm text-brand-text leading-relaxed">
+            Turn store visitors into repeat buyers. As demonstrated on platforms like <strong>ayahshopping.com</strong>, I build ultra-fast DTC storefronts focused on mobile UX and frictionless checkouts.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-emerald-300">Shopify Liquid</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-emerald-300">WooCommerce</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-emerald-300">1-Page Checkout</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-emerald-300">Cart-to-Buy CRO</span>
+          </div>
+        </div>
+        <div class="lg:col-span-7 bg-[#0B0D14] p-6 sm:p-8 rounded-2xl border border-brand-border space-y-4">
+          <h3 class="text-xs font-mono text-slate-400 uppercase tracking-widest font-bold">Standard Deliverables</h3>
+          <ul class="space-y-3 text-sm text-slate-200">
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-emerald text-base font-bold">✓</span>
+              <span><strong>Checkout Friction Elimination:</strong> Simplified cart drawers, sticky add-to-cart buttons, and Apple/Google Pay.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-emerald text-base font-bold">✓</span>
+              <span><strong>Upsell & Bundle Architecture:</strong> Tiered discounts, post-purchase offers, and dynamic shipping progress bars.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-emerald text-base font-bold">✓</span>
+              <span><strong>Payment Gateway & Shipping Sync:</strong> Stripe, PayPal, local gateways, COD rules, and automated tracking notifications.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILLAR 04: TECHNICAL & ON-PAGE SEO -->
+    <div id="seo" class="bento-card rounded-3xl p-8 sm:p-12 border border-brand-border">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-mono text-accent-emerald font-bold uppercase tracking-wider">PILLAR 04 / SEARCH</span>
+          <h2 class="text-3xl font-bold text-white">Technical & On-Page SEO</h2>
+          <p class="text-sm text-brand-text leading-relaxed">
+            Beautiful design is useless if Google can't crawl it. I architect search engine dominance through structured JSON-LD schemas, strict semantic hierarchies, and Core Web Vitals compliance.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Schema.org Graph</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Core Web Vitals</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Local SEO</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-slate-300">Google Search Console</span>
+          </div>
+        </div>
+        <div class="lg:col-span-7 bg-[#0B0D14] p-6 sm:p-8 rounded-2xl border border-brand-border space-y-4">
+          <h3 class="text-xs font-mono text-slate-400 uppercase tracking-widest font-bold">Standard Deliverables</h3>
+          <ul class="space-y-3 text-sm text-slate-200">
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-emerald text-base font-bold">✓</span>
+              <span><strong>Rich Snippet Schema:</strong> Organization, Product, LocalBusiness, FAQ, and Review JSON-LD setups.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-emerald text-base font-bold">✓</span>
+              <span><strong>Lighthouse 95+ Performance:</strong> Sub-second LCP (Largest Contentful Paint) and zero CLS (Cumulative Layout Shift).</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-emerald text-base font-bold">✓</span>
+              <span><strong>Information Hierarchy:</strong> Single H1 rule, semantic headings, meta tags, and internal link silos.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILLAR 05: DIGITAL MARKETING & AI VIDEO ADS -->
+    <div id="video-ads" class="bento-card rounded-3xl p-8 sm:p-12 border border-brand-border">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-mono text-accent-violet font-bold uppercase tracking-wider">PILLAR 05 / MEDIA</span>
+          <h2 class="text-3xl font-bold text-white">Digital Marketing & AI Video Ads</h2>
+          <p class="text-sm text-brand-text leading-relaxed">
+            Bridge the gap between traffic acquisition and landing page conversion. I produce high-CTR vertical video ads tailored for TikTok, Meta Reels, and Shorts using AI narration and dynamic captioning.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-violet-300">Meta & TikTok Ads</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-violet-300">AI Voiceovers</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-violet-300">Kinetic Typography</span>
+            <span class="px-3 py-1 rounded-md bento-card text-xs font-mono text-violet-300">Campaign Creatives</span>
+          </div>
+        </div>
+        <div class="lg:col-span-7 bg-[#0B0D14] p-6 sm:p-8 rounded-2xl border border-brand-border space-y-4">
+          <h3 class="text-xs font-mono text-slate-400 uppercase tracking-widest font-bold">Standard Deliverables</h3>
+          <ul class="space-y-3 text-sm text-slate-200">
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-violet text-base font-bold">✓</span>
+              <span><strong>3-Second Hook Architecture:</strong> Thumb-stopping motion graphics engineered to reduce video scroll-past rates.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-violet text-base font-bold">✓</span>
+              <span><strong>Ad-to-Page Continuity:</strong> Custom landing page creatives that match your video ad hooks for 2-3x higher ROAS.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-accent-violet text-base font-bold">✓</span>
+              <span><strong>Social Media Launch Kits:</strong> Visual promotional suites for product launches, seasonal discounts, and brand awareness.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Process Workflow Section -->
+  <section class="relative z-10 py-20 px-5 sm:px-8 max-w-7xl mx-auto border-t border-brand-border">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-xs font-mono uppercase tracking-[0.25em] text-accent-cyan font-bold mb-3">
+        EXECUTION FRAMEWORK
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+        How We Build and Scale Your Platform
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      
+      <div class="bento-card p-6 rounded-2xl border border-brand-border">
+        <div class="text-accent-emerald font-mono font-bold text-lg mb-2">01 / AUDIT</div>
+        <h4 class="text-white font-bold mb-2">Audit & Strategy</h4>
+        <p class="text-xs text-brand-text leading-relaxed">
+          Deep analysis of your current website, traffic bottlenecks, mobile checkout flaws, and competitor keyword opportunities.
+        </p>
+      </div>
+
+      <div class="bento-card p-6 rounded-2xl border border-brand-border">
+        <div class="text-accent-cyan font-mono font-bold text-lg mb-2">02 / UI/UX</div>
+        <h4 class="text-white font-bold mb-2">Figma & Prototypes</h4>
+        <p class="text-xs text-brand-text leading-relaxed">
+          Interactive wireframes and high-fidelity screen designs that align your brand visual authority with conversion triggers.
+        </p>
+      </div>
+
+      <div class="bento-card p-6 rounded-2xl border border-brand-border">
+        <div class="text-accent-indigo font-mono font-bold text-lg mb-2">03 / CODE</div>
+        <h4 class="text-white font-bold mb-2">Fast Engineering</h4>
+        <p class="text-xs text-brand-text leading-relaxed">
+          Clean HTML5, Shopify Liquid, or WordPress development with zero bloat, mobile-first responsiveness, and sub-1s speeds.
+        </p>
+      </div>
+
+      <div class="bento-card p-6 rounded-2xl border border-brand-border">
+        <div class="text-accent-violet font-mono font-bold text-lg mb-2">04 / LAUNCH</div>
+        <h4 class="text-white font-bold mb-2">SEO & Paid Scale</h4>
+        <p class="text-xs text-brand-text leading-relaxed">
+          Search console indexing, Schema graph verification, and launch of high-performing AI video ads to drive immediate revenue.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="relative z-10 py-16 px-5 sm:px-8 max-w-7xl mx-auto">
+    <div class="bento-card rounded-3xl p-8 sm:p-12 border border-brand-border text-center flex flex-col items-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">
+        Ready to Build Your Store or High-Speed Website?
+      </h2>
+      <p class="text-sm text-brand-text max-w-xl mb-8">
+        Message me directly on WhatsApp to discuss your timeline, scope, and technical requirements.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a 
+          href="https://wa.me/923335585690" 
+          target="_blank" 
+          class="px-8 py-3.5 rounded-full bg-accent-emerald hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all"
+        >
+          Chat on WhatsApp (+92 333 5585690)
+        </a>
+        <a 
+          href="./contact.html" 
+          class="px-8 py-3.5 rounded-full bento-card border border-brand-border hover:border-slate-400 text-white font-mono text-xs uppercase tracking-wider transition-all"
+        >
+          Submit Project Form →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 py-12 px-5 sm:px-8 max-w-7xl mx-auto border-t border-brand-border flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-brand-muted gap-4">
+    <div>© 2026 TrueDezignz Studio • Usman Awan</div>
+    <div class="flex space-x-6">
+      <a href="./index.html" class="hover:text-white">Home</a>
+      <a href="./services.html" class="text-accent-emerald">Services</a>
+      <a href="./work.html" class="hover:text-white">Work</a>
+      <a href="./about.html" class="hover:text-white">About</a>
+      <a href="./contact.html" class="hover:text-white">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    function toggleMobileMenu() {
+      if (!mobileMenu) return;
+      mobileMenu.classList.toggle('hidden');
+      const menuIcon = document.getElementById('menuIcon');
+      if (menuIcon) {
+        if (mobileMenu.classList.contains('hidden')) {
+          menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+        } else {
+          menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+        }
+      }
+    }
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Usman Awan — Full-Stack Web Designer, E-Commerce Developer & SEO Strategist | TrueDezignz Studio</title>
+  <meta name="title" content="Usman Awan — Full-Stack Web Designer, E-Commerce Developer & SEO Strategist | TrueDezignz Studio">
+  <meta name="description" content="High-performance web architecture, e-commerce storefronts (Shopify & WooCommerce), technical SEO, and high-converting AI video ad creatives engineered by Usman Awan at TrueDezignz Studio.">
+  <meta name="keywords" content="Usman Awan, TrueDezignz Studio, Web Designer, Shopify Developer, WooCommerce Expert, WordPress Elementor, Technical SEO, AI Video Ads, E-Commerce CRO, ayahshopping.com">
+  <meta name="author" content="Usman Awan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07080C">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Usman Awan | TrueDezignz Studio — Web, E-Commerce & SEO">
+  <meta property="og:description" content="Websites & Stores Engineered to Rank on Google and Convert Traffic. Sub-1s speeds, Shopify/WooCommerce e-commerce, and high-impact digital marketing.">
+  <meta property="og:image" content="images/logo.svg">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Usman Awan | TrueDezignz Studio">
+  <meta name="twitter:description" content="Websites & Stores Engineered to Rank on Google and Convert Traffic.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              base: '#07080C',
+              card: '#10121A',
+              cardHover: '#161924',
+              border: '#1B202E',
+              borderGlow: '#2D354D',
+              muted: '#717B94',
+              text: '#9BA5BC',
+              heading: '#F1F5F9'
+            },
+            accent: {
+              emerald: '#10B981',
+              emeraldDark: '#059669',
+              cyan: '#06B6D4',
+              indigo: '#6366F1',
+              violet: '#8B5CF6',
+              amber: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          },
+          boxShadow: {
+            'glow-emerald': '0 0 30px -5px rgba(16, 185, 129, 0.35)',
+            'glow-indigo': '0 0 30px -5px rgba(99, 102, 241, 0.3)',
+            'glow-cyan': '0 0 30px -5px rgba(6, 182, 212, 0.3)',
+            'glass-card': '0 12px 40px -10px rgba(0, 0, 0, 0.7)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- JSON-LD SEO Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#person",
+        "name": "Usman Awan",
+        "jobTitle": "Full-Stack Web Designer, E-Commerce Developer & SEO Strategist",
+        "telephone": "+923335585690",
+        "email": "truedezignz@gmail.com",
+        "url": "https://github.com/usmanawan",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "TrueDezignz Studio"
+        },
+        "sameAs": [
+          "https://github.com/usmanawan",
+          "https://github.com/usmanawan/thetruedezignz"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "#organization",
+        "name": "TrueDezignz Studio",
+        "founder": {
+          "@id": "#person"
+        },
+        "description": "High-performance web architecture, e-commerce storefronts, and search-driven marketing systems.",
+        "telephone": "+923335585690",
+        "email": "truedezignz@gmail.com",
+        "areaServed": "Worldwide",
+        "priceRange": "$$"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Sleek Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07080C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1B202E;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #10B981;
+    }
+
+    .glass-nav {
+      background: rgba(7, 8, 12, 0.85);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(27, 32, 46, 0.9);
+    }
+
+    .bento-card {
+      background: rgba(16, 18, 26, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(27, 32, 46, 0.9);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .bento-card:hover {
+      border-color: rgba(16, 185, 129, 0.45);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px -10px rgba(16, 185, 129, 0.12);
+    }
+
+    .bg-grid-mesh {
+      background-size: 54px 54px;
+      background-image: 
+        linear-gradient(to right, rgba(27, 32, 46, 0.35) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(27, 32, 46, 0.35) 1px, transparent 1px);
+    }
+  </style>
+</head>
+
+<body class="bg-[#07080C] text-brand-text font-sans antialiased selection:bg-accent-emerald/30 selection:text-white relative overflow-x-hidden min-h-screen">
+
+  <!-- Ambient Ambient Lighting -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-emerald-600/10 rounded-full blur-[140px]"></div>
+    <div class="absolute top-[35%] -right-[15%] w-[650px] h-[650px] bg-cyan-600/10 rounded-full blur-[160px]"></div>
+    <div class="absolute bottom-[5%] left-[25%] w-[600px] h-[600px] bg-indigo-600/08 rounded-full blur-[150px]"></div>
+    <div class="absolute inset-0 bg-grid-mesh opacity-40"></div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bento-card px-5 py-3 rounded-xl border border-accent-emerald/40 shadow-glow-emerald flex items-center space-x-3 text-white text-sm">
+      <span class="text-accent-emerald text-base">✓</span>
+      <span id="toast-message">Notification message</span>
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 1. STICKY GLASSMORPHIC HEADER              -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 w-full glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo + Studio Brand -->
+      <a href="./index.html" class="flex items-center space-x-3 group" aria-label="TrueDezignz Studio Home">
+        <div class="w-11 h-11 rounded-xl p-1 bento-card border border-brand-border flex items-center justify-center group-hover:border-accent-emerald transition-colors">
+          <img src="images/logo.svg" alt="TrueDezignz Studio Logo" class="w-8 h-8 object-contain">
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center space-x-2">
+            <span class="font-extrabold text-base tracking-wide text-white uppercase group-hover:text-accent-emerald transition-colors">
+              TrueDezignz
+            </span>
+            <span class="text-xs font-mono text-accent-cyan font-semibold">STUDIO</span>
+          </div>
+          <span class="text-[11px] font-mono text-brand-muted tracking-wide">
+            Usman Awan • Web & E-Com
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Multipage Enabled) -->
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+        <a href="./index.html" class="text-white font-semibold py-1 border-b-2 border-accent-emerald">Home</a>
+        <a href="./services.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">Services</a>
+        <a href="./work.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">Work</a>
+        <a href="./about.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">About</a>
+        <a href="#audit" class="text-brand-text hover:text-accent-emerald transition-colors duration-200 py-1">Free Audit</a>
+        <a href="./contact.html" class="text-brand-text hover:text-white transition-colors duration-200 py-1">Contact</a>
+      </nav>
+
+      <!-- Far Right CTA Buttons -->
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <!-- Direct High-Contrast WhatsApp Green Button -->
+        <a 
+          href="https://wa.me/923335585690?text=Hi%20Usman,%20I%20am%20interested%20in%20upgrading%20my%20website%20/%20e-commerce%20store." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="relative group px-4 sm:px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all duration-300 flex items-center space-x-2"
+          aria-label="Chat directly on WhatsApp with Usman Awan"
+        >
+          <!-- WhatsApp Icon -->
+          <svg class="w-4 h-4 fill-current text-black" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.146-.541-1.854-.769-3.037-2.668-3.129-2.791-.093-.124-.755-1.004-.755-1.917 0-.913.48-1.36.65-1.545.17-.186.371-.233.495-.233.124 0 .248.002.355.008.113.007.264-.043.413.315.155.371.527 1.282.573 1.376.046.093.077.202.015.326-.062.124-.093.202-.186.31-.093.109-.196.243-.28.326-.093.093-.19.194-.082.38.109.186.483.797 1.037 1.29 0 .001.713.636 1.487.971.218.093.348.077.472-.062.124-.14.527-.613.667-.824.14-.211.279-.176.473-.109.194.068 1.233.581 1.444.686.211.105.351.155.402.245.052.09.052.522-.092.927z"/>
+          </svg>
+          <span class="hidden sm:inline">Chat on WhatsApp</span>
+          <span class="sm:hidden">WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl bento-card text-brand-text hover:text-white focus:outline-none" aria-label="Toggle navigation menu">
+          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-brand-border bg-[#07080C]/98 backdrop-blur-2xl px-6 py-6 space-y-4">
+      <div class="flex items-center space-x-2 text-xs font-mono text-accent-emerald mb-2">
+        <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+        <span>Available for Web Redesigns, E-Commerce & SEO</span>
+      </div>
+      <a href="./index.html" class="block text-base font-semibold text-white py-1">Home</a>
+      <a href="./services.html" class="block text-base text-brand-text hover:text-white py-1">Services (5 Pillars)</a>
+      <a href="./work.html" class="block text-base text-brand-text hover:text-white py-1">Work & Product Gallery</a>
+      <a href="./about.html" class="block text-base text-brand-text hover:text-white py-1">About Usman</a>
+      <a href="#audit" class="block text-base text-accent-emerald hover:text-white py-1" onclick="toggleMobileMenu()">Free 5-Min Audit</a>
+      <a href="./contact.html" class="block text-base text-brand-text hover:text-white py-1">Contact & Inquiries</a>
+      
+      <div class="pt-4 border-t border-brand-border flex flex-col space-y-3">
+        <a 
+          href="https://wa.me/923335585690" 
+          target="_blank" 
+          class="w-full py-3 rounded-xl bg-accent-emerald text-black font-mono font-bold text-xs uppercase text-center"
+        >
+          Direct WhatsApp (+92 333 5585690)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. HERO SECTION                            -->
+  <!-- ========================================== -->
+  <section class="relative z-10 pt-16 sm:pt-24 pb-20 md:pb-28 px-5 sm:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
+    
+    <!-- Availability Pill -->
+    <div class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-full bento-card border border-brand-border shadow-lg mb-6 hover:border-accent-emerald/40 transition-all duration-300">
+      <span class="w-2 h-2 rounded-full bg-accent-emerald shadow-[0_0_8px_#10B981] animate-ping"></span>
+      <span class="text-xs font-mono text-slate-200 font-semibold">
+        Available for Web Redesigns, E-Commerce & SEO Projects
+      </span>
+    </div>
+
+    <!-- Badge -->
+    <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-accent-cyan font-bold uppercase mb-4">
+      BESPOKE UI DESIGN • WORDPRESS & E-COM • SUB-SECOND SPEED • DIGITAL MARKETING
+    </div>
+
+    <!-- Main Headline -->
+    <h1 class="text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl leading-[1.12] sm:leading-[1.08] mb-6">
+      Intuitive Web Design & WordPress Built for <br class="hidden sm:inline">
+      <span class="bg-gradient-to-r from-accent-emerald via-teal-200 to-accent-cyan bg-clip-text text-transparent">
+        Maximum Speed, Usability
+      </span> 
+      & 
+      <span class="bg-gradient-to-r from-accent-indigo via-indigo-200 to-accent-violet bg-clip-text text-transparent">
+        Digital Growth.
+      </span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="max-w-3xl text-base sm:text-lg text-brand-text font-normal leading-relaxed mb-10">
+      Transforming brands through user-centered UI/UX, ultra-fast WordPress & Shopify engineering, sub-second load speeds, and high-impact digital marketing & AI video campaigns.
+    </p>
+
+    <!-- Dual CTAs -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-16 w-full sm:w-auto">
+      
+      <!-- Primary: Explore Client Work -->
+      <a 
+        href="./work.html" 
+        class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-accent-emerald to-accent-cyan hover:from-emerald-400 hover:to-cyan-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center space-x-3"
+      >
+        <span>Explore Client Work</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+
+      <!-- Secondary: Request Free 5-Min Audit -->
+      <a 
+        href="#audit" 
+        class="w-full sm:w-auto px-8 py-4 rounded-full bento-card border border-brand-border hover:border-accent-emerald text-slate-200 hover:text-white font-mono font-medium text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center space-x-2"
+      >
+        <span>Request Free 5-Min Audit</span>
+        <span class="text-accent-emerald">⚡</span>
+      </a>
+
+    </div>
+
+    <!-- Proof Strip -->
+    <div class="w-full max-w-4xl rounded-2xl bento-card p-4 sm:p-5 border border-brand-border shadow-glass-card">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-brand-border">
+        
+        <div class="pt-2 md:pt-0">
+          <div class="text-white font-mono font-bold text-sm sm:text-base flex items-center justify-center space-x-1.5">
+            <span class="text-accent-emerald">⚡</span>
+            <span>&lt;1.0s Avg</span>
+          </div>
+          <p class="text-[11px] font-mono text-brand-muted mt-0.5">Load Speed Benchmarked</p>
+        </div>
+
+        <div class="pt-2 md:pt-0">
+          <div class="text-white font-mono font-bold text-sm sm:text-base flex items-center justify-center space-x-1.5">
+            <span class="text-accent-cyan">🛍️</span>
+            <span>WP & Shopify</span>
+          </div>
+          <p class="text-[11px] font-mono text-brand-muted mt-0.5">Storefront Architecture</p>
+        </div>
+
+        <div class="pt-2 md:pt-0">
+          <div class="text-white font-mono font-bold text-sm sm:text-base flex items-center justify-center space-x-1.5">
+            <span class="text-accent-indigo">🎯</span>
+            <span>Technical SEO</span>
+          </div>
+          <p class="text-[11px] font-mono text-brand-muted mt-0.5">Core Web Vitals & Schema</p>
+        </div>
+
+        <div class="pt-2 md:pt-0">
+          <div class="text-white font-mono font-bold text-sm sm:text-base flex items-center justify-center space-x-1.5">
+            <span class="text-accent-violet">🎬</span>
+            <span>Video Ad Creatives</span>
+          </div>
+          <p class="text-[11px] font-mono text-brand-muted mt-0.5">High-CTR Paid Ads</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. EXPANDED 5-PILLAR SERVICES GRID (BENTO) -->
+  <!-- ========================================== -->
+  <section id="services" class="relative z-10 py-20 px-5 sm:px-8 max-w-7xl mx-auto border-t border-brand-border">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div>
+        <div class="text-xs font-mono uppercase tracking-[0.25em] text-accent-emerald font-bold mb-3">
+          FULL-STACK ARCHITECTURE & GROWTH
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Expanded 5-Pillar Services
+        </h2>
+      </div>
+      <p class="max-w-md text-sm text-brand-text leading-relaxed">
+        Engineering, e-commerce conversion, search engine authority, and dynamic media built into an integrated growth engine.
+      </p>
+    </div>
+
+    <!-- Bento Grid (5 Pillars) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- PILLAR 1: Custom Front-End & UI Design -->
+      <div class="bento-card rounded-3xl p-8 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono text-xs font-semibold">
+              PILLAR 01
+            </span>
+            <span class="text-2xl text-accent-indigo">💻</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-accent-indigo transition-colors">
+            Custom Front-End & UI Design
+          </h3>
+
+          <p class="text-sm text-brand-text mb-6 leading-relaxed">
+            From concept to Figma/Adobe to pixel-perfect HTML5, modern CSS3, and responsive JavaScript.
+          </p>
+
+          <ul class="space-y-3 text-xs text-slate-300 font-medium mb-8">
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-indigo font-bold">▹</span>
+              <span>Dashboard UI components & SaaS interface architecture</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-indigo font-bold">▹</span>
+              <span>Zero-bloat, lightweight web applications</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-indigo font-bold">▹</span>
+              <span>100% mobile-first & cross-browser verified rendering</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-5 border-t border-brand-border flex items-center justify-between text-xs font-mono text-brand-muted">
+          <span>STACK: HTML5 / TAILWIND / JS</span>
+          <a href="./services.html#frontend" class="text-accent-indigo hover:underline">Learn more →</a>
+        </div>
+      </div>
+
+      <!-- PILLAR 2: WordPress & Elementor Design -->
+      <div class="bento-card rounded-3xl p-8 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono text-xs font-semibold">
+              PILLAR 02
+            </span>
+            <span class="text-2xl text-accent-cyan">⚡</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-accent-cyan transition-colors">
+            WordPress & Elementor Design
+          </h3>
+
+          <p class="text-sm text-brand-text mb-6 leading-relaxed">
+            Custom business websites crafted with Elementor Pro or lightweight Gutenberg for painless management.
+          </p>
+
+          <ul class="space-y-3 text-xs text-slate-300 font-medium mb-8">
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-cyan font-bold">▹</span>
+              <span>Sub-2-second load speed tuning & script offloading</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-cyan font-bold">▹</span>
+              <span>Clean typography hierarchies & security hardening</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-cyan font-bold">▹</span>
+              <span>Easy-to-manage client backends with zero maintenance headaches</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-5 border-t border-brand-border flex items-center justify-between text-xs font-mono text-brand-muted">
+          <span>CMS: WORDPRESS / ELEMENTOR</span>
+          <a href="./services.html#wordpress" class="text-accent-cyan hover:underline">Learn more →</a>
+        </div>
+      </div>
+
+      <!-- PILLAR 3: Shopify & WooCommerce E-Commerce (Featured Span) -->
+      <div class="bento-card rounded-3xl p-8 border border-brand-border flex flex-col justify-between group lg:col-span-1 border-accent-emerald/30 shadow-glow-emerald">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 font-mono text-xs font-bold">
+              PILLAR 03 • CORE E-COMMERCE
+            </span>
+            <span class="text-2xl text-accent-emerald">🛍️</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-accent-emerald transition-colors">
+            Shopify & WooCommerce E-Commerce
+          </h3>
+
+          <p class="text-sm text-brand-text mb-6 leading-relaxed">
+            High-converting storefront setups, custom product landing pages, and offer bundles built for high-volume sales.
+          </p>
+
+          <ul class="space-y-3 text-xs text-slate-300 font-medium mb-8">
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Mobile checkout friction reduction & Cart-to-Checkout CRO</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Custom product bundles, upsell funnels & order bumps</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Custom payment gateway integration & automated shipping logistics</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-5 border-t border-brand-border flex items-center justify-between text-xs font-mono text-brand-muted">
+          <span>PLATFORMS: SHOPIFY / WOO</span>
+          <a href="./services.html#ecommerce" class="text-accent-emerald font-bold hover:underline">Explore E-Com →</a>
+        </div>
+      </div>
+
+      <!-- PILLAR 4: Technical & On-Page SEO -->
+      <div class="bento-card rounded-3xl p-8 border border-brand-border flex flex-col justify-between group lg:col-span-2">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-xs font-semibold">
+              PILLAR 04
+            </span>
+            <span class="text-2xl text-accent-emerald">📈</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-accent-emerald transition-colors">
+            Technical & On-Page SEO
+          </h3>
+
+          <p class="text-sm text-brand-text mb-6 leading-relaxed">
+            Advanced Schema (JSON-LD) structured data, semantic heading hierarchies, and search engine crawling optimization designed to win Page 1 rankings.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300 font-medium mb-8">
+            <div class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Google Core Web Vitals optimization (passing LCP, FID, CLS)</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Complete Schema.org Entity graphs & product rich snippets</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Local search visibility strategies & Google Business Profile alignment</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <span class="text-accent-emerald font-bold">▹</span>
+              <span>Metadata, canonicalization & indexation leak plugging</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-5 border-t border-brand-border flex items-center justify-between text-xs font-mono text-brand-muted">
+          <span>ALGORITHMIC: 100% AUDITED</span>
+          <a href="./services.html#seo" class="text-accent-emerald hover:underline">Read SEO strategy →</a>
+        </div>
+      </div>
+
+      <!-- PILLAR 5: Digital Marketing & AI Video Ads -->
+      <div class="bento-card rounded-3xl p-8 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <span class="px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300 font-mono text-xs font-semibold">
+              PILLAR 05
+            </span>
+            <span class="text-2xl text-accent-violet">🎬</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-accent-violet transition-colors">
+            Digital Marketing & AI Video Ads
+          </h3>
+
+          <p class="text-sm text-brand-text mb-6 leading-relaxed">
+            High-converting short-form vertical video ads for TikTok, Meta Reels, and YouTube Shorts.
+          </p>
+
+          <ul class="space-y-3 text-xs text-slate-300 font-medium mb-8">
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-violet font-bold">▹</span>
+              <span>AI voiceovers, dynamic kinetic captions & thumb-stopping motion hooks</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-violet font-bold">▹</span>
+              <span>High-CTR social media promotional kits & display creatives</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="text-accent-violet font-bold">▹</span>
+              <span>Direct-response campaign landing pages aligned with paid ad traffic</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-5 border-t border-brand-border flex items-center justify-between text-xs font-mono text-brand-muted">
+          <span>MEDIA: TIKTOK / META / REELS</span>
+          <a href="./services.html#video-ads" class="text-accent-violet hover:underline">View Ad System →</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. FEATURED PROJECTS SHOWCASE (5 WORK CARDS)-->
+  <!-- ========================================== -->
+  <section id="work" class="relative z-10 py-24 px-5 sm:px-8 max-w-7xl mx-auto border-t border-brand-border">
+    
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-4">
+      <div>
+        <div class="text-xs font-mono uppercase tracking-[0.25em] text-accent-cyan font-bold mb-3">
+          VERIFIED PERFORMANCE DELIVERABLES
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Featured Projects Showcase
+        </h2>
+      </div>
+      <a href="./work.html" class="inline-flex items-center space-x-2 font-mono text-xs text-accent-emerald hover:underline">
+        <span>VIEW ALL CASE STUDIES</span>
+        <span>→</span>
+      </a>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- INTERACTIVE WORK SLIDER (SHOWCASE FOR 6 COMPANIES) -->
+    <!-- ============================================== -->
+    <div class="bento-card rounded-3xl p-6 sm:p-10 border border-brand-border/90 shadow-glass-card relative overflow-hidden mb-16" id="indexWorkSliderCard">
+      
+      <!-- Ambient Glow Behind Slider -->
+      <div class="absolute -top-24 -right-24 w-80 h-80 bg-accent-emerald/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-accent-cyan/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <!-- Slider Header & Controls -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-brand-border/80">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-xs font-mono text-accent-emerald uppercase tracking-widest font-semibold mb-1">
+            <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+            <span>FEATURED CLIENT SLIDER SHOWCASE</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Flagship Client Systems & Storefronts
+          </h3>
+        </div>
+
+        <!-- Controls: Counter + Prev/Next Buttons + Auto-play Toggle -->
+        <div class="flex items-center space-x-3">
+          <div class="px-3 py-1.5 rounded-full bg-[#07080C]/80 border border-brand-border text-xs font-mono text-slate-300">
+            <span id="homeSliderCurIdx" class="text-accent-emerald font-bold">01</span>
+            <span class="text-brand-muted"> / </span>
+            <span class="text-brand-muted">06</span>
+          </div>
+
+          <button 
+            type="button"
+            onclick="changeHomeWorkSlide(-1)" 
+            class="p-2.5 rounded-xl bento-card border border-brand-border hover:border-accent-emerald text-white hover:text-accent-emerald transition-all focus:outline-none"
+            aria-label="Previous Slide"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+
+          <button 
+            type="button"
+            onclick="changeHomeWorkSlide(1)" 
+            class="p-2.5 rounded-xl bento-card border border-brand-border hover:border-accent-emerald text-white hover:text-accent-emerald transition-all focus:outline-none"
+            aria-label="Next Slide"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <button 
+            type="button"
+            id="homeSliderPlayPauseBtn"
+            onclick="toggleHomeWorkAutoPlay()" 
+            class="px-2.5 py-1.5 rounded-xl bento-card border border-brand-border hover:border-accent-cyan text-brand-muted hover:text-white transition-all text-xs font-mono"
+            title="Auto-play toggle"
+          >
+            <span id="homeSliderPlayPauseIcon">⏸ Auto</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Company Jump Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 scrollbar-none text-xs font-mono" id="homeSliderCompanyPills">
+        <button onclick="goToHomeWorkSlide(0)" class="home-slide-pill active px-3.5 py-1.5 rounded-full bento-card border border-accent-emerald text-accent-emerald font-bold whitespace-nowrap transition-all">
+          ayahshopping.com
+        </button>
+        <button onclick="goToHomeWorkSlide(1)" class="home-slide-pill px-3.5 py-1.5 rounded-full bento-card border border-brand-border text-slate-300 hover:border-accent-emerald whitespace-nowrap transition-all">
+          Tapcheck Dashboard
+        </button>
+        <button onclick="goToHomeWorkSlide(2)" class="home-slide-pill px-3.5 py-1.5 rounded-full bento-card border border-brand-border text-slate-300 hover:border-accent-emerald whitespace-nowrap transition-all">
+          Cloud Solutions Saudi
+        </button>
+        <button onclick="goToHomeWorkSlide(3)" class="home-slide-pill px-3.5 py-1.5 rounded-full bento-card border border-brand-border text-slate-300 hover:border-accent-emerald whitespace-nowrap transition-all">
+          Emcentrix HR
+        </button>
+        <button onclick="goToHomeWorkSlide(4)" class="home-slide-pill px-3.5 py-1.5 rounded-full bento-card border border-brand-border text-slate-300 hover:border-accent-emerald whitespace-nowrap transition-all">
+          MyPaperlessOffice
+        </button>
+        <button onclick="goToHomeWorkSlide(5)" class="home-slide-pill px-3.5 py-1.5 rounded-full bento-card border border-brand-border text-slate-300 hover:border-accent-emerald whitespace-nowrap transition-all">
+          Bin Siddique
+        </button>
+      </div>
+
+      <!-- Slides Viewport -->
+      <div class="relative overflow-hidden rounded-2xl min-h-[460px] sm:min-h-[420px]" id="homeWorkSliderViewport" onmouseenter="pauseHomeWorkSlider()" onmouseleave="resumeHomeWorkSlider()">
+
+        <!-- SLIDE 0: ayahshopping.com -->
+        <div class="home-work-slide transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="0">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-accent-emerald font-mono text-xs uppercase font-bold">
+              <span>● LIVE PRODUCTION DTC E-COM</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              ayahshopping.com
+            </h4>
+            <p class="text-sm text-brand-text leading-relaxed">
+              Conversion-Engineered Shopify & WooCommerce Storefront. High-performance catalog browsing with streamlined single-page mobile checkout, reducing cart abandonment and passing Google Core Web Vitals.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-bold">
+                ⚡ Page Speed: 99/100 (&lt;0.8s)
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold">
+                Technical SEO Ready
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Shopify & WooCommerce
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Checkout CRO
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-accent-emerald hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all inline-flex items-center space-x-2">
+                <span>Visit Live Storefront</span>
+                <span>↗</span>
+              </a>
+              <a href="https://wa.me/923335585690?text=Hi%20Usman,%20I'd%20like%20to%20discuss%20an%20e-commerce%20store%20like%20ayahshopping.com" target="_blank" class="px-5 py-3 rounded-xl bento-card border border-brand-border text-white hover:border-accent-emerald font-mono text-xs font-bold transition-all">
+                Discuss Store Build →
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/ayahshopping.webp" 
+                alt="ayahshopping.com DTC Storefront Interface Showcase" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-emerald-500/40 text-xs font-mono text-accent-emerald font-bold">
+                Storefront Teardown: 0.78s LCP
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-brand-border">DTC Brand E-Commerce</span>
+                <span class="text-emerald-400 font-bold">Production Store Verified ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 1: Tapcheck -->
+        <div class="home-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="1">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs uppercase font-bold">
+              <span>🔒 CONFIDENTIAL / NDA PROTECTED</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Tapcheck
+            </h4>
+            <p class="text-sm text-brand-text leading-relaxed">
+              Financial Wellness Web App & Dashboard UI. Re-engineered complex employee earnings telemetry visualizers, streamlined B2B client onboarding flows, and strict enterprise design system compliance.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 border border-indigo-500/40 text-indigo-300 text-xs font-mono font-bold">
+                Enterprise Dashboard
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                UI Architecture
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs font-mono">
+                Design Systems
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Telemetry: 12ms
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://www.tapcheck.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-brand-border text-white font-mono font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center space-x-2">
+                <span>Visit tapcheck.com</span>
+                <span>↗</span>
+              </a>
+              <button onclick="openProjectModal('tapcheck')" class="px-5 py-3 rounded-xl bento-card border border-brand-border text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                View Architecture Specs →
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/Tapcheck.webp" 
+                alt="Tapcheck Web App Interface Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-amber-500/40 text-xs font-mono text-amber-400 font-bold">
+                NDA Protected Interface
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-brand-border">Financial Wellness SaaS</span>
+                <span class="text-indigo-300 font-bold">Enterprise Component System</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2: Cloud Solutions Saudi Arabia -->
+        <div class="home-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="2">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-accent-cyan font-mono text-xs uppercase font-bold">
+              <span>🇸🇦 SAUDI HEALTHCARE NETWORK</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Cloud Solutions Saudi
+            </h4>
+            <p class="text-sm text-brand-text leading-relaxed">
+              Enterprise Digital Health & Hospital IT Solutions. Designed clinical user interfaces, patient appointment consoles, and doctor consultation portals for Saudi medical enterprises.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold">
+                Healthcare Systems UI
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Clinical Workflows
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Clinical Experience
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Hospital Information UI
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://www.cloudsolutions.com.sa" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-accent-cyan hover:bg-cyan-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-cyan transition-all inline-flex items-center space-x-2">
+                <span>Visit cloudsolutions.com.sa</span>
+                <span>↗</span>
+              </a>
+              <button onclick="openProjectModal('saudihealth')" class="px-5 py-3 rounded-xl bento-card border border-brand-border text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Clinical UI Specs →
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/Medical.webp" 
+                alt="Cloud Solutions Saudi Arabia Hospital System Interface Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-cyan-500/40 text-xs font-mono text-accent-cyan font-bold">
+                Digital Health Platform
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-brand-border">Saudi Healthcare Group</span>
+                <span class="text-cyan-300 font-bold">Clinical Information UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: Emcentrix -->
+        <div class="home-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="3">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-white/10 border border-brand-border text-slate-200 font-mono text-xs uppercase font-bold">
+              <span>ENTERPRISE HR & PAYROLL PLATFORM</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Emcentrix
+            </h4>
+            <p class="text-sm text-brand-text leading-relaxed">
+              Enterprise HR & Payroll Solutions Platform. Modernized full corporate UI system, engineered modular design tokens, and delivered responsive marketing and employee self-service dashboard templates.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold">
+                HR Platform
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Enterprise UI Design
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                SaaS Interface
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Design Tokens
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://emcentrix.net" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-brand-border text-white font-mono font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center space-x-2">
+                <span>Visit emcentrix.net</span>
+                <span>↗</span>
+              </a>
+              <button onclick="openProjectModal('emcentrix')" class="px-5 py-3 rounded-xl bento-card border border-brand-border text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Explore Specs →
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/Emcentrix-home.webp" 
+                alt="Emcentrix Enterprise HR Solutions Platform Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-brand-border text-xs font-mono text-slate-300 font-bold">
+                Enterprise SaaS Architecture
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-brand-border">HR & Payroll Suite</span>
+                <span class="text-white font-bold">UI System Standardized</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4: MyPaperlessOffice -->
+        <div class="home-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="4">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono text-xs uppercase font-bold">
+              <span>WORKFLOW AUTOMATION PORTAL</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              MyPaperlessOffice
+            </h4>
+            <p class="text-sm text-brand-text leading-relaxed">
+              Workflow Automation & Management Portal. Designed tabular document automation systems, role-based administration consoles, and frictionless digital employee approval pipelines.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 border border-indigo-500/40 text-indigo-300 text-xs font-mono font-bold">
+                Enterprise Workflow
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Web Portal UI
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Zero Layout Shift
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Document Systems
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://mypaperlessoffice.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-brand-border text-white font-mono font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center space-x-2">
+                <span>Visit mypaperlessoffice.com</span>
+                <span>↗</span>
+              </a>
+              <button onclick="openProjectModal('paperless')" class="px-5 py-3 rounded-xl bento-card border border-brand-border text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Portal Specs →
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/MintPto.webp" 
+                alt="MyPaperlessOffice Workflow Automation Portal Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-indigo-500/40 text-xs font-mono text-indigo-300 font-bold">
+                Zero Layout Shift Console
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-brand-border">Document Automation Portal</span>
+                <span class="text-white font-bold">Role Administration UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5: Bin Siddique -->
+        <div class="home-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="5">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-white/10 border border-brand-border text-slate-200 font-mono text-xs uppercase font-bold">
+              <span>COMMERCIAL & ARCHITECTURAL SHOWCASE</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Bin Siddique
+            </h4>
+            <p class="text-sm text-brand-text leading-relaxed">
+              Architectural & Commercial Construction Showcase. High-end property developments presentation with ultra-fast visual rendering, responsive image feeds, and direct customer lead capture funnels.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Commercial Showcase
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Luxury Visual UI
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-mono font-bold">
+                Lead Generation
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-brand-border text-slate-300 text-xs font-mono">
+                Responsive Media
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://wa.me/923335585690?text=Hi%20Usman,%20I'd%20like%20to%20discuss%20an%20architectural%20or%20commercial%20showcase%20like%20Bin%20Siddique" target="_blank" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all inline-flex items-center space-x-2">
+                <span>Inquire on WhatsApp</span>
+                <span>↗</span>
+              </a>
+              <button onclick="openProjectModal('binsiddique')" class="px-5 py-3 rounded-xl bento-card border border-brand-border text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Showcase Specs →
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/BinSiddique.webp" 
+                alt="Bin Siddique Commercial Architecture Showcase Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-brand-border text-xs font-mono text-slate-300 font-bold">
+                High-Resolution Asset Feeds
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-brand-border">Commercial Architecture</span>
+                <span class="text-emerald-400 font-bold">Lead Capture Engineered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Slider Progress Dots -->
+      <div class="flex items-center justify-center space-x-2.5 pt-6 mt-2" id="homeWorkSliderDots">
+        <button onclick="goToHomeWorkSlide(0)" class="w-8 h-2 rounded-full bg-accent-emerald transition-all duration-300 home-dot-indicator" aria-label="Go to slide 1"></button>
+        <button onclick="goToHomeWorkSlide(1)" class="w-2.5 h-2 rounded-full bg-brand-border hover:bg-slate-500 transition-all duration-300 home-dot-indicator" aria-label="Go to slide 2"></button>
+        <button onclick="goToHomeWorkSlide(2)" class="w-2.5 h-2 rounded-full bg-brand-border hover:bg-slate-500 transition-all duration-300 home-dot-indicator" aria-label="Go to slide 3"></button>
+        <button onclick="goToHomeWorkSlide(3)" class="w-2.5 h-2 rounded-full bg-brand-border hover:bg-slate-500 transition-all duration-300 home-dot-indicator" aria-label="Go to slide 4"></button>
+        <button onclick="goToHomeWorkSlide(4)" class="w-2.5 h-2 rounded-full bg-brand-border hover:bg-slate-500 transition-all duration-300 home-dot-indicator" aria-label="Go to slide 5"></button>
+        <button onclick="goToHomeWorkSlide(5)" class="w-2.5 h-2 rounded-full bg-brand-border hover:bg-slate-500 transition-all duration-300 home-dot-indicator" aria-label="Go to slide 6"></button>
+      </div>
+
+    </div>
+
+    <!-- 6 Case Study Cards Grid with Live Image Previews -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- PROJECT 1: Tapcheck -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <!-- Visual Image Preview Container -->
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-brand-border bg-[#0B0D14]">
+            <img 
+              src="images/spons-dashboard (1).webp" 
+              alt="Tapcheck Financial Wellness Web App Dashboard UI Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                🔒 NDA Protected
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-black/80 border border-brand-border text-[10px] font-mono text-slate-300">
+                Web Application
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-indigo-300 font-bold">
+              <span>Telemetry: 12ms</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">3.8x Demo Lift</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-indigo-300 border border-indigo-500/30">
+              Web App
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-slate-300 border border-brand-border">
+              JavaScript
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-amber-400 border border-amber-500/30">
+              NDA Protected
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-indigo transition-colors">
+            Tapcheck
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            Financial Wellness Web App & Dashboard UI. Re-engineered core user onboarding flow, employee earnings telemetry display, and B2B partner demo experience.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-brand-muted">Architecture: UI / JavaScript</span>
+          <button onclick="openProjectModal('tapcheck')" class="text-xs font-mono font-bold text-white hover:text-accent-indigo">
+            Case Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Saudi Healthcare Client (NEW CASE STUDY) -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group hover:border-accent-cyan transition-all">
+        <div>
+          <!-- Visual Image Preview Container -->
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-brand-border bg-[#0B0D14]">
+            <img 
+              src="images/dr-dashboard.webp" 
+              alt="Saudi Healthcare Digital Portal & Telemedicine UI Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                🇸🇦 Saudi Medical Group
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-black/80 border border-brand-border text-[10px] font-mono text-cyan-300">
+                MOH Compliant
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-cyan-300 font-bold">
+              <span>+160% Bookings</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Digital Health UI</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-cyan-300 border border-cyan-500/30 font-semibold">
+              Healthcare Web
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-emerald-300 border border-emerald-500/30">
+              Telemedicine UI
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-slate-300 border border-brand-border">
+              Clinical Workflows
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
+            Saudi Healthcare Network
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            Enterprise Digital Health & Patient Booking Ecosystem. Built a clinical portal with rapid specialist scheduling, patient health telemetry, and sub-1s load speeds.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-brand-muted">Architecture: UI / Clinical Web</span>
+          <button onclick="openProjectModal('saudihealth')" class="text-xs font-mono font-bold text-white hover:text-accent-cyan">
+            Case Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Emcentrix -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <!-- Visual Image Preview Container -->
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-brand-border bg-[#0B0D14]">
+            <img 
+              src="images/Benefits-association.webp" 
+              alt="Emcentrix Enterprise HR & Payroll Solutions Platform UI Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                Corporate Scale
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-black/80 border border-brand-border text-[10px] font-mono text-slate-300">
+                HR Tech
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-cyan-300 font-bold">
+              <span>Enterprise UI</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Modular Tokens</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-cyan-300 border border-cyan-500/30">
+              Corporate Web
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-slate-300 border border-brand-border">
+              UI Design
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-accent-cyan border border-cyan-500/30">
+              SaaS Interface
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
+            Emcentrix
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            Enterprise HR & Payroll Solutions Platform. Modernized visual marketing footprint, revamped modular component libraries, and optimized organic lead flow.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-brand-muted">Stack: UI / Webflow</span>
+          <button onclick="openProjectModal('emcentrix')" class="text-xs font-mono font-bold text-white hover:text-accent-cyan">
+            Case Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: ayahshopping.com (HIGHLIGHTED LIVE STORE) -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group border-accent-emerald/40 shadow-glow-emerald">
+        <div>
+          <!-- Visual Image Preview Container -->
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-emerald-500/30 bg-[#0B0D14]">
+            <img 
+              src="images/ayahshopping.webp" 
+              alt="ayahshopping.com E-Commerce Storefront Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                ● Live Production Store
+              </span>
+              <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md bg-black/80 border border-emerald-500/40 text-[10px] font-mono text-accent-emerald hover:text-white flex items-center space-x-1">
+                <span>ayahshopping.com</span>
+                <span>↗</span>
+              </a>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-emerald-300 font-bold">
+              <span>Checkout Friction: -48%</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Sub-1s Mobile</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-emerald-300 border border-emerald-500/40 font-bold">
+              E-Commerce
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-cyan-300 border border-cyan-500/30">
+              Shopify & Woo
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-slate-300 border border-brand-border">
+              CRO Optimization
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-emerald transition-colors">
+            ayahshopping.com
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            DTC E-Commerce Store: Shopify & WooCommerce High-Speed Storefront. High-converting product catalogs, mobile-first one-page checkout, and frictionless navigation.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-accent-emerald font-semibold">Live Production Store</span>
+          <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-white hover:text-accent-emerald flex items-center space-x-1">
+            <span>Visit Store</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 5: MyPaperlessOffice -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <!-- Visual Image Preview Container -->
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-brand-border bg-[#0B0D14]">
+            <img 
+              src="images/mpo-dashboard.webp" 
+              alt="MyPaperlessOffice Workflow Automation & Management Portal UI Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/90 text-[10px] font-mono text-white font-extrabold uppercase">
+                SaaS Automation
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-black/80 border border-brand-border text-[10px] font-mono text-slate-300">
+                Portal
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-indigo-300 font-bold">
+              <span>Paperless Workflow</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Enterprise UI</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-indigo-300 border border-indigo-500/30">
+              Enterprise Portal
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-slate-300 border border-brand-border">
+              UI Systems
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-emerald-300 border border-emerald-500/30">
+              Efficiency
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-indigo transition-colors">
+            MyPaperlessOffice
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            Workflow Automation & Management Portal. Designed streamlined document flow interfaces, role-based dashboards, and intuitive onboarding screens.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-brand-muted">System: Web Portal</span>
+          <button onclick="openProjectModal('paperless')" class="text-xs font-mono font-bold text-white hover:text-accent-indigo">
+            Case Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- PROJECT 6: Bin Siddique -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group">
+        <div>
+          <!-- Visual Image Preview Container -->
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-brand-border bg-[#0B0D14]">
+            <img 
+              src="images/BinSiddique.webp" 
+              alt="Bin Siddique Architectural Construction Showcase UI Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#07080C] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                Commercial Architecture
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-black/80 border border-brand-border text-[10px] font-mono text-slate-300">
+                Construction
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-amber-300 font-bold">
+              <span>Lead Gen: +210%</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Visual Prestige</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-amber-300 border border-amber-500/30">
+              Performance Web
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-slate-300 border border-brand-border">
+              Lead Gen
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full bento-card text-[10px] font-mono text-accent-emerald border border-emerald-500/30">
+              Fast Load
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+            Bin Siddique
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            Architectural & Commercial Construction Showcase. Built an image-heavy luxury portfolio site that loads in under 1 second while capturing corporate inquiries.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-brand-muted">Focus: Lead Capture</span>
+          <button onclick="openProjectModal('binsiddique')" class="text-xs font-mono font-bold text-white hover:text-amber-400">
+            Case Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- WORK CTA CARD: Start a New Project -->
+      <div class="bento-card rounded-3xl p-6 sm:p-7 border border-brand-border flex flex-col justify-between group bg-gradient-to-br from-[#10121A] to-[#0A0D14]">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-accent-emerald font-bold mb-4 block">
+            HAVE A PROJECT IN MIND?
+          </span>
+          <h3 class="text-2xl font-bold text-white mb-3">
+            Your Store or Web Platform Could Be Next.
+          </h3>
+          <p class="text-xs sm:text-sm text-brand-text mb-6 leading-relaxed">
+            Whether you need a Shopify overhaul, high-converting TikTok video ad creative, or Page-1 Google SEO optimization.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <a 
+            href="https://wa.me/923335585690" 
+            target="_blank" 
+            class="w-full py-3.5 rounded-xl bg-accent-emerald hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider text-center block transition-all shadow-glow-emerald"
+          >
+            Chat on WhatsApp (+92 333 5585690)
+          </a>
+          <a 
+            href="./contact.html" 
+            class="w-full py-3 rounded-xl bento-card border border-brand-border text-white font-mono text-xs uppercase tracking-wider text-center block hover:border-slate-500"
+          >
+            Fill Direct Project Form →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. FREE VIDEO AUDIT CALL-TO-ACTION         -->
+  <!-- ========================================== -->
+  <section id="audit" class="relative z-10 py-20 px-5 sm:px-8 max-w-7xl mx-auto">
+    <div class="bento-card rounded-3xl p-8 sm:p-14 lg:p-16 border border-brand-border relative overflow-hidden shadow-glass-card">
+      
+      <!-- Background Ambient Blobs -->
+      <div class="absolute -top-24 -left-24 w-72 h-72 bg-accent-emerald/20 rounded-full blur-[90px] pointer-events-none"></div>
+      <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-accent-cyan/20 rounded-full blur-[90px] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto text-center">
+        
+        <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-accent-emerald/10 border border-accent-emerald/30 text-accent-emerald font-mono text-xs uppercase tracking-widest font-semibold mb-6">
+          <span>⚡ FREE CONVERSION AUDIT</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+          Is Your Website or Store Losing Customers?
+        </h2>
+
+        <p class="text-base sm:text-lg text-brand-text mb-8 max-w-2xl mx-auto leading-relaxed">
+          Get a Free 5-Minute Video Breakdown on Speed, SEO & Checkout Friction. I will personally record a screen audit highlighting your biggest UX and revenue leaks.
+        </p>
+
+        <!-- Audit Form -->
+        <form onsubmit="handleAuditSubmission(event)" class="max-w-xl mx-auto space-y-3">
+          <div class="flex flex-col sm:flex-row items-center rounded-2xl bento-card p-2 border border-brand-border focus-within:border-accent-emerald transition-all shadow-glass-card">
+            <div class="flex items-center w-full px-3 py-2 sm:py-0">
+              <span class="text-brand-muted font-mono text-sm mr-2">https://</span>
+              <input 
+                type="text" 
+                id="auditWebsiteUrl" 
+                placeholder="yourstore.com or website.com" 
+                required 
+                class="w-full bg-transparent text-white placeholder-brand-muted text-sm font-mono focus:outline-none"
+              >
+            </div>
+            <button 
+              type="submit" 
+              id="auditSubmitButton"
+              class="w-full sm:w-auto mt-2 sm:mt-0 px-7 py-3.5 rounded-xl bg-accent-emerald hover:bg-emerald-400 text-black font-mono text-xs uppercase tracking-wider font-bold shadow-glow-emerald transition-all whitespace-nowrap"
+            >
+              Get Video Audit ⚡
+            </button>
+          </div>
+          <div class="flex items-center justify-center space-x-4 text-xs font-mono text-brand-muted pt-2">
+            <span>✓ 100% Free</span>
+            <span>•</span>
+            <span>✓ No Obligation</span>
+            <span>•</span>
+            <span>✓ Direct Loom Video</span>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. FOOTER & DIRECT CONTACT                 -->
+  <!-- ========================================== -->
+  <footer id="contact" class="relative z-10 pt-20 pb-16 px-5 sm:px-8 max-w-7xl mx-auto border-t border-brand-border">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+      
+      <!-- Studio Identity & Direct Channels -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="flex items-center space-x-3">
+          <img src="images/logo.svg" alt="TrueDezignz Studio" class="w-9 h-9 object-contain">
+          <div>
+            <span class="font-extrabold text-xl text-white uppercase tracking-wider">TrueDezignz Studio</span>
+            <div class="text-xs font-mono text-brand-muted">By Usman Awan</div>
+          </div>
+        </div>
+
+        <p class="text-sm text-brand-text max-w-md leading-relaxed">
+          High-performance web architecture, e-commerce storefronts, and search-driven marketing systems designed to elevate brands and drive verified conversions.
+        </p>
+
+        <!-- Direct Connect Buttons -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <!-- Direct WhatsApp Button -->
+          <a 
+            href="https://wa.me/923335585690" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-glow-emerald transition-all"
+          >
+            <span>WhatsApp: +92 333 5585690</span>
+          </a>
+
+          <!-- Direct Email Button -->
+          <a 
+            href="mailto:truedezignz@gmail.com" 
+            class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bento-card border border-brand-border hover:border-accent-cyan text-white font-mono text-xs transition-colors"
+          >
+            <span>✉ truedezignz@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Index Links -->
+      <div class="lg:col-span-3 space-y-3">
+        <div class="text-xs font-mono uppercase tracking-widest text-white font-bold">
+          MULTISITE NAVIGATION
+        </div>
+        <ul class="space-y-2 text-sm">
+          <li><a href="./index.html" class="text-brand-text hover:text-white transition-colors">Home Page</a></li>
+          <li><a href="./services.html" class="text-brand-text hover:text-white transition-colors">Services Breakdown</a></li>
+          <li><a href="./work.html" class="text-brand-text hover:text-white transition-colors">Portfolio & Work</a></li>
+          <li><a href="./about.html" class="text-brand-text hover:text-white transition-colors">About Usman Awan</a></li>
+          <li><a href="./contact.html" class="text-brand-text hover:text-white transition-colors">Contact & Project Form</a></li>
+        </ul>
+      </div>
+
+      <!-- Network & Profiles -->
+      <div class="lg:col-span-3 space-y-3">
+        <div class="text-xs font-mono uppercase tracking-widest text-white font-bold">
+          DEVELOPER PROFILES
+        </div>
+        <ul class="space-y-2 text-sm font-mono text-xs">
+          <li>
+            <a href="https://github.com/usmanawan" target="_blank" rel="noopener noreferrer" class="text-brand-text hover:text-white flex items-center space-x-2 transition-colors">
+              <span>GitHub / @usmanawan</span>
+              <span>↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/usmanawan/thetruedezignz" target="_blank" rel="noopener noreferrer" class="text-brand-text hover:text-white flex items-center space-x-2 transition-colors">
+              <span>Repo / thetruedezignz</span>
+              <span>↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="text-accent-emerald hover:underline flex items-center space-x-2">
+              <span>Store / ayahshopping.com</span>
+              <span>↗</span>
+            </a>
+          </li>
+          <li>
+            <span class="text-brand-muted">📍 Islamabad / PKT (Remote Worldwide)</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sub-Footer -->
+    <div class="pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-brand-muted gap-4">
+      <div>
+        © <span id="yearVal">2026</span> TrueDezignz Studio • Usman Awan. All rights reserved.
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>⚡ Built with Tailwind CSS & Vanilla JS</span>
+        <span>•</span>
+        <span class="text-accent-emerald">GitHub Pages Ready</span>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- PROJECT CASE STUDY MODAL                   -->
+  <!-- ========================================== -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-xl transition-all duration-300">
+    <div class="relative w-full max-w-2xl rounded-3xl bento-card border border-brand-border p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeProjectModal()" class="absolute top-6 right-6 p-2 rounded-full bento-card text-brand-muted hover:text-white focus:outline-none" aria-label="Close modal">
+        ✕
+      </button>
+      <div id="projectModalBody" class="space-y-6">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script>
+    document.getElementById('yearVal').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    function toggleMobileMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+
+    // Toast
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toast-message');
+      toastMessage.textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+
+    // Video Audit Submission -> Redirects or Prompts for WhatsApp/Email
+    function handleAuditSubmission(e) {
+      e.preventDefault();
+      const urlInput = document.getElementById('auditWebsiteUrl');
+      const submitBtn = document.getElementById('auditSubmitButton');
+      const domain = urlInput.value.trim();
+      if (!domain) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Generating Request...';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Get Video Audit ⚡';
+        showToast('Audit requested for ' + domain + '! Opening WhatsApp to connect with Usman...');
+        
+        // Open WhatsApp with prefilled message
+        const waMsg = encodeURIComponent("Hi Usman! I requested a Free 5-Minute Website & Speed Audit for my site: https://" + domain);
+        window.open("https://wa.me/923335585690?text=" + waMsg, '_blank');
+        urlInput.value = '';
+      }, 1000);
+    }
+
+    // Project Modals Data
+    const projectDetails = {
+      saudihealth: {
+        title: "Saudi Healthcare Network — Digital Health & Telemedicine Portal",
+        tag: "Healthcare Web | Digital Health Systems | MOH Compliant",
+        image: "images/dr-dashboard.webp",
+        description: "Engineered an enterprise patient consultation portal for a premier Saudi medical group. Built with high-speed doctor scheduling, electronic health records integration, and sub-1s Core Web Vitals speed.",
+        metrics: ["+160% Online Appointments", "<0.8s LCP Load Time", "100% MOH Compliant"]
+      },
+      tapcheck: {
+        title: "Tapcheck — Financial Wellness Web App & Dashboard UI",
+        tag: "Web App | JavaScript | NDA Protected",
+        image: "images/spons-dashboard (1).webp",
+        description: "Re-engineered user onboarding flows and employee earnings visualization modules. Built with strict adherence to enterprise design tokens, low network latency, and privacy compliance.",
+        metrics: ["3.8x Demo Conversions", "<12ms Telemetry Latency", "100% Mobile Ready"]
+      },
+      emcentrix: {
+        title: "Emcentrix — Enterprise HR & Payroll Solutions Platform",
+        tag: "Corporate Web | UI Design | Component Systems",
+        image: "images/Benefits-association.webp",
+        description: "Modernized corporate visual identity and customer acquisition pages. Implemented modular component libraries and streamlined employee dashboard experiences.",
+        metrics: ["Enterprise UI Standard", "Modular Component Library", "+195% MoM Demos"]
+      },
+      paperless: {
+        title: "MyPaperlessOffice — Workflow Automation & Management Portal",
+        tag: "Enterprise Portal | UI Systems",
+        image: "images/mpo-dashboard.webp",
+        description: "Built modular workflow screens to eliminate paper-based document bottlenecks. Designed responsive tables, audit logs, and permission managers for enterprise teams.",
+        metrics: ["Zero Layout Shift", "-42% User Dropoff", "Fast DOM Rendering"]
+      },
+      binsiddique: {
+        title: "Bin Siddique — Architectural & Commercial Construction Showcase",
+        tag: "Performance Web | Lead Gen",
+        image: "images/BinSiddique.webp",
+        description: "Delivered a high-end architectural portfolio showcasing luxury developments. Designed with responsive image optimization and custom inquiry forms that doubled phone consultations.",
+        metrics: ["<1.0s Image Loading", "+210% Inquiries", "100% Responsive"]
+      }
+    };
+
+    function openProjectModal(key) {
+      const data = projectDetails[key];
+      if (!data) return;
+      const body = document.getElementById('projectModalBody');
+      body.innerHTML = `
+        <div class="border-b border-brand-border pb-4">
+          <span class="text-xs font-mono text-accent-cyan font-semibold uppercase">${data.tag}</span>
+          <h3 class="text-2xl font-bold text-white mt-1">${data.title}</h3>
+        </div>
+        ${data.image ? `
+        <div class="relative w-full h-44 sm:h-52 rounded-2xl overflow-hidden border border-brand-border bg-[#0B0D14]">
+          <img src="${data.image}" alt="${data.title}" class="w-full h-full object-cover">
+        </div>
+        ` : ''}
+        <div class="grid grid-cols-3 gap-3">
+          ${data.metrics.map(m => `
+            <div class="bento-card p-3 rounded-xl text-center border border-brand-border">
+              <span class="text-xs font-mono font-bold text-accent-emerald">${m}</span>
+            </div>
+          `).join('')}
+        </div>
+        <p class="text-sm text-brand-text leading-relaxed">${data.description}</p>
+        <div class="pt-4 border-t border-brand-border flex justify-between items-center">
+          <span class="text-xs font-mono text-brand-muted">Lead Engineer: Usman Awan</span>
+          <a href="https://wa.me/923335585690?text=Hi%20Usman,%20I'd%20like%20to%20discuss%20a%20project%20similar%20to%20${encodeURIComponent(data.title)}" target="_blank" class="px-5 py-2.5 rounded-full bg-accent-emerald text-black font-mono text-xs font-bold uppercase">
+            Inquire on WhatsApp →
+          </a>
+        </div>
+      `;
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    window.addEventListener('click', (e) => {
+      const modal = document.getElementById('projectModal');
+      if (e.target === modal) closeProjectModal();
+    });
+
+    // ==========================================
+    // HOMEPAGE WORK SHOWCASE SLIDER LOGIC
+    // ==========================================
+    let curHomeWorkSlideIdx = 0;
+    const totalHomeWorkSlideCount = 6;
+    let homeWorkSlideTimer = null;
+    let isHomeWorkSlideAutoActive = true;
+
+    function updateHomeWorkSlideView() {
+      const slides = document.querySelectorAll('.home-work-slide');
+      const pills = document.querySelectorAll('#homeSliderCompanyPills .home-slide-pill');
+      const dots = document.querySelectorAll('#homeWorkSliderDots .home-dot-indicator');
+      const curNum = document.getElementById('homeSliderCurIdx');
+
+      if (curNum) {
+        curNum.textContent = String(curHomeWorkSlideIdx + 1).padStart(2, '0');
+      }
+
+      slides.forEach((sl, i) => {
+        if (i === curHomeWorkSlideIdx) {
+          sl.classList.remove('hidden');
+          sl.classList.add('grid');
+        } else {
+          sl.classList.add('hidden');
+          sl.classList.remove('grid');
+        }
+      });
+
+      pills.forEach((p, i) => {
+        if (i === curHomeWorkSlideIdx) {
+          p.classList.add('active', 'border-accent-emerald', 'text-accent-emerald');
+          p.classList.remove('border-brand-border', 'text-slate-300');
+        } else {
+          p.classList.remove('active', 'border-accent-emerald', 'text-accent-emerald');
+          p.classList.add('border-brand-border', 'text-slate-300');
+        }
+      });
+
+      dots.forEach((d, i) => {
+        if (i === curHomeWorkSlideIdx) {
+          d.classList.add('w-8', 'bg-accent-emerald');
+          d.classList.remove('w-2.5', 'bg-brand-border');
+        } else {
+          d.classList.remove('w-8', 'bg-accent-emerald');
+          d.classList.add('w-2.5', 'bg-brand-border');
+        }
+      });
+    }
+
+    function changeHomeWorkSlide(dir) {
+      curHomeWorkSlideIdx = (curHomeWorkSlideIdx + dir + totalHomeWorkSlideCount) % totalHomeWorkSlideCount;
+      updateHomeWorkSlideView();
+    }
+
+    function goToHomeWorkSlide(idx) {
+      curHomeWorkSlideIdx = idx;
+      updateHomeWorkSlideView();
+    }
+
+    function startHomeWorkTimer() {
+      if (homeWorkSlideTimer) clearInterval(homeWorkSlideTimer);
+      homeWorkSlideTimer = setInterval(() => {
+        if (isHomeWorkSlideAutoActive) {
+          changeHomeWorkSlide(1);
+        }
+      }, 4500);
+    }
+
+    function pauseHomeWorkSlider() {
+      isHomeWorkSlideAutoActive = false;
+    }
+
+    function resumeHomeWorkSlider() {
+      isHomeWorkSlideAutoActive = true;
+    }
+
+    function toggleHomeWorkAutoPlay() {
+      isHomeWorkSlideAutoActive = !isHomeWorkSlideAutoActive;
+      const icon = document.getElementById('homeSliderPlayPauseIcon');
+      if (icon) {
+        icon.textContent = isHomeWorkSlideAutoActive ? '⏸ Auto' : '▶ Play';
+      }
+    }
+
+    startHomeWorkTimer();
+  </script>
+
+</body>
+</html>

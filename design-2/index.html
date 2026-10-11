@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>TrueDezignz Studio — Usman Awan | High-Performance Web Architecture, Commerce & Digital Growth</title>
+  <meta name="title" content="TrueDezignz Studio — Usman Awan | High-Performance Web Architecture, Commerce & Digital Growth">
+  <meta name="description" content="Independent Digital Studio specializing in Custom Web Experiences, Commerce Architecture, Search Intelligence & Performance Marketing. Founded by Usman Awan.">
+  <meta name="keywords" content="TrueDezignz Studio, Usman Awan, Webdesigner,seo, UI Architecture, Shopify Developer, WooCommerce Storefront, Technical SEO, AI Video Ads, Tapcheck, Emcentrix, Cloud Solutions, ayahshopping.com">
+  <meta name="author" content="Usman Awan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#06070a">
+
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TrueDezignz Studio — Where High-Performance Web Engineering Meets Search & Growth">
+  <meta property="og:description" content="Independent Digital Studio specializing in Custom Web Experiences, Commerce Architecture, Search Intelligence & Performance Marketing.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gf: {
+              bg: '#06070a',
+              card: '#11131c',
+              border: '#1e2230',
+              borderHover: '#33394d',
+              muted: '#697288',
+              text: '#98a2b8',
+              heading: '#f3f6fc'
+            },
+            accent: {
+              indigo: '#6366f1',
+              violet: '#8b5cf6',
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              amber: '#f59e0b'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          },
+          boxShadow: {
+            'gf-glow': '0 0 45px -10px rgba(99, 102, 241, 0.28)',
+            'gf-emerald': '0 0 45px -10px rgba(16, 185, 129, 0.28)',
+            'gf-card': '0 16px 50px -15px rgba(0, 0, 0, 0.85)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#usmanawan",
+        "name": "Usman Awan",
+        "jobTitle": "Principal & Digital Product Architect",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "TrueDezignz Studio"
+        },
+        "url": "https://github.com/usmanawan",
+        "sameAs": [
+          "https://github.com/usmanawan",
+          "https://github.com/usmanawan/thetruedezignz"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "TrueDezignz Studio",
+        "description": "Independent Digital Studio specializing in Custom Web Experiences, Commerce Architecture, Search Intelligence & Performance Marketing.",
+        "founder": {
+          "@id": "#usmanawan"
+        },
+        "telephone": "+923335585690",
+        "email": "info@thetruedezignz.com"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Goodface Signature Styling */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #06070a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e2230;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6366f1;
+    }
+
+    .gf-frosted {
+      background: rgba(17, 19, 28, 0.72);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(30, 34, 48, 0.9);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .gf-frosted:hover {
+      border-color: rgba(99, 102, 241, 0.45);
+      box-shadow: 0 16px 45px -12px rgba(99, 102, 241, 0.18);
+    }
+
+    .gf-grid-mesh {
+      background-size: 60px 60px;
+      background-image: 
+        linear-gradient(to right, rgba(30, 34, 48, 0.32) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(30, 34, 48, 0.32) 1px, transparent 1px);
+    }
+
+    /* Ambient cursor follower */
+    #cursor-light {
+      pointer-events: none;
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.03) 40%, transparent 70%);
+      transform: translate(-50%, -50%);
+      transition: width 0.3s, height 0.3s;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body class="bg-[#06070a] text-gf-text font-sans antialiased selection:bg-accent-indigo/30 selection:text-white relative overflow-x-hidden min-h-screen">
+
+  <!-- Interactive Cursor Follower -->
+  <div id="cursor-light" class="hidden md:block"></div>
+
+  <!-- Ambient Cinematic Background Lighting -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-[25%] -left-[10%] w-[700px] h-[700px] bg-indigo-600/10 rounded-full blur-[160px]"></div>
+    <div class="absolute top-[38%] -right-[15%] w-[750px] h-[750px] bg-violet-600/10 rounded-full blur-[180px]"></div>
+    <div class="absolute bottom-[5%] left-[20%] w-[650px] h-[650px] bg-emerald-600/08 rounded-full blur-[150px]"></div>
+    <div class="absolute inset-0 gf-grid-mesh opacity-35"></div>
+  </div>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="gf-frosted px-5 py-3 rounded-xl border border-accent-indigo/50 shadow-gf-glow flex items-center space-x-3 text-white text-sm">
+      <span class="text-accent-emerald text-base">✓</span>
+      <span id="toast-message">Action confirmed</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 1. STUDIO HEADER & NAVIGATION              -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-2xl bg-[#06070a]/85 border-b border-gf-border transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo + Studio Identity -->
+      <a href="#" class="flex items-center space-x-3.5 group" aria-label="TrueDezignz Studio Home">
+        <div class="w-10 h-10 rounded-xl gf-frosted border border-gf-border flex items-center justify-center p-1 group-hover:border-accent-indigo transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(99,102,241,0.4)]">
+          <img src="images/logo.svg" alt="TrueDezignz Logo" class="w-7 h-7 object-contain" onerror="this.src='../images/logo.svg'">
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center space-x-2">
+            <span class="font-extrabold text-base tracking-wider text-white uppercase group-hover:text-accent-indigo transition-colors">
+              TrueDezignz
+            </span>
+            <span class="text-[10px] font-mono tracking-widest text-accent-cyan font-bold">STUDIO</span>
+          </div>
+          <span class="text-[11px] font-mono text-gf-muted tracking-tight">
+            Usman Awan • Principal Architect
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Multipage) -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide">
+        <a href="./index.html" class="text-white font-semibold py-1 border-b-2 border-accent-indigo">Home</a>
+        <a href="./expertise.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">Expertise</a>
+        <a href="./work.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">Selected Work</a>
+        <a href="./about.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">About</a>
+        <a href="./contact.html" class="text-gf-text hover:text-white transition-colors duration-200 py-1">Contact</a>
+      </nav>
+
+      <!-- Far Right CTA & Mobile Hamburger -->
+      <div class="flex items-center space-x-4">
+        <!-- Outlined Frosted Button: "Let's Talk" linking to WhatsApp -->
+        <a 
+          href="https://wa.me/923335585690?text=Hi%20Usman,%20I%20am%20interested%20in%20discussing%20a%20project%20with%20TrueDezignz%20Studio." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="relative group px-5 py-2.5 rounded-full gf-frosted border border-gf-border hover:border-accent-emerald text-xs uppercase tracking-widest font-mono font-semibold text-white transition-all duration-300 flex items-center space-x-2"
+        >
+          <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+          <span>Let's Talk</span>
+          <svg class="w-3.5 h-3.5 text-accent-emerald group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menuToggle" class="md:hidden p-2 rounded-xl gf-frosted text-gf-text hover:text-white focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden md:hidden border-t border-gf-border bg-[#06070a]/98 backdrop-blur-2xl px-6 py-6 space-y-4">
+      <a href="./index.html" class="block text-base font-semibold text-white py-1">Home</a>
+      <a href="./expertise.html" class="block text-base text-gf-text hover:text-white py-1">Expertise (5 Pillars)</a>
+      <a href="./work.html" class="block text-base text-gf-text hover:text-white py-1">Selected Work & Products</a>
+      <a href="./about.html" class="block text-base text-gf-text hover:text-white py-1">About Usman</a>
+      <a href="./contact.html" class="block text-base text-gf-text hover:text-white py-1">Contact & Consultation</a>
+      <div class="pt-3 border-t border-gf-border">
+        <a 
+          href="https://wa.me/923335585690" 
+          target="_blank" 
+          class="block w-full py-3 rounded-xl bg-accent-emerald/20 border border-accent-emerald text-accent-emerald font-mono text-xs uppercase tracking-widest text-center font-bold"
+        >
+          WhatsApp: +92 333 5585690
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. CINEMATIC HERO SECTION                  -->
+  <!-- ========================================== -->
+  <section class="relative z-10 pt-16 sm:pt-26 pb-20 md:pb-32 px-5 sm:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
+    
+    <!-- Availability Pill -->
+    <div class="inline-flex items-center space-x-2.5 px-4 py-2 rounded-full bento-card border border-brand-border shadow-lg mb-6 hover:border-accent-emerald/40 transition-all duration-300">
+      <span class="w-2 h-2 rounded-full bg-accent-emerald shadow-[0_0_8px_#10B981] animate-ping"></span>
+      <span class="text-xs font-mono text-slate-200 font-semibold">
+        Available for Web Redesigns, E-Commerce & SEO Projects
+      </span>
+    </div>
+
+    <!-- Badge -->
+    <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-accent-cyan font-bold uppercase mb-4">
+      UI DESIGN • USABILITY • WORDPRESS & E-COM • SPEED • DIGITAL MARKETING
+    </div>
+
+    <!-- Cinematic Headline -->
+    <h1 class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-white max-w-5xl leading-[1.08] sm:leading-[1.06] mb-8">
+      Where Bespoke Design & Usability <br class="hidden sm:inline">
+      <span class="bg-gradient-to-r from-accent-indigo via-indigo-200 to-accent-violet bg-clip-text text-transparent">
+        Meet Speed,
+      </span>
+    </h1>
+
+    <!-- Subhead -->
+    <p class="max-w-3xl text-lg sm:text-xl text-gf-text font-normal leading-relaxed mb-10">
+      We fuse intuitive UI/UX design, custom WordPress & Shopify development, ultra-fast load speed, and high-converting performance marketing into a verified scaling advantage.
+    </p>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-16 w-full sm:w-auto">
+      
+      <!-- Explore Selected Work -->
+      <a 
+        href="#work" 
+        class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-accent-indigo to-accent-violet hover:from-indigo-500 hover:to-violet-500 text-white font-mono font-bold text-xs uppercase tracking-wider shadow-gf-glow hover:shadow-[0_0_50px_rgba(99,102,241,0.55)] transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center space-x-3"
+      >
+        <span>Explore Selected Work</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+
+      <!-- Book 1-on-1 Consultation -->
+      <a 
+        href="https://wa.me/923335585690?text=Hi%20Usman,%20I%20would%20like%20to%20book%20a%201-on-1%20consultation%20for%20my%20brand." 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full sm:w-auto px-8 py-4 rounded-full gf-frosted border border-gf-border hover:border-slate-400 text-slate-200 hover:text-white font-mono font-medium text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center space-x-2"
+      >
+        <span>Book 1-on-1 Consultation</span>
+        <span class="text-accent-emerald">⚡</span>
+      </a>
+
+    </div>
+
+    <!-- Floating Capabilities Pill Bar -->
+    <div class="rounded-full gf-frosted px-6 py-3 border border-gf-border shadow-gf-card flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs font-mono text-slate-300">
+      <span class="flex items-center space-x-2">
+        <span class="text-accent-indigo">▹</span>
+        <span>Front-End Code</span>
+      </span>
+      <span class="text-gf-border">•</span>
+      <span class="flex items-center space-x-2">
+        <span class="text-accent-cyan">▹</span>
+        <span>WordPress</span>
+      </span>
+      <span class="text-gf-border">•</span>
+      <span class="flex items-center space-x-2">
+        <span class="text-accent-emerald">▹</span>
+        <span>Shopify</span>
+      </span>
+      <span class="text-gf-border">•</span>
+      <span class="flex items-center space-x-2">
+        <span class="text-accent-indigo">▹</span>
+        <span>SEO</span>
+      </span>
+      <span class="text-gf-border">•</span>
+      <span class="flex items-center space-x-2">
+        <span class="text-accent-violet">▹</span>
+        <span>AI Creatives</span>
+      </span>
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. 5-PILLAR CAPABILITIES MATRIX            -->
+  <!-- ========================================== -->
+  <section id="expertise" class="relative z-10 py-24 px-5 sm:px-8 max-w-7xl mx-auto border-t border-gf-border">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div>
+        <div class="text-xs font-mono uppercase tracking-[0.25em] text-accent-indigo font-bold mb-3">
+          ARCHITECTURE & VALUE ENGINE
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Comprehensive 5-Pillar Matrix
+        </h2>
+      </div>
+      <p class="max-w-md text-sm text-gf-text leading-relaxed">
+        Engineered with oversized precision, where visual sophistication aligns directly with conversion psychology and technical stability.
+      </p>
+    </div>
+
+    <!-- 5 Pillars Matrix Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- PILLAR 01: Front-End & UI Architecture -->
+      <div class="relative rounded-3xl gf-frosted p-8 sm:p-10 border border-gf-border hover:border-accent-indigo transition-all duration-500 group overflow-hidden flex flex-col justify-between min-h-[440px]">
+        <span class="absolute -top-6 -right-3 text-8xl sm:text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none group-hover:text-accent-indigo/[0.08] transition-colors duration-500">
+          01
+        </span>
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-indigo to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <div>
+          <div class="text-xs font-mono tracking-widest text-accent-indigo font-bold uppercase mb-4">
+            01 / INTERFACE DISCIPLINE
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-indigo-200 transition-colors">
+            Custom Front-End & UI Architecture
+          </h3>
+          <p class="text-sm text-gf-text leading-relaxed mb-6">
+            Concept-to-Figma-to-code precision, modular HTML/CSS/JS, custom dashboard applications, and design systems with zero layout shift.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-indigo">▹</span>
+              <span>Modular enterprise dashboard UI components</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-indigo">▹</span>
+              <span>Zero-bloat responsive front-end code</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-indigo">▹</span>
+              <span>Sub-second tactile micro-interactions</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-6 border-t border-gf-border flex items-center justify-between text-xs font-mono text-gf-muted">
+          <span>SPEC: HTML5 / TAILWIND / JS</span>
+          <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- PILLAR 02: WordPress & Elementor Solutions -->
+      <div class="relative rounded-3xl gf-frosted p-8 sm:p-10 border border-gf-border hover:border-accent-cyan transition-all duration-500 group overflow-hidden flex flex-col justify-between min-h-[440px]">
+        <span class="absolute -top-6 -right-3 text-8xl sm:text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none group-hover:text-accent-cyan/[0.08] transition-colors duration-500">
+          02
+        </span>
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-cyan to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <div>
+          <div class="text-xs font-mono tracking-widest text-accent-cyan font-bold uppercase mb-4">
+            02 / CMS ARCHITECTURE
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-200 transition-colors">
+            WordPress & Elementor Solutions
+          </h3>
+          <p class="text-sm text-gf-text leading-relaxed mb-6">
+            Tailored corporate websites, custom Elementor Pro implementations, speed-first code architecture, and bulletproof security.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-cyan">▹</span>
+              <span>Bespoke Elementor Pro layouts without plugin bloat</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-cyan">▹</span>
+              <span>Sub-2-second server and asset load tuning</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-cyan">▹</span>
+              <span>Intuitive client management backends</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-6 border-t border-gf-border flex items-center justify-between text-xs font-mono text-gf-muted">
+          <span>ENGINE: WORDPRESS / ELEMENTOR</span>
+          <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- PILLAR 03: Shopify & WooCommerce Commerce -->
+      <div class="relative rounded-3xl gf-frosted p-8 sm:p-10 border border-gf-border hover:border-accent-emerald transition-all duration-500 group overflow-hidden flex flex-col justify-between min-h-[440px]">
+        <span class="absolute -top-6 -right-3 text-8xl sm:text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none group-hover:text-accent-emerald/[0.08] transition-colors duration-500">
+          03
+        </span>
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-emerald to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <div>
+          <div class="text-xs font-mono tracking-widest text-accent-emerald font-bold uppercase mb-4">
+            03 / COMMERCE ENGINE
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-emerald-200 transition-colors">
+            Shopify & WooCommerce Commerce
+          </h3>
+          <p class="text-sm text-gf-text leading-relaxed mb-6">
+            Conversion-engineered direct-to-consumer (DTC) storefronts, custom product funnels, and frictionless mobile checkout experiences.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-emerald">▹</span>
+              <span>Cart-to-Checkout conversion friction elimination</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-emerald">▹</span>
+              <span>Custom product landing pages & offer bundles</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-emerald">▹</span>
+              <span>Gateway and automated fulfillment integrations</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-6 border-t border-gf-border flex items-center justify-between text-xs font-mono text-gf-muted">
+          <span>PLATFORMS: SHOPIFY / WOO</span>
+          <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- PILLAR 04: Search Intelligence & Technical SEO -->
+      <div class="relative rounded-3xl gf-frosted p-8 sm:p-10 border border-gf-border hover:border-accent-indigo transition-all duration-500 group overflow-hidden flex flex-col justify-between min-h-[440px]">
+        <span class="absolute -top-6 -right-3 text-8xl sm:text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none group-hover:text-accent-indigo/[0.08] transition-colors duration-500">
+          04
+        </span>
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-indigo to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <div>
+          <div class="text-xs font-mono tracking-widest text-accent-indigo font-bold uppercase mb-4">
+            04 / ALGORITHMIC SEARCH
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-indigo-200 transition-colors">
+            Search Intelligence & Technical SEO
+          </h3>
+          <p class="text-sm text-gf-text leading-relaxed mb-6">
+            Semantic indexing, JSON-LD Schema integration, Core Web Vitals optimization, and keyword mapping built to capture high-intent search traffic.
+          </p>
+          <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-indigo">▹</span>
+              <span>Comprehensive Schema.org entity graph modeling</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-indigo">▹</span>
+              <span>Core Web Vitals compliance (LCP, FID, CLS)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-accent-indigo">▹</span>
+              <span>High-intent commercial keyword architecture</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-6 border-t border-gf-border flex items-center justify-between text-xs font-mono text-gf-muted">
+          <span>VISIBILITY: 100% CRAWLABILITY</span>
+          <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- PILLAR 05: Performance Media & AI Video Ads -->
+      <div class="relative rounded-3xl gf-frosted p-8 sm:p-10 border border-gf-border hover:border-accent-violet transition-all duration-500 group overflow-hidden flex flex-col justify-between min-h-[440px] md:col-span-2 lg:col-span-2">
+        <span class="absolute -top-6 -right-3 text-8xl sm:text-9xl font-black font-mono text-white/[0.03] select-none pointer-events-none group-hover:text-accent-violet/[0.08] transition-colors duration-500">
+          05
+        </span>
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-violet to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <div>
+          <div class="text-xs font-mono tracking-widest text-accent-violet font-bold uppercase mb-4">
+            05 / CREATIVE MEDIA & ADS
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-violet-200 transition-colors">
+            Performance Media & AI Video Ads
+          </h3>
+          <p class="text-sm text-gf-text leading-relaxed mb-6">
+            Short-form vertical video ad production (Meta & TikTok), dynamic captions, AI-assisted video editing, and high-CTR social launch collateral.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300 font-medium">
+            <div class="flex items-center space-x-2">
+              <span class="text-accent-violet">▹</span>
+              <span>Thumb-stopping 3-second kinetic hooks</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-accent-violet">▹</span>
+              <span>AI voice narration & synchronized captions</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-accent-violet">▹</span>
+              <span>Ad creative continuity to high-conversion landing pages</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-accent-violet">▹</span>
+              <span>Social campaign media kits & promotional graphics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-gf-border flex items-center justify-between text-xs font-mono text-gf-muted mt-6">
+          <span>CHANNELS: TIKTOK / META REELS / SHORTS</span>
+          <span class="text-white group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. SELECTED WORKS & CASE STUDIES           -->
+  <!-- ========================================== -->
+  <section id="work" class="relative z-10 py-24 px-5 sm:px-8 max-w-7xl mx-auto border-t border-gf-border">
+    
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-4">
+      <div>
+        <div class="text-xs font-mono uppercase tracking-[0.25em] text-accent-cyan font-bold mb-3">
+          FEATURED CLIENT WORK
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Selected Client Projects & Case Studies
+        </h2>
+      </div>
+      <div class="text-xs font-mono text-gf-muted">
+        [FEATURED CLIENT PORTFOLIO]
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- GOODFACE LUXURY INTERACTIVE WORKS SLIDER       -->
+    <!-- ============================================== -->
+    <div class="gf-frosted rounded-3xl p-6 sm:p-10 border border-gf-border relative overflow-hidden shadow-2xl mb-16" id="homeGfWorkSliderCard">
+      
+      <!-- Ambient Lighting Blobs -->
+      <div class="absolute -top-28 -right-28 w-80 h-80 bg-indigo-600/15 rounded-full blur-[110px] pointer-events-none"></div>
+      <div class="absolute -bottom-28 -left-28 w-80 h-80 bg-violet-600/15 rounded-full blur-[110px] pointer-events-none"></div>
+
+      <!-- Header with Navigation HUD -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-gf-border/80">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-xs font-mono text-accent-indigo uppercase tracking-widest font-semibold mb-1">
+            <span class="w-2 h-2 rounded-full bg-accent-indigo animate-pulse"></span>
+            <span>CURATED WORKS SHOWCASE</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Flagship Client Architectures & Systems
+          </h3>
+        </div>
+
+        <!-- Controls HUD -->
+        <div class="flex items-center space-x-3">
+          <div class="px-3.5 py-1.5 rounded-full bg-[#06070a]/90 border border-gf-border text-xs font-mono text-slate-300">
+            <span id="homeGfSliderCurIdx" class="text-accent-indigo font-bold">01</span>
+            <span class="text-gf-muted"> / </span>
+            <span class="text-gf-muted">06</span>
+          </div>
+
+          <button 
+            type="button"
+            onclick="changeHomeGfWorkSlide(-1)" 
+            class="p-2.5 rounded-xl gf-frosted border border-gf-border hover:border-accent-indigo text-white hover:text-accent-indigo transition-all focus:outline-none"
+            aria-label="Previous Project"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+
+          <button 
+            type="button"
+            onclick="changeHomeGfWorkSlide(1)" 
+            class="p-2.5 rounded-xl gf-frosted border border-gf-border hover:border-accent-indigo text-white hover:text-accent-indigo transition-all focus:outline-none"
+            aria-label="Next Project"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <button 
+            type="button"
+            id="homeGfSliderPlayPauseBtn"
+            onclick="toggleHomeGfWorkAutoPlay()" 
+            class="px-3 py-1.5 rounded-xl gf-frosted border border-gf-border hover:border-accent-cyan text-gf-muted hover:text-white transition-all text-xs font-mono"
+            title="Auto-play toggle"
+          >
+            <span id="homeGfSliderPlayPauseIcon">⏸ Auto</span>
+          </button>
+        </div>
+      </div>
+
+        <!-- Quick Company Jump Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 scrollbar-none text-xs font-mono" id="homeGfSliderCompanyPills">
+        <button onclick="goToHomeGfWorkSlide(0)" class="home-gf-slide-pill active px-3.5 py-1.5 rounded-full gf-frosted border border-accent-indigo text-accent-indigo font-bold whitespace-nowrap transition-all">
+          Tapcheck
+        </button>
+        <button onclick="goToHomeGfWorkSlide(1)" class="home-gf-slide-pill px-3.5 py-1.5 rounded-full gf-frosted border border-gf-border text-slate-300 hover:border-accent-indigo whitespace-nowrap transition-all">
+          Emcentrix HR
+        </button>
+        <button onclick="goToHomeGfWorkSlide(2)" class="home-gf-slide-pill px-3.5 py-1.5 rounded-full gf-frosted border border-gf-border text-slate-300 hover:border-accent-indigo whitespace-nowrap transition-all">
+          Cloud Solutions Saudi
+        </button>
+        <button onclick="goToHomeGfWorkSlide(3)" class="home-gf-slide-pill px-3.5 py-1.5 rounded-full gf-frosted border border-gf-border text-slate-300 hover:border-accent-indigo whitespace-nowrap transition-all">
+          ayahshopping.com
+        </button>
+        <button onclick="goToHomeGfWorkSlide(4)" class="home-gf-slide-pill px-3.5 py-1.5 rounded-full gf-frosted border border-gf-border text-slate-300 hover:border-accent-indigo whitespace-nowrap transition-all">
+          MyPaperlessOffice
+        </button>
+        <button onclick="goToHomeGfWorkSlide(5)" class="home-gf-slide-pill px-3.5 py-1.5 rounded-full gf-frosted border border-gf-border text-slate-300 hover:border-accent-indigo whitespace-nowrap transition-all">
+          Bin Siddique
+        </button>
+      </div>
+
+      <!-- Slides Viewport -->
+      <div class="relative overflow-hidden rounded-2xl min-h-[460px] sm:min-h-[420px]" id="homeGfWorkSliderViewport" onmouseenter="pauseHomeGfWorkSlider()" onmouseleave="resumeHomeGfWorkSlider()">
+
+        <!-- SLIDE 0: Tapcheck -->
+        <div class="home-gf-work-slide transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="0">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs uppercase font-bold">
+              <span>🔒 CONFIDENTIAL / NDA PROTECTED</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Tapcheck
+            </h4>
+            <p class="text-sm text-gf-text leading-relaxed">
+              Enterprise Web App & Dashboard UI. Built a modular, low-latency financial wellness user interface with complex telemetry visualizers, design tokens, and streamlined employee onboarding flows.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 border border-indigo-500/40 text-indigo-300 text-xs font-mono font-bold">
+                Enterprise Dashboard
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                UI Architecture
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs font-mono">
+                Design Systems
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Telemetry: 12ms
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://www.tapcheck.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-accent-indigo hover:bg-indigo-500 text-white font-mono font-bold text-xs uppercase tracking-wider shadow-gf-glow transition-all inline-flex items-center space-x-2">
+                <span>Visit Platform</span>
+                <span>↗</span>
+              </a>
+              <a href="https://wa.me/923335585690?text=Hi%20Usman,%20I'd%20like%20to%20discuss%20a%20project%20similar%20to%20Tapcheck" target="_blank" class="px-5 py-3 rounded-full gf-frosted border border-gf-border hover:border-accent-indigo text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Discuss Architecture →
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-gf-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/Tapcheck.webp" 
+                alt="Tapcheck Enterprise Web App Interface Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-amber-500/40 text-xs font-mono text-amber-400 font-bold">
+                NDA Protected
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-gf-border">Financial Wellness SaaS</span>
+                <span class="text-indigo-300 font-bold">Telemetry Latency: 12ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 1: Emcentrix -->
+        <div class="home-gf-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="1">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-accent-cyan font-mono text-xs uppercase font-bold">
+              <span>CORPORATE HR & PAYROLL SUITE</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Emcentrix
+            </h4>
+            <p class="text-sm text-gf-text leading-relaxed">
+              Enterprise HR & Payroll Solutions Platform. Modernized full corporate UI system, engineered modular design tokens, and delivered responsive marketing and dashboard templates.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold">
+                HR Platform
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Enterprise UI Design
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                SaaS Interface
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Component System
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://emcentrix.net" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-accent-cyan hover:bg-cyan-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-gf-glow transition-all inline-flex items-center space-x-2">
+                <span>Visit emcentrix.net</span>
+                <span>↗</span>
+              </a>
+              <a href="https://wa.me/923335585690" target="_blank" class="px-5 py-3 rounded-full gf-frosted border border-gf-border hover:border-accent-cyan text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Discuss Platform →
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-gf-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/Benefits-association.webp?q=80&w=1200&auto=format&fit=crop" 
+                alt="Emcentrix Enterprise HR Solutions Platform Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-cyan-500/40 text-xs font-mono text-accent-cyan font-bold">
+                Enterprise HR Platform
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-gf-border">Corporate UI Architecture</span>
+                <span class="text-cyan-300 font-bold">Modular Design Tokens</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2: Cloud Solutions Saudi Arabia -->
+        <div class="home-gf-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="2">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-accent-cyan font-mono text-xs uppercase font-bold">
+              <span>🇸🇦 SAUDI HEALTHCARE NETWORK</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Cloud Solutions Saudi
+            </h4>
+            <p class="text-sm text-gf-text leading-relaxed">
+              Enterprise Digital Health & Hospital IT Solutions. Designed clinical interface architectures, doctor consultation flows, and medical digital services.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold">
+                Healthcare Systems UI
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Clinical Workflows
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Clinical Experience
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Hospital IT Systems
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://www.cloudsolutions.com.sa" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-accent-cyan hover:bg-cyan-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-gf-glow transition-all inline-flex items-center space-x-2">
+                <span>Visit cloudsolutions.com.sa</span>
+                <span>↗</span>
+              </a>
+              <a href="https://wa.me/923335585690" target="_blank" class="px-5 py-3 rounded-full gf-frosted border border-gf-border hover:border-accent-cyan text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Clinical UI Specs →
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-gf-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/Medical.webp?q=80&w=1200&auto=format&fit=crop" 
+                alt="Cloud Solutions Saudi Arabia Hospital System Interface Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-cyan-500/40 text-xs font-mono text-accent-cyan font-bold">
+                Digital Health Platform
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-gf-border">Saudi Healthcare Group</span>
+                <span class="text-cyan-300 font-bold">Hospital Information UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: ayahshopping.com -->
+        <div class="home-gf-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="3">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-accent-emerald font-mono text-xs uppercase font-bold">
+              <span>● LIVE PRODUCTION DTC E-COM</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              ayahshopping.com
+            </h4>
+            <p class="text-sm text-gf-text leading-relaxed">
+              Modern DTC Brand: Conversion-Engineered Shopify/WooCommerce Store. Sub-second mobile storefront, streamlined one-page cart-to-buy funnel, and structured schema graphs.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-bold">
+                ⚡ Page Speed: 99/100 (&lt;0.8s)
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold">
+                Technical SEO Ready
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Shopify & WooCommerce
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Checkout CRO
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-accent-emerald hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-gf-emerald transition-all inline-flex items-center space-x-2">
+                <span>Visit Storefront</span>
+                <span>↗</span>
+              </a>
+              <a href="https://wa.me/923335585690" target="_blank" class="px-5 py-3 rounded-full gf-frosted border border-gf-border hover:border-accent-emerald text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Discuss Store Build →
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/ayahshopping.webp?q=80&w=1200&auto=format&fit=crop" 
+                alt="ayahshopping.com DTC Storefront Interface Showcase" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-emerald-500/40 text-xs font-mono text-accent-emerald font-bold">
+                Page Speed: 99/100 (&lt;0.8s)
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-gf-border">DTC Brand E-Commerce</span>
+                <span class="text-emerald-400 font-bold">Production Store Verified ✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4: MyPaperlessOffice -->
+        <div class="home-gf-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="4">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono text-xs uppercase font-bold">
+              <span>WORKFLOW AUTOMATION PORTAL</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              MyPaperlessOffice
+            </h4>
+            <p class="text-sm text-gf-text leading-relaxed">
+              Enterprise Workflow Portal. Designed tabular document automation systems, role-based administration consoles, and frictionless digital employee approval pipelines.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 border border-indigo-500/40 text-indigo-300 text-xs font-mono font-bold">
+                Enterprise Workflow
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Web Portal UI
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Zero Layout Shift
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Document Systems
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://mypaperlessoffice.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-accent-indigo hover:bg-indigo-500 text-white font-mono font-bold text-xs uppercase tracking-wider shadow-gf-glow transition-all inline-flex items-center space-x-2">
+                <span>Visit Portal</span>
+                <span>↗</span>
+              </a>
+              <a href="https://wa.me/923335585690" target="_blank" class="px-5 py-3 rounded-full gf-frosted border border-gf-border hover:border-accent-indigo text-slate-300 hover:text-white font-mono text-xs font-bold transition-all">
+                Portal Specs →
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-gf-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/MintPto.webp?q=80&w=1200&auto=format&fit=crop" 
+                alt="MyPaperlessOffice Workflow Automation Portal Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-indigo-500/40 text-xs font-mono text-indigo-300 font-bold">
+                Zero Layout Shift Console
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-gf-border">Document Automation Portal</span>
+                <span class="text-white font-bold">Role Administration UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5: Bin Siddique -->
+        <div class="home-gf-work-slide hidden transition-opacity duration-500 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="5">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-white/10 border border-gf-border text-slate-200 font-mono text-xs uppercase font-bold">
+              <span>COMMERCIAL ARCHITECTURAL SHOWCASE</span>
+            </div>
+            <h4 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Bin Siddique
+            </h4>
+            <p class="text-sm text-gf-text leading-relaxed">
+              Architectural & Commercial Construction Showcase. High-end property developments presentation with ultra-fast visual rendering, responsive image feeds, and direct customer lead capture funnels.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Commercial Showcase
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Luxury Visual UI
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-mono font-bold">
+                Lead Generation
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-white/5 border border-gf-border text-slate-300 text-xs font-mono">
+                Responsive Media
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="https://wa.me/923335585690?text=Hi%20Usman,%20I'd%20like%20to%20discuss%20an%20architectural%20showcase%20like%20Bin%20Siddique" target="_blank" class="px-6 py-3 rounded-full bg-accent-emerald hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-gf-emerald transition-all inline-flex items-center space-x-2">
+                <span>Inquire on WhatsApp</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="relative rounded-2xl overflow-hidden border border-gf-border shadow-2xl bg-[#090B12] group">
+              <img 
+                src="images/BinSiddique.webp" 
+                alt="Bin Siddique Commercial Architecture Showcase Mockup" 
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/30 to-transparent"></div>
+              <div class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-gf-border text-xs font-mono text-slate-300 font-bold">
+                High-Resolution Asset Feeds
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono text-slate-300">
+                <span class="bg-black/75 px-3 py-1 rounded-md border border-gf-border">Commercial Architecture</span>
+                <span class="text-emerald-400 font-bold">Lead Capture Engineered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Slider Progress Dots -->
+      <div class="flex items-center justify-center space-x-2.5 pt-6 mt-2" id="homeGfWorkSliderDots">
+        <button onclick="goToHomeGfWorkSlide(0)" class="w-8 h-2 rounded-full bg-accent-indigo transition-all duration-300 home-gf-dot-indicator" aria-label="Go to slide 1"></button>
+        <button onclick="goToHomeGfWorkSlide(1)" class="w-2.5 h-2 rounded-full bg-gf-border hover:bg-slate-500 transition-all duration-300 home-gf-dot-indicator" aria-label="Go to slide 2"></button>
+        <button onclick="goToHomeGfWorkSlide(2)" class="w-2.5 h-2 rounded-full bg-gf-border hover:bg-slate-500 transition-all duration-300 home-gf-dot-indicator" aria-label="Go to slide 3"></button>
+        <button onclick="goToHomeGfWorkSlide(3)" class="w-2.5 h-2 rounded-full bg-gf-border hover:bg-slate-500 transition-all duration-300 home-gf-dot-indicator" aria-label="Go to slide 4"></button>
+        <button onclick="goToHomeGfWorkSlide(4)" class="w-2.5 h-2 rounded-full bg-gf-border hover:bg-slate-500 transition-all duration-300 home-gf-dot-indicator" aria-label="Go to slide 5"></button>
+        <button onclick="goToHomeGfWorkSlide(5)" class="w-2.5 h-2 rounded-full bg-gf-border hover:bg-slate-500 transition-all duration-300 home-gf-dot-indicator" aria-label="Go to slide 6"></button>
+      </div>
+
+    </div>
+
+    <!-- Interactive Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- 1. TAPCHECK -->
+      <div class="rounded-3xl gf-frosted p-6 sm:p-7 border border-gf-border flex flex-col justify-between group">
+        <div>
+          <div class="relative w-full h-56 rounded-2xl overflow-hidden mb-6 border border-gf-border bg-[#0a0c14]">
+            <img 
+              src="images/Tapcheck.webp" 
+              alt="Tapcheck Enterprise Operations Dashboard UI" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                🔒 Confidential / NDA
+              </span>
+              <a href="https://www.tapcheck.com" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md bg-black/80 border border-gf-border text-[10px] font-mono text-slate-300 hover:text-white flex items-center space-x-1">
+                <span>tapcheck.com</span>
+                <span>↗</span>
+              </a>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-indigo-300 font-bold">
+              <span>Telemetry: 12ms</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Dashboard UI</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-indigo-300 border border-indigo-500/30">
+              Enterprise Dashboard
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              UI Architecture
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-amber-400 border border-amber-500/30">
+              Design Systems
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-indigo transition-colors">
+            Tapcheck
+          </h3>
+          <p class="text-xs sm:text-sm text-gf-text mb-6 leading-relaxed">
+            Enterprise Operations Dashboard. Built a modular, low-latency financial wellness user interface with complex telemetry visualizers and streamlined employee onboarding flows.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-gf-border flex justify-between items-center">
+          <span class="text-xs font-mono text-gf-muted">UI Architecture & Systems</span>
+          <a href="https://www.tapcheck.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-white hover:text-accent-indigo flex items-center space-x-1">
+            <span>Visit Platform</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. EMCENTRIX -->
+      <div class="rounded-3xl gf-frosted p-6 sm:p-7 border border-gf-border flex flex-col justify-between group">
+        <div>
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-gf-border bg-[#0a0c14]">
+            <img 
+              src="images/Benefits-association.webp" 
+              alt="Emcentrix Enterprise HR & Payroll Solutions Platform UI" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                Corporate Scale
+              </span>
+              <a href="https://emcentrix.net" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md bg-black/80 border border-gf-border text-[10px] font-mono text-slate-300 hover:text-white flex items-center space-x-1">
+                <span>emcentrix.net</span>
+                <span>↗</span>
+              </a>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-cyan-300 font-bold">
+              <span>Enterprise HR</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Component System</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-cyan-300 border border-cyan-500/30">
+              HR Platform
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Enterprise UI Design
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              SaaS Interface
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
+            Emcentrix
+          </h3>
+          <p class="text-xs sm:text-sm text-gf-text mb-6 leading-relaxed">
+            Enterprise HR & Payroll Solutions Platform. Modernized full corporate UI system, engineered modular design tokens, and delivered responsive marketing and dashboard templates.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-gf-border flex justify-between items-center">
+          <span class="text-xs font-mono text-gf-muted">UI Architecture / Webflow</span>
+          <a href="https://emcentrix.net" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-white hover:text-accent-cyan flex items-center space-x-1">
+            <span>Visit Platform</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. CLOUD SOLUTIONS SAUDI ARABIA -->
+      <div class="rounded-3xl gf-frosted p-6 sm:p-7 border border-gf-border flex flex-col justify-between group hover:border-accent-cyan transition-all">
+        <div>
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-gf-border bg-[#0a0c14]">
+            <img 
+              src="images/dr-dashboard.webp" 
+              alt="Cloud Solutions Saudi Arabia Digital Healthcare Systems UI" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                🇸🇦 Saudi Healthcare
+              </span>
+              <a href="https://www.cloudsolutions.com.sa" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md bg-black/80 border border-gf-border text-[10px] font-mono text-cyan-300 hover:text-white flex items-center space-x-1">
+                <span>cloudsolutions.com.sa</span>
+                <span>↗</span>
+              </a>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-cyan-300 font-bold">
+              <span>Digital Health Platform</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Hospital Information UI</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-cyan-300 border border-cyan-500/30">
+              Healthcare Systems UI
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Clinical Workflows
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Clinical Experience
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
+            Cloud Solutions Saudi
+          </h3>
+          <p class="text-xs sm:text-sm text-gf-text mb-6 leading-relaxed">
+            Enterprise Digital Health & Hospital IT Solutions. Designed clinical interface architectures, doctor consultation flows, and medical digital services.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-gf-border flex justify-between items-center">
+          <span class="text-xs font-mono text-gf-muted">Clinical UI / Systems</span>
+          <a href="https://www.cloudsolutions.com.sa" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-white hover:text-accent-cyan flex items-center space-x-1">
+            <span>Visit Platform</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. MODERN DTC BRAND (AYAHSHOPPING.COM) — EXCLUSIVELY RECEIVES SEO & PAGESPEED TAGS -->
+      <div class="rounded-3xl gf-frosted p-6 sm:p-7 border border-brand-border flex flex-col justify-between group border-accent-emerald/40 shadow-gf-emerald">
+        <div>
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-emerald-500/30 bg-[#0a0c14]">
+            <img 
+              src="images/ayahshopping.webp" 
+              alt="ayahshopping.com Modern DTC E-Commerce Storefront Screenshot" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                ● Live Production Store
+              </span>
+              <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md bg-black/80 border border-emerald-500/40 text-[10px] font-mono text-accent-emerald hover:text-white flex items-center space-x-1">
+                <span>ayahshopping.com</span>
+                <span>↗</span>
+              </a>
+            </div>
+            <!-- SEO & PageSpeed indicators strictly shown here -->
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-emerald-300 font-bold">
+              <span>⚡ Page Speed: 99/100 (&lt;0.8s)</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Technical SEO Ready</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-emerald-300 border border-emerald-500/40 font-bold">
+              Shopify & WooCommerce
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-cyan-300 border border-cyan-500/30">
+              Page Speed: 99/100
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-emerald-300 border border-emerald-500/30">
+              Technical SEO Ready
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Checkout CRO
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-emerald transition-colors">
+            ayahshopping.com
+          </h3>
+          <p class="text-xs sm:text-sm text-gf-text mb-6 leading-relaxed">
+            Modern DTC Brand: Conversion-Engineered Shopify/WooCommerce Store. Sub-second mobile storefront, streamlined one-page cart-to-buy funnel, and structured schema graphs.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-gf-border flex justify-between items-center">
+          <span class="text-xs font-mono text-accent-emerald font-semibold">Live Production E-Com</span>
+          <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-white hover:text-accent-emerald flex items-center space-x-1">
+            <span>Visit Store</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. MYPAPERLESSOFFICE -->
+      <div class="rounded-3xl gf-frosted p-6 sm:p-7 border border-gf-border flex flex-col justify-between group">
+        <div>
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-gf-border bg-[#0a0c14]">
+            <img 
+              src="images/mpo-dashboard.webp" 
+              alt="MyPaperlessOffice Enterprise Workflow Portal UI" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/90 text-[10px] font-mono text-white font-extrabold uppercase">
+                SaaS Workflow
+              </span>
+              <a href="https://mypaperlessoffice.com" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md bg-black/80 border border-gf-border text-[10px] font-mono text-slate-300 hover:text-white flex items-center space-x-1">
+                <span>mypaperlessoffice.com</span>
+                <span>↗</span>
+              </a>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-indigo-300 font-bold">
+              <span>Zero Layout Shift</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">Enterprise Portal UI</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-indigo-300 border border-indigo-500/30">
+              Enterprise Workflow
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Web Portal UI
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              SaaS Interface
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-accent-indigo transition-colors">
+            MyPaperlessOffice
+          </h3>
+          <p class="text-xs sm:text-sm text-gf-text mb-6 leading-relaxed">
+            Enterprise Workflow Portal. Designed tabular document automation systems, role-based administration consoles, and frictionless digital employee approval pipelines.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-gf-border flex justify-between items-center">
+          <span class="text-xs font-mono text-gf-muted">Portal Architecture / UI</span>
+          <a href="https://mypaperlessoffice.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-white hover:text-accent-indigo flex items-center space-x-1">
+            <span>Visit Portal</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. BIN SIDDIQUE -->
+      <div class="rounded-3xl gf-frosted p-6 sm:p-7 border border-gf-border flex flex-col justify-between group">
+        <div>
+          <div class="relative w-full h-52 rounded-2xl overflow-hidden mb-6 border border-gf-border bg-[#0a0c14]">
+            <img 
+              src="images/BinSiddique.webp" 
+              alt="Bin Siddique Commercial Showcase & Lead Generation UI" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#06070a] via-black/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/90 text-[10px] font-mono text-black font-extrabold uppercase">
+                Commercial Architecture
+              </span>
+              <span class="px-2.5 py-1 rounded-md bg-black/80 border border-gf-border text-[10px] font-mono text-slate-300">
+                Luxury Showcase
+              </span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center text-[10px] font-mono text-amber-300 font-bold">
+              <span>Visual Prestige UI</span>
+              <span class="bg-black/70 px-2 py-0.5 rounded">High-End Lead Gen</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-amber-300 border border-amber-500/30">
+              Commercial Showcase
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Luxury Visual UI
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full gf-frosted text-[10px] font-mono text-slate-300 border border-gf-border">
+              Lead Generation
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+            Bin Siddique
+          </h3>
+          <p class="text-xs sm:text-sm text-gf-text mb-6 leading-relaxed">
+            Commercial Showcase & Lead Generation. Crafted a high-aesthetic architectural portfolio interface presenting luxury corporate construction portfolios and capturing prime commercial contracts.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-gf-border flex justify-between items-center">
+          <span class="text-xs font-mono text-gf-muted">Visual UI / Architectural</span>
+          <a href="https://wa.me/923335585690?text=Hi%20Usman,%20I'd%20like%20to%20see%20details%20for%20Bin%20Siddique%20architectural%20showcase." target="_blank" class="text-xs font-mono font-bold text-white hover:text-amber-400">
+            Request Briefing →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. FREE VIDEO AUDIT HOOK                   -->
+  <!-- ========================================== -->
+  <section id="audit" class="relative z-10 py-24 px-5 sm:px-8 max-w-7xl mx-auto">
+    <div class="rounded-3xl gf-frosted p-8 sm:p-14 lg:p-20 border border-gf-border relative overflow-hidden shadow-2xl">
+      
+      <!-- Internal Ambient Glows -->
+      <div class="absolute -top-32 -left-32 w-80 h-80 bg-accent-indigo/20 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-accent-emerald/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto text-center">
+        
+        <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-accent-emerald/10 border border-accent-emerald/30 text-accent-emerald font-mono text-xs uppercase tracking-widest font-bold mb-6">
+          <span>⚡ EXPERT SCREEN RECORDING</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+          Request a 5-Minute Technical & Storefront Teardown.
+        </h2>
+
+        <p class="text-base sm:text-lg text-gf-text mb-10 max-w-2xl mx-auto leading-relaxed">
+          Drop your store or website URL. I personally record a private screen walkthrough breaking down UX friction, checkout leaks, and technical performance gaps.
+        </p>
+
+        <!-- Clean Single-Input Card -->
+        <form id="teardownForm" onsubmit="handleTeardownSubmit(event)" class="max-w-xl mx-auto space-y-3">
+          <div class="flex flex-col sm:flex-row items-center rounded-2xl gf-frosted p-2 border border-gf-border focus-within:border-accent-emerald transition-all shadow-gf-card">
+            <div class="flex items-center w-full px-3 py-2 sm:py-0">
+              <span class="text-gf-muted font-mono text-sm mr-2">https://</span>
+              <input 
+                type="text" 
+                id="teardownUrl" 
+                placeholder="yourstore.com or company.com" 
+                required 
+                class="w-full bg-transparent text-white placeholder-gf-muted text-sm font-mono focus:outline-none"
+              >
+            </div>
+            <button 
+              type="submit" 
+              id="teardownBtn"
+              class="w-full sm:w-auto mt-2 sm:mt-0 px-7 py-3.5 rounded-xl bg-accent-emerald hover:bg-emerald-400 text-black font-mono text-xs uppercase tracking-wider font-bold shadow-gf-emerald transition-all whitespace-nowrap"
+            >
+              Get Video Teardown ⚡
+            </button>
+          </div>
+          <div class="flex items-center justify-center space-x-4 text-xs font-mono text-gf-muted pt-2">
+            <span>✓ 100% Complimentary</span>
+            <span>•</span>
+            <span>✓ No Sales Call</span>
+            <span>•</span>
+            <span>✓ Delivered to WhatsApp</span>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. STUDIO FOOTER                           -->
+  <!-- ========================================== -->
+  <footer id="contact" class="relative z-10 pt-20 pb-16 px-5 sm:px-8 max-w-7xl mx-auto border-t border-gf-border">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+      
+      <!-- Studio Identity Column -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="flex items-center space-x-3.5">
+          <img src="images/logo.svg" alt="TrueDezignz Studio" class="w-9 h-9 object-contain" onerror="this.src='../images/logo.svg'">
+          <div>
+            <div class="font-extrabold text-xl text-white uppercase tracking-wider">TrueDezignz Studio</div>
+            <div class="text-xs font-mono text-gf-muted">By Usman Awan • Principal Digital Architect</div>
+          </div>
+        </div>
+
+        <p class="text-sm text-gf-text max-w-md leading-relaxed">
+          Independent Digital Studio specializing in Custom Web Experiences, Commerce Architecture, Search Intelligence & Performance Marketing.
+        </p>
+
+        <!-- Direct Connect Buttons -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <!-- WhatsApp Button -->
+          <a 
+            href="https://wa.me/923335585690" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-accent-emerald hover:bg-emerald-400 text-black font-mono font-bold text-xs uppercase tracking-wider shadow-gf-emerald transition-all"
+          >
+            <span>WhatsApp: +92 333 5585690</span>
+          </a>
+
+          <!-- Email Button -->
+          <a 
+            href="mailto:truedezignz@gmail.com" 
+            class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl gf-frosted border border-gf-border hover:border-accent-cyan text-white font-mono text-xs transition-colors"
+          >
+            <span>✉ truedezignz@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Index -->
+      <div class="lg:col-span-3 space-y-3">
+        <div class="text-xs font-mono uppercase tracking-widest text-white font-bold">
+          STUDIO INDEX
+        </div>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#expertise" class="text-gf-text hover:text-white transition-colors">5-Pillar Matrix</a></li>
+          <li><a href="#work" class="text-gf-text hover:text-white transition-colors">Selected Work</a></li>
+          <li><a href="#audit" class="text-gf-text hover:text-white transition-colors">Audit Teardown</a></li>
+          <li><a href="https://wa.me/923335585690" target="_blank" class="text-gf-text hover:text-accent-emerald transition-colors">Direct WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <!-- Profiles & Repositories -->
+      <div class="lg:col-span-3 space-y-3">
+        <div class="text-xs font-mono uppercase tracking-widest text-white font-bold">
+        Location
+        </div>
+        <ul class="space-y-2 text-sm font-mono text-xs">
+          <!-- <li>
+            <a href="https://github.com/usmanawan" target="_blank" rel="noopener noreferrer" class="text-gf-text hover:text-white flex items-center space-x-2 transition-colors">
+              <span>GitHub / @usmanawan</span>
+              <span>↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/usmanawan/thetruedezignz" target="_blank" rel="noopener noreferrer" class="text-gf-text hover:text-white flex items-center space-x-2 transition-colors">
+              <span>Repo / thetruedezignz</span>
+              <span>↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://ayahshopping.com" target="_blank" rel="noopener noreferrer" class="text-accent-emerald hover:underline flex items-center space-x-2">
+              <span>Live / ayahshopping.com</span>
+              <span>↗</span>
+            </a>
+          </li> -->
+          <li>
+            <span class="text-gf-muted">📍 Islamabad / PK (Global Remote Engagements)</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sub-Footer -->
+    <div class="pt-8 border-t border-gf-border flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-gf-muted gap-4">
+      <div>
+        © <span id="year">2026</span> TrueDezignz Studio • Usman Awan. All rights reserved.
+      </div>
+      <div>
+        <span>High-Performance Web Design & Architecture</span>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- VANILLA JAVASCRIPT LOGIC                   -->
+  <!-- ========================================== -->
+  <script>
+    // Set Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Cursor Follower
+    const cursor = document.getElementById('cursor-light');
+    if (cursor) {
+      window.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
+    }
+
+    // Mobile Drawer Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    function toggleDrawer() {
+      if (!mobileDrawer) return;
+      mobileDrawer.classList.toggle('hidden');
+      const icon = menuToggle ? menuToggle.querySelector('svg') : null;
+      if (icon) {
+        if (mobileDrawer.classList.contains('hidden')) {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+        } else {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+        }
+      }
+    }
+    if (menuToggle) {
+      menuToggle.addEventListener('click', toggleDrawer);
+    }
+
+    // Toast Notification
+    function triggerToast(text) {
+      const toast = document.getElementById('toast');
+      const msg = document.getElementById('toast-message');
+      msg.textContent = text;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+
+    // Teardown Form Handler
+    function handleTeardownSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById('teardownUrl');
+      const btn = document.getElementById('teardownBtn');
+      const domain = input.value.trim();
+      if (!domain) return;
+
+      btn.disabled = true;
+      btn.textContent = 'Processing URL...';
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = 'Get Video Teardown ⚡';
+        triggerToast('Teardown queued for ' + domain + '! Opening WhatsApp to connect with Usman...');
+        
+        const text = encodeURIComponent("Hi Usman! I requested a 5-Minute Technical & Storefront Teardown for my site: https://" + domain);
+        window.open("https://wa.me/923335585690?text=" + text, '_blank');
+        input.value = '';
+      }, 900);
+    }
+
+    // ==========================================
+    // GOODFACE LUXURY HOME WORK SLIDER LOGIC
+    // ==========================================
+    let curHomeGfWorkSlideIdx = 0;
+    const totalHomeGfWorkSlideCount = 6;
+    let homeGfWorkSlideTimer = null;
+    let isHomeGfWorkSlideAutoActive = true;
+
+    function updateHomeGfWorkSlideView() {
+      const slides = document.querySelectorAll('.home-gf-work-slide');
+      const pills = document.querySelectorAll('#homeGfSliderCompanyPills .home-gf-slide-pill');
+      const dots = document.querySelectorAll('#homeGfWorkSliderDots .home-gf-dot-indicator');
+      const curNum = document.getElementById('homeGfSliderCurIdx');
+
+      if (curNum) {
+        curNum.textContent = String(curHomeGfWorkSlideIdx + 1).padStart(2, '0');
+      }
+
+      slides.forEach((sl, i) => {
+        if (i === curHomeGfWorkSlideIdx) {
+          sl.classList.remove('hidden');
+          sl.classList.add('grid');
+        } else {
+          sl.classList.add('hidden');
+          sl.classList.remove('grid');
+        }
+      });
+
+      pills.forEach((p, i) => {
+        if (i === curHomeGfWorkSlideIdx) {
+          p.classList.add('active', 'border-accent-indigo', 'text-accent-indigo');
+          p.classList.remove('border-gf-border', 'text-slate-300');
+        } else {
+          p.classList.remove('active', 'border-accent-indigo', 'text-accent-indigo');
+          p.classList.add('border-gf-border', 'text-slate-300');
+        }
+      });
+
+      dots.forEach((d, i) => {
+        if (i === curHomeGfWorkSlideIdx) {
+          d.classList.add('w-8', 'bg-accent-indigo');
+          d.classList.remove('w-2.5', 'bg-gf-border');
+        } else {
+          d.classList.remove('w-8', 'bg-accent-indigo');
+          d.classList.add('w-2.5', 'bg-gf-border');
+        }
+      });
+    }
+
+    function changeHomeGfWorkSlide(dir) {
+      curHomeGfWorkSlideIdx = (curHomeGfWorkSlideIdx + dir + totalHomeGfWorkSlideCount) % totalHomeGfWorkSlideCount;
+      updateHomeGfWorkSlideView();
+    }
+
+    function goToHomeGfWorkSlide(idx) {
+      curHomeGfWorkSlideIdx = idx;
+      updateHomeGfWorkSlideView();
+    }
+
+    function startHomeGfWorkTimer() {
+      if (homeGfWorkSlideTimer) clearInterval(homeGfWorkSlideTimer);
+      homeGfWorkSlideTimer = setInterval(() => {
+        if (isHomeGfWorkSlideAutoActive) {
+          changeHomeGfWorkSlide(1);
+        }
+      }, 4500);
+    }
+
+    function pauseHomeGfWorkSlider() {
+      isHomeGfWorkSlideAutoActive = false;
+    }
+
+    function resumeHomeGfWorkSlider() {
+      isHomeGfWorkSlideAutoActive = true;
+    }
+
+    function toggleHomeGfWorkAutoPlay() {
+      isHomeGfWorkSlideAutoActive = !isHomeGfWorkSlideAutoActive;
+      const icon = document.getElementById('homeGfSliderPlayPauseIcon');
+      if (icon) {
+        icon.textContent = isHomeGfWorkSlideAutoActive ? '⏸ Auto' : '▶ Play';
+      }
+    }
+
+    startHomeGfWorkTimer();
+  </script>
+
+</body>
+</html>

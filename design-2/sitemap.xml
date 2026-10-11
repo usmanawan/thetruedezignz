@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Design 2 Homepage -->
+  <url>
+    <loc>https://usmanawan.github.io/thetruedezignz/design-2/index.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Design 2 5-Pillar Expertise Matrix -->
+  <url>
+    <loc>https://usmanawan.github.io/thetruedezignz/design-2/expertise.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Design 2 Selected Work & Product Gallery -->
+  <url>
+    <loc>https://usmanawan.github.io/thetruedezignz/design-2/work.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Design 2 Studio Story & Founder Architecture -->
+  <url>
+    <loc>https://usmanawan.github.io/thetruedezignz/design-2/about.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Design 2 Contact & Video Teardown Request -->
+  <url>
+    <loc>https://usmanawan.github.io/thetruedezignz/design-2/contact.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
